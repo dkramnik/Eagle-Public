@@ -143,6 +143,16 @@
 <text x="95.25" y="99.695" size="0.8128" layer="26" rot="MR0">GND</text>
 <text x="50.8" y="99.695" size="0.8128" layer="26" rot="MR0">B+</text>
 <text x="56.1975" y="99.695" size="0.8128" layer="26" rot="MR0">B+</text>
+<polygon width="0.4064" layer="42">
+<vertex x="94.615" y="75.565"/>
+<vertex x="94.615" y="77.47"/>
+<vertex x="98.7425" y="81.5975"/>
+<vertex x="98.7425" y="100.965"/>
+<vertex x="101.2825" y="100.965"/>
+<vertex x="101.2825" y="80.645"/>
+<vertex x="98.425" y="77.7875"/>
+<vertex x="98.425" y="75.565"/>
+</polygon>
 </plain>
 <libraries>
 <library name="Kramnik's Library">
