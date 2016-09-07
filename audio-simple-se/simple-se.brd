@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1744,6 +1744,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
+<package name="SMTSO-M3">
+<pad name="P$1" x="0" y="0" drill="4.3" diameter="7.3"/>
+<text x="-2.54" y="6.35" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.54" y="5.08" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="heatsink">
@@ -1902,7 +1907,7 @@ RJ45 Jack connectors&lt;br&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules>
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2259,6 +2264,8 @@ design rules under a new name.</description>
 <element name="J2" library="con-amp" package="1X2MTA" value="" x="-25.7175" y="-189.865"/>
 <element name="J3" library="con-amp" package="1X2MTA" value="" x="-35.8775" y="-189.865"/>
 <element name="J4" library="con-amp" package="1X3MTA" value="" x="-47.625" y="-189.23"/>
+<element name="X1" library="simple-se" package="SMTSO-M3" value="PEM-SMTSO-M3" x="-50.165" y="-200.9775"/>
+<element name="X14" library="simple-se" package="SMTSO-M3" value="PEM-SMTSO-M3" x="-50.165" y="-208.5975"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2516,6 +2523,10 @@ design rules under a new name.</description>
 <contactref element="R19" pad="1"/>
 <contactref element="R22" pad="1"/>
 <contactref element="R16" pad="1"/>
+<contactref element="X1" pad="P$1"/>
+<contactref element="X14" pad="P$1"/>
+<wire x1="-50.165" y1="-208.5975" x2="-50.165" y2="-200.9775" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.1275" y1="-183.8325" x2="-50.165" y2="-200.9775" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.2075" y1="-163.5125" x2="-4.1275" y2="-183.8325" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.2075" y1="-151.765" x2="-9.2075" y2="-163.5125" width="0" layer="19" extent="1-1"/>
 <wire x1="0.9525" y1="-103.8225" x2="-9.2075" y2="-151.765" width="0" layer="19" extent="1-1"/>
@@ -2525,6 +2536,17 @@ design rules under a new name.</description>
 <wire x1="0.9525" y1="-50.4825" x2="0.9525" y2="-81.5975" width="0" layer="19" extent="1-1"/>
 <wire x1="0.9525" y1="-46.0375" x2="0.9525" y2="-50.4825" width="0" layer="19" extent="1-1"/>
 <wire x1="4.1275" y1="20.955" x2="0.9525" y2="-46.0375" width="0" layer="19" extent="1-1"/>
+<wire x1="26.035" y1="49.8475" x2="4.1275" y2="20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="22.225" y1="59.055" x2="26.035" y2="49.8475" width="0" layer="19" extent="1-1"/>
+<wire x1="4.1275" y1="84.7725" x2="22.225" y2="59.055" width="0" layer="19" extent="1-1"/>
+<wire x1="4.1275" y1="89.7763" x2="4.1275" y2="84.7725" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="91.1225" x2="4.1275" y2="89.7763" width="0" layer="19" extent="1-1"/>
+<wire x1="74.295" y1="16.1925" x2="26.035" y2="49.8475" width="0" layer="19" extent="1-1"/>
+<wire x1="75.5904" y1="6.35" x2="74.295" y2="16.1925" width="0" layer="19" extent="1-1"/>
+<wire x1="113.6396" y1="6.35" x2="75.5904" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="102.5525" y1="46.355" x2="74.295" y2="16.1925" width="0" layer="19" extent="1-1"/>
+<wire x1="104.4829" y1="95.25" x2="102.5525" y2="46.355" width="0" layer="19" extent="1-1"/>
+<wire x1="93.9546" y1="95.25" x2="104.4829" y2="95.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="C9" pad="+"/>
