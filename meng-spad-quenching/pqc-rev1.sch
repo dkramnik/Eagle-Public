@@ -13148,7 +13148,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <label x="81.28" y="78.74" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VCOMP_IN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VN"/>
 <wire x1="88.9" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
@@ -13161,9 +13161,10 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <junction x="71.12" y="58.42"/>
+<label x="68.58" y="73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VSPAD" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -13172,6 +13173,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="71.12" y1="101.6" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="101.6" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <junction x="71.12" y="101.6"/>
+<label x="66.04" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -13183,7 +13185,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="VA_FILT" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -13197,38 +13199,47 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="88.9" y1="139.7" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 <junction x="78.74" y="139.7"/>
+<label x="73.66" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="PP_N5V0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VEE"/>
 <wire x1="104.14" y1="48.26" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="27.94" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
+<label x="109.22" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="PP_P5V0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCCI"/>
 <wire x1="104.14" y1="86.36" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<label x="109.22" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="PP_P3V3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCCO"/>
 <wire x1="127" y1="78.74" x2="127" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="127" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<label x="132.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="VSCOPE_1" class="0">
 <segment>
 <pinref part="X3" gate="G1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
+<label x="53.34" y="60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VA_IN" class="0">
 <segment>
 <pinref part="X4" gate="G1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="139.7" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<label x="53.34" y="142.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

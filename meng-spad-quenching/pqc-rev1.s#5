@@ -6500,7 +6500,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="88.9" y="43.18" size="1.778" layer="98">R_HYS</text>
 <text x="38.1" y="71.12" size="1.778" layer="98">To scope</text>
 <text x="38.1" y="152.4" size="1.778" layer="98">VA Bias</text>
-<text x="78.74" y="142.24" size="1.778" layer="98">Bias Filter</text>
+<text x="78.74" y="142.24" size="1.778" layer="98">Optional Bias Filter</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="93.98" y="50.8" smashed="yes">
