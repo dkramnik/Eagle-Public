@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -193,6 +193,130 @@
 <text x="-3.175" y="5.3975" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-3.175" y="4.445" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
+<package name="SOT54E">
+<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm</description>
+<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.1524" layer="51" curve="-47.3637"/>
+<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.1524" layer="21" curve="-113.782"/>
+<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.1524" layer="21" curve="-113.782"/>
+<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.1524" layer="21"/>
+<pad name="D" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="G" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="S" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="EPC2040">
+<smd name="1" x="-0.2" y="0.4" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="-0.2" y="0" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="-0.2" y="-0.4" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<smd name="4" x="0.2" y="0.4" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<smd name="5" x="0.2" y="0" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<smd name="6" x="0.2" y="-0.4" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<wire x1="-0.425" y1="0.6" x2="0.425" y2="0.6" width="0.05" layer="21"/>
+<wire x1="0.425" y1="0.6" x2="0.425" y2="-0.6" width="0.05" layer="21"/>
+<wire x1="0.425" y1="-0.6" x2="-0.425" y2="-0.6" width="0.05" layer="21"/>
+<wire x1="-0.425" y1="-0.6" x2="-0.425" y2="0.6" width="0.05" layer="21"/>
+<text x="-0.635" y="1.905" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-0.635" y="0.9525" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<circle x="-0.7" y="0.4" radius="0.1" width="0.05" layer="21"/>
+<polygon width="0.005" layer="29">
+<vertex x="-0.105" y="0" curve="-90"/>
+<vertex x="-0.2" y="-0.095" curve="-90"/>
+<vertex x="-0.295" y="0" curve="-90"/>
+<vertex x="-0.2" y="0.095" curve="-90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.295" y="0" curve="-90"/>
+<vertex x="0.2" y="-0.095" curve="-90"/>
+<vertex x="0.105" y="0" curve="-90"/>
+<vertex x="0.2" y="0.095" curve="-90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.105" y="-0.4" curve="-90"/>
+<vertex x="-0.2" y="-0.495" curve="-90"/>
+<vertex x="-0.295" y="-0.4" curve="-90"/>
+<vertex x="-0.2" y="-0.305" curve="-90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.295" y="-0.4" curve="-90"/>
+<vertex x="0.2" y="-0.495" curve="-90"/>
+<vertex x="0.105" y="-0.4" curve="-90"/>
+<vertex x="0.2" y="-0.305" curve="-90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.105" y="0.4" curve="-90"/>
+<vertex x="-0.2" y="0.305" curve="-90"/>
+<vertex x="-0.295" y="0.4" curve="-90"/>
+<vertex x="-0.2" y="0.495" curve="-90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.295" y="0.4" curve="-90"/>
+<vertex x="0.2" y="0.305" curve="-90"/>
+<vertex x="0.105" y="0.4" curve="-90"/>
+<vertex x="0.2" y="0.495" curve="-90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="-0.16" y="0.07"/>
+<vertex x="-0.24" y="0.07" curve="90"/>
+<vertex x="-0.27" y="0.04"/>
+<vertex x="-0.27" y="-0.04" curve="90"/>
+<vertex x="-0.24" y="-0.07"/>
+<vertex x="-0.16" y="-0.07" curve="90"/>
+<vertex x="-0.13" y="-0.04"/>
+<vertex x="-0.13" y="0.04" curve="90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="0.16" y="-0.07"/>
+<vertex x="0.24" y="-0.07" curve="90"/>
+<vertex x="0.27" y="-0.04"/>
+<vertex x="0.27" y="0.04" curve="90"/>
+<vertex x="0.24" y="0.07"/>
+<vertex x="0.16" y="0.07" curve="90"/>
+<vertex x="0.13" y="0.04"/>
+<vertex x="0.13" y="-0.04" curve="90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="-0.27" y="0.44"/>
+<vertex x="-0.27" y="0.36" curve="90"/>
+<vertex x="-0.24" y="0.33"/>
+<vertex x="-0.16" y="0.33" curve="90"/>
+<vertex x="-0.13" y="0.36"/>
+<vertex x="-0.13" y="0.44" curve="90"/>
+<vertex x="-0.16" y="0.47"/>
+<vertex x="-0.24" y="0.47" curve="90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="0.16" y="0.33"/>
+<vertex x="0.24" y="0.33" curve="90"/>
+<vertex x="0.27" y="0.36"/>
+<vertex x="0.27" y="0.44" curve="90"/>
+<vertex x="0.24" y="0.47"/>
+<vertex x="0.16" y="0.47" curve="90"/>
+<vertex x="0.13" y="0.44"/>
+<vertex x="0.13" y="0.36" curve="90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="-0.16" y="-0.33"/>
+<vertex x="-0.24" y="-0.33" curve="90"/>
+<vertex x="-0.27" y="-0.36"/>
+<vertex x="-0.27" y="-0.44" curve="90"/>
+<vertex x="-0.24" y="-0.47"/>
+<vertex x="-0.16" y="-0.47" curve="90"/>
+<vertex x="-0.13" y="-0.44"/>
+<vertex x="-0.13" y="-0.36" curve="90"/>
+</polygon>
+<polygon width="0.06" layer="31">
+<vertex x="0.24" y="-0.33"/>
+<vertex x="0.16" y="-0.33" curve="90"/>
+<vertex x="0.13" y="-0.36"/>
+<vertex x="0.13" y="-0.44" curve="90"/>
+<vertex x="0.16" y="-0.47"/>
+<vertex x="0.24" y="-0.47" curve="90"/>
+<vertex x="0.27" y="-0.44"/>
+<vertex x="0.27" y="-0.36" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -302,6 +426,37 @@
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="IGFNA">
+<wire x1="-1.1176" y1="2.413" x2="-1.1176" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="0.5334" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="0" x2="1.778" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="0.381" x2="1.778" y2="-0.381" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.381" x2="0.508" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="0" x2="1.143" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.143" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.1176" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.1176" y1="0" x2="-1.1176" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.651" y1="0.127" x2="1.143" y2="0" width="0.3048" layer="94"/>
+<wire x1="1.143" y1="0" x2="1.651" y2="-0.127" width="0.3048" layer="94"/>
+<circle x="2.54" y="-1.905" radius="0.254" width="0.4064" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="2.413" size="0.8128" layer="93">D</text>
+<text x="1.143" y="-3.175" size="0.8128" layer="93">S</text>
+<text x="-2.413" y="0.381" size="0.8128" layer="93">G</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="-1.27" layer="94"/>
+<rectangle x1="-0.254" y1="1.27" x2="0.508" y2="2.54" layer="94"/>
+<rectangle x1="-0.254" y1="-0.889" x2="0.508" y2="0.889" layer="94"/>
+<pin name="G" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="EPC2040">
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADCMP582" prefix="IC">
@@ -390,6 +545,43 @@ http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BS170" prefix="Q">
+<description>&lt;b&gt;N-CHANNEL MOS FET&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="IGFNA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT54E">
+<connects>
+<connect gate="1" pin="D" pad="D"/>
+<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPC2040" prefix="M">
+<gates>
+<gate name="G$1" symbol="IGFNA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EPC2040">
+<connects>
+<connect gate="G$1" pin="D" pad="2 5"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3 4 6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="EPC2040" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
