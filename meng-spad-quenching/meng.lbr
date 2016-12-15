@@ -317,6 +317,23 @@ grid 2.54 mm</description>
 <vertex x="0.27" y="-0.36" curve="90"/>
 </polygon>
 </package>
+<package name="US8_3.1MM_JDEC_MO-187">
+<smd name="7" x="-0.25" y="1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.75" y="1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.75" y="-1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.25" y="-1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.25" y="-1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="1" x="-0.75" y="-1.35" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-1" y1="0.875" x2="1" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1" y1="0.875" x2="1" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.875" x2="-1" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.875" x2="-1" y2="0.875" width="0.127" layer="21"/>
+<circle x="-0.625" y="-0.5" radius="0.176775" width="0.05" layer="21"/>
+<text x="-0.9525" y="3.175" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-0.9525" y="2.2225" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -457,6 +474,22 @@ grid 2.54 mm</description>
 </symbol>
 <symbol name="EPC2040">
 </symbol>
+<symbol name="DFLOP">
+<pin name="D" x="-5.08" y="7.62" length="middle"/>
+<pin name="Q" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="VDD" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="GND" x="25.4" y="2.54" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="!PRE" x="-5.08" y="17.78" length="middle" function="dot"/>
+<pin name="!CLR" x="-5.08" y="2.54" length="middle" function="dot"/>
+<pin name="CLK" x="-5.08" y="12.7" length="middle" function="clk"/>
+<text x="0" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!Q" x="25.4" y="7.62" length="middle" function="dot" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADCMP582" prefix="IC">
@@ -581,6 +614,30 @@ http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="EPC2040" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC7SV74K8X" prefix="IC">
+<gates>
+<gate name="G$1" symbol="DFLOP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="US8_3.1MM_JDEC_MO-187">
+<connects>
+<connect gate="G$1" pin="!CLR" pad="6"/>
+<connect gate="G$1" pin="!PRE" pad="7"/>
+<connect gate="G$1" pin="!Q" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="1"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="Q" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="NC7SV74K8X" constant="no"/>
 </technology>
 </technologies>
 </device>
