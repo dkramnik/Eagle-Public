@@ -334,6 +334,259 @@ grid 2.54 mm</description>
 <text x="-0.9525" y="3.175" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-0.9525" y="2.2225" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
+<package name="SOT23R_INFINEON">
+<description>&lt;b&gt;Small Outline Transistor; 3 leads&lt;/b&gt; Reflow soldering&lt;p&gt;
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT23C">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
+<wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-1.983" x2="-1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-1.983" x2="-1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="1.983" x2="1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="1.422" y1="0.66" x2="1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
+</package>
+<package name="PE29100">
+<wire x1="-1.02" y1="0.82" x2="-1.02" y2="-0.82" width="0.1016" layer="21"/>
+<wire x1="-1.02" y1="-0.82" x2="1.02" y2="-0.82" width="0.1016" layer="21"/>
+<wire x1="1.02" y1="-0.82" x2="1.02" y2="0.82" width="0.1016" layer="21"/>
+<wire x1="1.02" y1="0.82" x2="-1.02" y2="0.82" width="0.1016" layer="21"/>
+<polygon width="0.005" layer="29">
+<vertex x="-0.4" y="0.245" curve="90"/>
+<vertex x="-0.445" y="0.2" curve="90"/>
+<vertex x="-0.4" y="0.155" curve="90"/>
+<vertex x="-0.355" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.4" y="-0.155" curve="90"/>
+<vertex x="-0.445" y="-0.2" curve="90"/>
+<vertex x="-0.4" y="-0.245" curve="90"/>
+<vertex x="-0.355" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.8" y="0.245" curve="90"/>
+<vertex x="-0.845" y="0.2" curve="90"/>
+<vertex x="-0.8" y="0.155" curve="90"/>
+<vertex x="-0.755" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.8" y="-0.155" curve="90"/>
+<vertex x="-0.845" y="-0.2" curve="90"/>
+<vertex x="-0.8" y="-0.245" curve="90"/>
+<vertex x="-0.755" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.4" y="0.645" curve="90"/>
+<vertex x="-0.445" y="0.6" curve="90"/>
+<vertex x="-0.4" y="0.555" curve="90"/>
+<vertex x="-0.355" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.8" y="0.645" curve="90"/>
+<vertex x="-0.845" y="0.6" curve="90"/>
+<vertex x="-0.8" y="0.555" curve="90"/>
+<vertex x="-0.755" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0" y="0.645" curve="90"/>
+<vertex x="-0.045" y="0.6" curve="90"/>
+<vertex x="0" y="0.555" curve="90"/>
+<vertex x="0.045" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.4" y="0.645" curve="90"/>
+<vertex x="0.355" y="0.6" curve="90"/>
+<vertex x="0.4" y="0.555" curve="90"/>
+<vertex x="0.445" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.8" y="0.645" curve="90"/>
+<vertex x="0.755" y="0.6" curve="90"/>
+<vertex x="0.8" y="0.555" curve="90"/>
+<vertex x="0.845" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.8" y="0.245" curve="90"/>
+<vertex x="0.755" y="0.2" curve="90"/>
+<vertex x="0.8" y="0.155" curve="90"/>
+<vertex x="0.845" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.8" y="-0.155" curve="90"/>
+<vertex x="0.755" y="-0.2" curve="90"/>
+<vertex x="0.8" y="-0.245" curve="90"/>
+<vertex x="0.845" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.8" y="-0.555" curve="90"/>
+<vertex x="0.755" y="-0.6" curve="90"/>
+<vertex x="0.8" y="-0.645" curve="90"/>
+<vertex x="0.845" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0.4" y="-0.555" curve="90"/>
+<vertex x="0.355" y="-0.6" curve="90"/>
+<vertex x="0.4" y="-0.645" curve="90"/>
+<vertex x="0.445" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="0" y="-0.555" curve="90"/>
+<vertex x="-0.045" y="-0.6" curve="90"/>
+<vertex x="0" y="-0.645" curve="90"/>
+<vertex x="0.045" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.4" y="-0.555" curve="90"/>
+<vertex x="-0.445" y="-0.6" curve="90"/>
+<vertex x="-0.4" y="-0.645" curve="90"/>
+<vertex x="-0.355" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="29">
+<vertex x="-0.8" y="-0.555" curve="90"/>
+<vertex x="-0.845" y="-0.6" curve="90"/>
+<vertex x="-0.8" y="-0.645" curve="90"/>
+<vertex x="-0.755" y="-0.6" curve="90"/>
+</polygon>
+<smd name="10" x="-0.4" y="-0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="11" x="-0.8" y="-0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="7" x="-0.4" y="0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="8" x="-0.8" y="0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="5" x="-0.8" y="0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="4" x="-0.4" y="0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="3" x="0" y="0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="2" x="0.4" y="0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="1" x="0.8" y="0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="6" x="0.8" y="0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="9" x="0.8" y="-0.2" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="12" x="0.8" y="-0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="13" x="0.4" y="-0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="14" x="0" y="-0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="15" x="-0.4" y="-0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="16" x="-0.8" y="-0.6" dx="0.14" dy="0.14" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.005" layer="31">
+<vertex x="-0.4" y="0.245" curve="90"/>
+<vertex x="-0.445" y="0.2" curve="90"/>
+<vertex x="-0.4" y="0.155" curve="90"/>
+<vertex x="-0.355" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.8" y="0.245" curve="90"/>
+<vertex x="-0.845" y="0.2" curve="90"/>
+<vertex x="-0.8" y="0.155" curve="90"/>
+<vertex x="-0.755" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.8" y="0.645" curve="90"/>
+<vertex x="-0.845" y="0.6" curve="90"/>
+<vertex x="-0.8" y="0.555" curve="90"/>
+<vertex x="-0.755" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.4" y="0.645" curve="90"/>
+<vertex x="-0.445" y="0.6" curve="90"/>
+<vertex x="-0.4" y="0.555" curve="90"/>
+<vertex x="-0.355" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.4" y="-0.155" curve="90"/>
+<vertex x="-0.445" y="-0.2" curve="90"/>
+<vertex x="-0.4" y="-0.245" curve="90"/>
+<vertex x="-0.355" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.8" y="-0.155" curve="90"/>
+<vertex x="-0.845" y="-0.2" curve="90"/>
+<vertex x="-0.8" y="-0.245" curve="90"/>
+<vertex x="-0.755" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.8" y="-0.555" curve="90"/>
+<vertex x="-0.845" y="-0.6" curve="90"/>
+<vertex x="-0.8" y="-0.645" curve="90"/>
+<vertex x="-0.755" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="-0.4" y="-0.555" curve="90"/>
+<vertex x="-0.445" y="-0.6" curve="90"/>
+<vertex x="-0.4" y="-0.645" curve="90"/>
+<vertex x="-0.355" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0" y="0.645" curve="90"/>
+<vertex x="-0.045" y="0.6" curve="90"/>
+<vertex x="0" y="0.555" curve="90"/>
+<vertex x="0.045" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.4" y="0.645" curve="90"/>
+<vertex x="0.355" y="0.6" curve="90"/>
+<vertex x="0.4" y="0.555" curve="90"/>
+<vertex x="0.445" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.8" y="0.645" curve="90"/>
+<vertex x="0.755" y="0.6" curve="90"/>
+<vertex x="0.8" y="0.555" curve="90"/>
+<vertex x="0.845" y="0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.8" y="0.245" curve="90"/>
+<vertex x="0.755" y="0.2" curve="90"/>
+<vertex x="0.8" y="0.155" curve="90"/>
+<vertex x="0.845" y="0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.8" y="-0.155" curve="90"/>
+<vertex x="0.755" y="-0.2" curve="90"/>
+<vertex x="0.8" y="-0.245" curve="90"/>
+<vertex x="0.845" y="-0.2" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.8" y="-0.555" curve="90"/>
+<vertex x="0.755" y="-0.6" curve="90"/>
+<vertex x="0.8" y="-0.645" curve="90"/>
+<vertex x="0.845" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0.4" y="-0.555" curve="90"/>
+<vertex x="0.355" y="-0.6" curve="90"/>
+<vertex x="0.4" y="-0.645" curve="90"/>
+<vertex x="0.445" y="-0.6" curve="90"/>
+</polygon>
+<polygon width="0.005" layer="31">
+<vertex x="0" y="-0.555" curve="90"/>
+<vertex x="-0.045" y="-0.6" curve="90"/>
+<vertex x="0" y="-0.645" curve="90"/>
+<vertex x="0.045" y="-0.6" curve="90"/>
+</polygon>
+<text x="-1.27" y="2.54" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-1.27" y="1.5875" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<text x="-0.9525" y="0.9525" size="0.3048" layer="27" font="vector" ratio="16">*</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -490,6 +743,33 @@ grid 2.54 mm</description>
 <text x="0" y="22.86" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="!Q" x="25.4" y="7.62" length="middle" function="dot" rot="R180"/>
 </symbol>
+<symbol name="PE29100">
+<wire x1="0" y1="0" x2="0" y2="43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="43.18" x2="35.56" y2="43.18" width="0.254" layer="94"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="RDHL" x="-5.08" y="17.78" length="middle"/>
+<pin name="RDLH" x="-5.08" y="22.86" length="middle"/>
+<pin name="!EN" x="-5.08" y="30.48" length="middle"/>
+<pin name="IN" x="-5.08" y="35.56" length="middle"/>
+<pin name="GND" x="12.7" y="-5.08" visible="pad" length="middle" rot="R90"/>
+<pin name="LSO" x="22.86" y="-5.08" visible="pad" length="middle" rot="R90"/>
+<pin name="VDD" x="17.78" y="48.26" visible="pad" length="middle" rot="R270"/>
+<pin name="HSB" x="40.64" y="40.64" length="middle" rot="R180"/>
+<pin name="HSG_PU" x="40.64" y="35.56" length="middle" rot="R180"/>
+<pin name="HSG_PD" x="40.64" y="30.48" length="middle" rot="R180"/>
+<pin name="HSS" x="40.64" y="25.4" length="middle" rot="R180"/>
+<pin name="LSB" x="40.64" y="17.78" length="middle" rot="R180"/>
+<pin name="LSG_PU" x="40.64" y="12.7" length="middle" rot="R180"/>
+<pin name="LSG_PD" x="40.64" y="7.62" length="middle" rot="R180"/>
+<pin name="LSS" x="40.64" y="2.54" length="middle" rot="R180"/>
+<text x="17.78" y="40.64" size="1.524" layer="97" ratio="16" align="center">VDD</text>
+<text x="12.7" y="2.54" size="1.524" layer="97" ratio="16" align="center">GND</text>
+<text x="22.86" y="2.54" size="1.524" layer="97" ratio="16" align="center">LSO</text>
+<text x="22.86" y="48.26" size="1.778" layer="95" ratio="16">&gt;NAME</text>
+<text x="22.86" y="45.72" size="1.778" layer="96" ratio="16">&gt;VALUE</text>
+<pin name="NC_GND" x="-5.08" y="7.62" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADCMP582" prefix="IC">
@@ -639,6 +919,53 @@ http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_
 <technology name="">
 <attribute name="VALUE" value="NC7SV74K8X" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSS806N" prefix="M">
+<gates>
+<gate name="G$1" symbol="IGFNA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23R_INFINEON">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PE29100" prefix="IC">
+<gates>
+<gate name="G$1" symbol="PE29100" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PE29100">
+<connects>
+<connect gate="G$1" pin="!EN" pad="7"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="HSB" pad="3"/>
+<connect gate="G$1" pin="HSG_PD" pad="1"/>
+<connect gate="G$1" pin="HSG_PU" pad="6"/>
+<connect gate="G$1" pin="HSS" pad="2"/>
+<connect gate="G$1" pin="IN" pad="8"/>
+<connect gate="G$1" pin="LSB" pad="14"/>
+<connect gate="G$1" pin="LSG_PD" pad="12"/>
+<connect gate="G$1" pin="LSG_PU" pad="9"/>
+<connect gate="G$1" pin="LSO" pad="10"/>
+<connect gate="G$1" pin="LSS" pad="13"/>
+<connect gate="G$1" pin="NC_GND" pad="4"/>
+<connect gate="G$1" pin="RDHL" pad="16"/>
+<connect gate="G$1" pin="RDLH" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
