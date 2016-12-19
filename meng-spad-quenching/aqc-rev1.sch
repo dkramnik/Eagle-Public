@@ -15160,6 +15160,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="243.84" y1="142.24" x2="243.84" y2="205.74" width="0.1524" layer="98" style="longdash"/>
 <text x="243.84" y="208.28" size="1.778" layer="98">One-Shot (Holdoff Time)</text>
 <text x="297.18" y="167.64" size="1.778" layer="98">100R</text>
+<text x="266.7" y="63.5" size="1.778" layer="98">HIGH = Latch Disabled</text>
+<text x="266.7" y="60.96" size="1.778" layer="98">LOW = Latch Enabled</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="93.98" y="119.38" smashed="yes">
