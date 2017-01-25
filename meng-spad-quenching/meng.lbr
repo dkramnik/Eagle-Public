@@ -681,6 +681,28 @@ NS Package M08A</description>
 <rectangle x1="-0.4751" y1="1.5" x2="-0.1751" y2="2.45" layer="51"/>
 <rectangle x1="-1.1253" y1="1.5" x2="-0.8253" y2="2.45" layer="51"/>
 </package>
+<package name="SC70-6L">
+<description>&lt;b&gt;SC-70 Package&lt;/b&gt;</description>
+<wire x1="-1.1" y1="0.5" x2="1.1" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
+<circle x="-0.65" y="-0.2" radius="0.15" width="0" layer="21"/>
+<smd name="1" x="-0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
+<smd name="3" x="0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
+<smd name="4" x="0.65" y="0.85" dx="0.35" dy="0.8" layer="1"/>
+<smd name="5" x="0" y="0.85" dx="0.35" dy="0.8" layer="1"/>
+<smd name="6" x="-0.65" y="0.85" dx="0.35" dy="0.8" layer="1"/>
+<text x="-1.27" y="2.54" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-1.27" y="1.5875" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -912,6 +934,22 @@ NS Package M08A</description>
 <wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0" y="30.48" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="27.94" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NC7WZ16P6X">
+<pin name="IN2" x="-5.08" y="5.08" length="middle"/>
+<pin name="IN1" x="-5.08" y="12.7" length="middle"/>
+<pin name="OUT2" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT1" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="VCC" x="10.16" y="22.86" visible="pad" length="middle" rot="R270"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pad" length="middle" rot="R90"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="10.16" y="2.54" size="1.524" layer="97" align="center">GND</text>
+<text x="10.16" y="15.24" size="1.524" layer="97" align="center">VCC</text>
+<text x="12.7" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="12.7" y="20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1195,6 +1233,26 @@ Source: Texas Instruments (Burr-Brown) .. U11 opa333 Operational Amp.pdf</descri
 <connect gate="G$1" pin="TAP4" pad="3"/>
 <connect gate="G$1" pin="TAP5" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC7WZ16P6X" prefix="IC">
+<gates>
+<gate name="G$1" symbol="NC7WZ16P6X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6L">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="3"/>
+<connect gate="G$1" pin="OUT1" pad="6"/>
+<connect gate="G$1" pin="OUT2" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
