@@ -18757,6 +18757,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="SD101BW-TP"/>
 <part name="DNP68" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="C45" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
+<part name="C46" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
+<part name="GND80" library="supply1" deviceset="GND" device=""/>
+<part name="GND81" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19303,8 +19307,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="200.66" y="91.44" size="1.778" layer="98" rot="R180">1V</text>
 <text x="137.16" y="160.02" size="1.778" layer="98" rot="R180">11.35V</text>
 <text x="43.18" y="152.4" size="1.778" layer="98">5V0 is lower noise than 3V3</text>
-<text x="83.82" y="109.22" size="1.778" layer="98">1mA/V</text>
-<text x="50.8" y="83.82" size="1.778" layer="98">1V/V offset</text>
+<text x="78.74" y="109.22" size="1.778" layer="98">1mA/V</text>
+<text x="33.02" y="68.58" size="1.778" layer="98">1V/V offset</text>
 <text x="137.16" y="172.72" size="1.778" layer="98" rot="MR0">12.8V</text>
 <text x="99.06" y="114.3" size="1.778" layer="98">-0.6V</text>
 <text x="83.82" y="124.46" size="1.778" layer="98" rot="R180">0V</text>
@@ -19333,7 +19337,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="83.82" y="147.32" size="1.778" layer="98" rot="R180">5V</text>
 <text x="208.28" y="106.68" size="1.778" layer="98">Cascode provides speedup of bias current sensing</text>
 <text x="208.28" y="104.14" size="1.778" layer="98">by killing Miller cap. of bottom PNP in push-pull</text>
-<text x="17.78" y="88.9" size="1.778" layer="98">For first-time bringup, DNP this CCS:</text>
+<text x="17.78" y="73.66" size="1.778" layer="98">For first-time bringup, DNP this CCS:</text>
 <text x="208.28" y="160.02" size="1.778" layer="98">(Expect some offset through the diamond w/. discretes)</text>
 <text x="132.08" y="165.1" size="1.778" layer="98" rot="MR0">This reduces V_CE mismatch</text>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">OUTPUT DRIVER</text>
@@ -19464,11 +19468,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </instance>
 <instance part="DNP2" gate="G$1" x="27.94" y="121.92" smashed="yes"/>
 <instance part="DNP35" gate="G$1" x="60.96" y="144.78" smashed="yes"/>
-<instance part="R27" gate="G$1" x="96.52" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="97.79" y="77.6986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="97.79" y="72.898" size="1.778" layer="96"/>
+<instance part="R27" gate="G$1" x="96.52" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.79" y="62.4586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="97.79" y="57.658" size="1.778" layer="96"/>
 </instance>
-<instance part="DNP36" gate="G$1" x="60.96" y="55.88" smashed="yes"/>
+<instance part="DNP36" gate="G$1" x="60.96" y="40.64" smashed="yes"/>
 <instance part="R28" gate="G$1" x="139.7" y="165.1" smashed="yes" rot="MR90">
 <attribute name="NAME" x="138.43" y="166.5986" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="138.43" y="161.798" size="1.778" layer="96" rot="MR0"/>
@@ -19484,7 +19488,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND51" gate="1" x="116.84" y="78.74" smashed="yes">
 <attribute name="VALUE" x="114.3" y="76.2" size="1.778" layer="96"/>
 </instance>
-<instance part="DNP38" gate="G$1" x="88.9" y="106.68" smashed="yes"/>
+<instance part="DNP38" gate="G$1" x="83.82" y="106.68" smashed="yes"/>
 <instance part="C27" gate="G$1" x="121.92" y="127" smashed="yes">
 <attribute name="NAME" x="123.444" y="127.381" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.444" y="122.301" size="1.778" layer="96"/>
@@ -19500,32 +19504,32 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="127" y="114.3" size="1.778" layer="96"/>
 </instance>
 <instance part="DNP37" gate="G$1" x="116.84" y="139.7" smashed="yes" rot="R270"/>
-<instance part="IC5" gate="G$1" x="73.66" y="78.74"/>
-<instance part="T7" gate="G$1" x="86.36" y="78.74" smashed="yes">
-<attribute name="NAME" x="81.28" y="91.44" size="1.778" layer="95"/>
-<attribute name="VALUE" x="81.28" y="88.9" size="1.778" layer="96"/>
+<instance part="IC5" gate="G$1" x="73.66" y="63.5"/>
+<instance part="T7" gate="G$1" x="86.36" y="63.5" smashed="yes">
+<attribute name="NAME" x="81.28" y="76.2" size="1.778" layer="95"/>
+<attribute name="VALUE" x="81.28" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="88.9" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="90.17" y="64.9986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.17" y="60.198" size="1.778" layer="96"/>
+<instance part="R29" gate="G$1" x="88.9" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="90.17" y="49.7586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.17" y="44.958" size="1.778" layer="96"/>
 </instance>
-<instance part="DNP39" gate="G$1" x="60.96" y="81.28" smashed="yes"/>
-<instance part="GND54" gate="1" x="68.58" y="88.9" smashed="yes">
-<attribute name="VALUE" x="66.04" y="86.36" size="1.778" layer="96"/>
+<instance part="DNP39" gate="G$1" x="43.18" y="66.04" smashed="yes"/>
+<instance part="GND54" gate="1" x="68.58" y="73.66" smashed="yes">
+<attribute name="VALUE" x="66.04" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="C29" gate="G$1" x="78.74" y="50.8" smashed="yes">
-<attribute name="NAME" x="80.264" y="51.181" size="1.778" layer="95"/>
-<attribute name="VALUE" x="80.264" y="46.101" size="1.778" layer="96"/>
+<instance part="C29" gate="G$1" x="78.74" y="35.56" smashed="yes">
+<attribute name="NAME" x="80.264" y="35.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="80.264" y="30.861" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="86.36" y="50.8" smashed="yes">
-<attribute name="NAME" x="87.884" y="51.181" size="1.778" layer="95"/>
-<attribute name="VALUE" x="87.884" y="46.101" size="1.778" layer="96"/>
+<instance part="C30" gate="G$1" x="86.36" y="35.56" smashed="yes">
+<attribute name="NAME" x="87.884" y="35.941" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.884" y="30.861" size="1.778" layer="96"/>
 </instance>
-<instance part="GND55" gate="1" x="78.74" y="40.64" smashed="yes">
-<attribute name="VALUE" x="76.2" y="38.1" size="1.778" layer="96"/>
+<instance part="GND55" gate="1" x="78.74" y="25.4" smashed="yes">
+<attribute name="VALUE" x="76.2" y="22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="GND56" gate="1" x="86.36" y="40.64" smashed="yes">
-<attribute name="VALUE" x="83.82" y="38.1" size="1.778" layer="96"/>
+<instance part="GND56" gate="1" x="86.36" y="25.4" smashed="yes">
+<attribute name="VALUE" x="83.82" y="22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="DNP40" gate="G$1" x="60.96" y="200.66" smashed="yes"/>
 <instance part="C31" gate="G$1" x="88.9" y="195.58" smashed="yes">
@@ -19575,6 +19579,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C5" gate="G$1" x="195.58" y="144.78" smashed="yes">
 <attribute name="NAME" x="197.104" y="145.161" size="1.778" layer="95"/>
 <attribute name="VALUE" x="197.104" y="140.081" size="1.778" layer="96"/>
+</instance>
+<instance part="C45" gate="G$1" x="48.26" y="60.96" smashed="yes">
+<attribute name="NAME" x="49.784" y="61.341" size="1.778" layer="95"/>
+<attribute name="VALUE" x="49.784" y="56.261" size="1.778" layer="96"/>
+</instance>
+<instance part="C46" gate="G$1" x="88.9" y="101.6" smashed="yes">
+<attribute name="NAME" x="90.424" y="101.981" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.424" y="96.901" size="1.778" layer="96"/>
+</instance>
+<instance part="GND80" gate="1" x="88.9" y="91.44" smashed="yes">
+<attribute name="VALUE" x="86.36" y="88.9" size="1.778" layer="96"/>
+</instance>
+<instance part="GND81" gate="1" x="48.26" y="50.8" smashed="yes">
+<attribute name="VALUE" x="45.72" y="48.26" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -19637,18 +19655,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
 <pinref part="IC5" gate="G$1" pin="V+"/>
-<wire x1="68.58" y1="91.44" x2="73.66" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="91.44" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND55" gate="1" pin="GND"/>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="43.18" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="27.94" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND56" gate="1" pin="GND"/>
 <pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="43.18" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND57" gate="1" pin="GND"/>
@@ -19675,6 +19693,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="218.44" y1="78.74" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND81" gate="1" pin="GND"/>
+<pinref part="C45" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="53.34" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND80" gate="1" pin="GND"/>
+<pinref part="C46" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="93.98" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VSPAD" class="0">
 <segment>
@@ -19690,26 +19718,26 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="PP_N5V0" class="0">
 <segment>
-<wire x1="96.52" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="55.88" y="55.88" size="1.778" layer="95" rot="R180"/>
-<wire x1="88.9" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
+<label x="55.88" y="40.64" size="1.778" layer="95" rot="R180"/>
+<wire x1="88.9" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="V-"/>
-<wire x1="73.66" y1="71.12" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
-<junction x="73.66" y="55.88"/>
+<wire x1="73.66" y1="55.88" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<junction x="73.66" y="40.64"/>
 <pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="53.34" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="38.1" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="53.34" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<junction x="78.74" y="55.88"/>
-<junction x="86.36" y="55.88"/>
+<wire x1="78.74" y1="38.1" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
+<junction x="78.74" y="40.64"/>
+<junction x="86.36" y="40.64"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="55.88" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="58.42" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<junction x="88.9" y="55.88"/>
+<wire x1="88.9" y1="43.18" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
+<junction x="88.9" y="40.64"/>
 </segment>
 </net>
 <net name="PP_P5V0" class="0">
@@ -19962,12 +19990,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="T6" gate="G$1" pin="E"/>
-<wire x1="96.52" y1="81.28" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="66.04" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="T7" gate="G$1" pin="C"/>
-<wire x1="96.52" y1="86.36" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="83.82" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<junction x="96.52" y="86.36"/>
+<wire x1="96.52" y1="71.12" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="68.58" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<junction x="96.52" y="71.12"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -19991,22 +20019,30 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="VREF_DIAMOND_IBIAS" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="+IN"/>
-<wire x1="109.22" y1="106.68" x2="83.82" y2="106.68" width="0.1524" layer="91"/>
-<label x="83.82" y="106.68" size="1.778" layer="95" rot="R180"/>
+<wire x1="109.22" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<label x="78.74" y="106.68" size="1.778" layer="95" rot="R180"/>
+<pinref part="C46" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="104.14" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<junction x="88.9" y="106.68"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="OUT"/>
 <pinref part="T7" gate="G$1" pin="B"/>
-<wire x1="81.28" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF_CASCODE_IBIAS" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="+IN"/>
-<wire x1="66.04" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
-<label x="55.88" y="81.28" size="1.778" layer="95" rot="R180"/>
+<wire x1="66.04" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+<label x="38.1" y="66.04" size="1.778" layer="95" rot="R180"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="63.5" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+<junction x="48.26" y="66.04"/>
 </segment>
 </net>
 <net name="LOGIC_QUENCH" class="0">
@@ -20027,13 +20063,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="T7" gate="G$1" pin="E"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="71.12" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="71.12" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="53.34" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="55.88" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="55.88" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="-IN"/>
-<wire x1="63.5" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
-<junction x="88.9" y="71.12"/>
+<wire x1="63.5" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<junction x="88.9" y="55.88"/>
 </segment>
 </net>
 </nets>
