@@ -24059,6 +24059,7 @@
 <rectangle x1="14.59991875" y1="10.26668125" x2="25.3898375" y2="10.2768375" layer="21"/>
 <text x="85.4075" y="53.34" size="0.8128" layer="21" font="vector" ratio="16">-5V Ind.</text>
 <text x="85.4075" y="49.8475" size="0.8128" layer="21" font="vector" ratio="16">+5V Ind.</text>
+<text x="19.3675" y="86.36" size="1.778" layer="21" font="vector" ratio="12">+</text>
 </plain>
 <libraries>
 <library name="meng">
