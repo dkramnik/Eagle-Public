@@ -23143,9 +23143,9 @@ type RDH, grid 15 mm</description>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="Kramnik's Library" deviceset="CONN_MOLEX_3PIN_MINI-FIT_JR" device="" value="VIN_LOGIC"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
+<part name="TP9" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP5" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="TP6" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP2" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP3" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="IC3" library="meng" deviceset="NC7SV74K8X" device="" value="NC7SV74K8X"/>
@@ -23280,8 +23280,8 @@ type RDH, grid 15 mm</description>
 <part name="DNP52" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP53" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP54" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="TP4" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP5" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP7" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP8" library="testpad" deviceset="TP" device="TP20R"/>
 <part name="DNP42" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP48" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP51" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -23303,9 +23303,9 @@ type RDH, grid 15 mm</description>
 <part name="DNP56" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP57" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP58" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
-<part name="R38" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R40" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="RT3" library="meng" deviceset="BOURNS_3269WX" device="" value="3269W-1-102LF"/>
 <part name="GND70" library="supply1" deviceset="GND" device=""/>
 <part name="X4" library="con-coax" deviceset="SMA-" device="142-0711-871/876" value="CONN_VREF_DIAMOND_IBIAS_EXT"/>
@@ -23314,9 +23314,9 @@ type RDH, grid 15 mm</description>
 <part name="DNP60" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP61" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP62" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R40" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R42" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
-<part name="R37" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="RT2" library="meng" deviceset="BOURNS_3269WX" device="" value="3269W-1-102LF"/>
 <part name="GND73" library="supply1" deviceset="GND" device=""/>
 <part name="X3" library="con-coax" deviceset="SMA-" device="142-0711-871/876" value="CONN_VREF_CASCODE_IBIAS_EXT"/>
@@ -23325,9 +23325,9 @@ type RDH, grid 15 mm</description>
 <part name="DNP64" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP65" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP66" library="meng" deviceset="ARROW_1DIR" device="" value="VREF_CASCODE_IBIAS"/>
-<part name="R39" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R41" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND75" library="supply1" deviceset="GND" device=""/>
-<part name="R36" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R38" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME7" library="frames" deviceset="FRAME_A_L" device=""/>
@@ -23341,7 +23341,7 @@ type RDH, grid 15 mm</description>
 <part name="GND78" library="supply1" deviceset="GND" device=""/>
 <part name="DNP1" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP49" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="TP1" library="testpad" deviceset="TP" device="TP20R">
+<part name="TP4" library="testpad" deviceset="TP" device="TP20R">
 <attribute name="TP_SIGNAL_NAME" value=""/>
 </part>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
@@ -23368,18 +23368,18 @@ type RDH, grid 15 mm</description>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
-<part name="R42" library="resistor" deviceset="R-EU_" device="R0805" value="470R"/>
-<part name="R43" library="resistor" deviceset="R-EU_" device="R0805" value="470R"/>
+<part name="R37" library="resistor" deviceset="R-EU_" device="R0805" value="470R"/>
+<part name="R36" library="resistor" deviceset="R-EU_" device="R0805" value="470R"/>
 <part name="DNP69" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP70" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="TP7" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_ONE_SHOT"/>
-<part name="TP8" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_DIAMOND_IBIAS"/>
-<part name="TP9" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_CASCODE_IBIAS"/>
-<part name="TP10" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="GND"/>
-<part name="GND84" library="supply1" deviceset="GND" device=""/>
-<part name="TP11" library="testpad" deviceset="TP" device="TP08R"/>
-<part name="TP12" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_AV_DET"/>
+<part name="TP12" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_ONE_SHOT"/>
+<part name="TP11" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_DIAMOND_IBIAS"/>
+<part name="TP10" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_CASCODE_IBIAS"/>
 <part name="TP13" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="GND"/>
+<part name="GND84" library="supply1" deviceset="GND" device=""/>
+<part name="TP1" library="testpad" deviceset="TP" device="TP08R"/>
+<part name="TP2" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_AV_DET"/>
+<part name="TP3" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="GND"/>
 <part name="GND85" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -23506,15 +23506,15 @@ type RDH, grid 15 mm</description>
 <instance part="GND38" gate="1" x="38.1" y="116.84" smashed="yes">
 <attribute name="VALUE" x="35.56" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="TP6" gate="G$1" x="172.72" y="160.02" smashed="yes">
+<instance part="TP9" gate="G$1" x="172.72" y="160.02" smashed="yes">
 <attribute name="NAME" x="171.45" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="173.99" y="158.75" size="1.778" layer="97"/>
 </instance>
-<instance part="TP2" gate="G$1" x="182.88" y="160.02" smashed="yes">
+<instance part="TP5" gate="G$1" x="182.88" y="160.02" smashed="yes">
 <attribute name="NAME" x="181.61" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="184.15" y="158.75" size="1.778" layer="97"/>
 </instance>
-<instance part="TP3" gate="G$1" x="193.04" y="160.02" smashed="yes">
+<instance part="TP6" gate="G$1" x="193.04" y="160.02" smashed="yes">
 <attribute name="NAME" x="191.77" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="194.31" y="158.75" size="1.778" layer="97"/>
 </instance>
@@ -23586,15 +23586,15 @@ type RDH, grid 15 mm</description>
 <instance part="DNP52" gate="G$1" x="129.54" y="147.32" smashed="yes"/>
 <instance part="DNP53" gate="G$1" x="129.54" y="152.4" smashed="yes"/>
 <instance part="DNP54" gate="G$1" x="129.54" y="142.24" smashed="yes"/>
-<instance part="TP4" gate="G$1" x="114.3" y="160.02" smashed="yes">
+<instance part="TP7" gate="G$1" x="114.3" y="160.02" smashed="yes">
 <attribute name="NAME" x="113.03" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="115.57" y="158.75" size="1.778" layer="97"/>
 </instance>
-<instance part="TP5" gate="G$1" x="124.46" y="160.02" smashed="yes">
+<instance part="TP8" gate="G$1" x="124.46" y="160.02" smashed="yes">
 <attribute name="NAME" x="123.19" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="125.73" y="158.75" size="1.778" layer="97"/>
 </instance>
-<instance part="TP1" gate="G$1" x="251.46" y="160.02" smashed="yes">
+<instance part="TP4" gate="G$1" x="251.46" y="160.02" smashed="yes">
 <attribute name="NAME" x="250.19" y="161.29" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="252.73" y="158.75" size="1.778" layer="97"/>
 </instance>
@@ -23609,11 +23609,11 @@ type RDH, grid 15 mm</description>
 <instance part="GND83" gate="1" x="132.08" y="58.42" smashed="yes">
 <attribute name="VALUE" x="129.54" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="R42" gate="G$1" x="124.46" y="81.28" smashed="yes" rot="R90">
+<instance part="R37" gate="G$1" x="124.46" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="123.19" y="84.8614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="123.19" y="79.502" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R43" gate="G$1" x="124.46" y="55.88" smashed="yes" rot="R90">
+<instance part="R36" gate="G$1" x="124.46" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="123.19" y="59.4614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="123.19" y="54.102" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -23674,7 +23674,7 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
-<pinref part="TP6" gate="G$1" pin="TP"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
 <wire x1="172.72" y1="154.94" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -23730,7 +23730,7 @@ type RDH, grid 15 mm</description>
 <segment>
 <pinref part="GND83" gate="1" pin="GND"/>
 <wire x1="132.08" y1="60.96" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R43" gate="G$1" pin="2"/>
+<pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="60.96" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="63.5" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
@@ -23753,7 +23753,7 @@ type RDH, grid 15 mm</description>
 <junction x="182.88" y="134.62"/>
 <label x="200.66" y="152.4" size="1.778" layer="95"/>
 <wire x1="182.88" y1="152.4" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
 <wire x1="182.88" y1="152.4" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
 <junction x="182.88" y="152.4"/>
 </segment>
@@ -23793,12 +23793,12 @@ type RDH, grid 15 mm</description>
 <wire x1="193.04" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="147.32" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
 <junction x="187.96" y="142.24"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
 <wire x1="193.04" y1="157.48" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
 <junction x="193.04" y="147.32"/>
 </segment>
 <segment>
-<pinref part="R42" gate="G$1" pin="2"/>
+<pinref part="R37" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="86.36" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <label x="116.84" y="88.9" size="1.778" layer="95" rot="R180"/>
@@ -23814,7 +23814,7 @@ type RDH, grid 15 mm</description>
 <wire x1="251.46" y1="142.24" x2="259.08" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="139.7" x2="248.92" y2="142.24" width="0.1524" layer="91"/>
 <junction x="248.92" y="142.24"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
 <wire x1="251.46" y1="157.48" x2="251.46" y2="142.24" width="0.1524" layer="91"/>
 <junction x="251.46" y="142.24"/>
 </segment>
@@ -23881,7 +23881,7 @@ type RDH, grid 15 mm</description>
 <junction x="114.3" y="134.62"/>
 <label x="132.08" y="152.4" size="1.778" layer="95"/>
 <wire x1="114.3" y1="152.4" x2="132.08" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
 <wire x1="114.3" y1="152.4" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
 <junction x="114.3" y="152.4"/>
 <pinref part="IC8" gate="G$1" pin="IN"/>
@@ -23911,7 +23911,7 @@ type RDH, grid 15 mm</description>
 <wire x1="124.46" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="147.32" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
 <junction x="119.38" y="142.24"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
 <wire x1="124.46" y1="157.48" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <junction x="124.46" y="147.32"/>
 <pinref part="IC8" gate="G$1" pin="!SP"/>
@@ -23951,7 +23951,7 @@ type RDH, grid 15 mm</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="R43" gate="G$1" pin="1"/>
+<pinref part="R36" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="124.46" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 </segment>
@@ -23959,7 +23959,7 @@ type RDH, grid 15 mm</description>
 <net name="N$40" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R37" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="73.66" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -24973,8 +24973,8 @@ type RDH, grid 15 mm</description>
 <instance part="GND76" gate="1" x="33.02" y="162.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="35.56" y="160.02" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="TP12" gate="G$1" x="71.12" y="180.34"/>
-<instance part="TP13" gate="G$1" x="71.12" y="200.66"/>
+<instance part="TP2" gate="G$1" x="71.12" y="180.34"/>
+<instance part="TP3" gate="G$1" x="71.12" y="200.66"/>
 <instance part="GND85" gate="1" x="71.12" y="195.58" smashed="yes">
 <attribute name="VALUE" x="68.58" y="193.04" size="1.778" layer="96"/>
 </instance>
@@ -25090,7 +25090,7 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <pinref part="GND85" gate="1" pin="GND"/>
-<pinref part="TP13" gate="G$1" pin="P$1"/>
+<pinref part="TP3" gate="G$1" pin="P$1"/>
 <wire x1="71.12" y1="198.12" x2="71.12" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -25115,7 +25115,7 @@ type RDH, grid 15 mm</description>
 <wire x1="33.02" y1="180.34" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="180.34"/>
 <junction x="33.02" y="180.34"/>
-<pinref part="TP12" gate="G$1" pin="P$1"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
 <junction x="71.12" y="180.34"/>
 </segment>
 </net>
@@ -25518,7 +25518,7 @@ type RDH, grid 15 mm</description>
 <attribute name="VALUE" x="68.58" y="134.8486" size="1.778" layer="96"/>
 </instance>
 <instance part="DNP68" gate="G$1" x="198.12" y="132.08" smashed="yes" rot="R180"/>
-<instance part="TP11" gate="G$1" x="119.38" y="152.4" smashed="yes">
+<instance part="TP1" gate="G$1" x="119.38" y="152.4" smashed="yes">
 <attribute name="NAME" x="118.11" y="146.05" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="120.65" y="151.13" size="1.778" layer="97"/>
 </instance>
@@ -25724,7 +25724,7 @@ type RDH, grid 15 mm</description>
 <pinref part="IC3" gate="G$1" pin="!Q"/>
 <wire x1="132.08" y1="149.86" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
 <label x="132.08" y="149.86" size="1.778" layer="95"/>
-<pinref part="TP11" gate="G$1" pin="TP"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="119.38" y1="149.86" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
 <junction x="119.38" y="149.86"/>
 </segment>
@@ -25947,14 +25947,14 @@ type RDH, grid 15 mm</description>
 <instance part="DNP56" gate="G$1" x="99.06" y="185.42" smashed="yes"/>
 <instance part="DNP57" gate="G$1" x="106.68" y="172.72" smashed="yes"/>
 <instance part="DNP58" gate="G$1" x="185.42" y="182.88" smashed="yes"/>
-<instance part="R41" gate="G$1" x="78.74" y="177.8" smashed="yes" rot="R270">
+<instance part="R43" gate="G$1" x="78.74" y="177.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="179.2986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="174.498" size="1.778" layer="96"/>
 </instance>
 <instance part="GND60" gate="1" x="78.74" y="165.1" smashed="yes">
 <attribute name="VALUE" x="76.2" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="R38" gate="G$1" x="78.74" y="193.04" smashed="yes" rot="R270">
+<instance part="R40" gate="G$1" x="78.74" y="193.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="194.5386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="189.738" size="1.778" layer="96"/>
 </instance>
@@ -25976,14 +25976,14 @@ type RDH, grid 15 mm</description>
 <instance part="DNP60" gate="G$1" x="99.06" y="139.7" smashed="yes"/>
 <instance part="DNP61" gate="G$1" x="106.68" y="127" smashed="yes"/>
 <instance part="DNP62" gate="G$1" x="185.42" y="137.16" smashed="yes"/>
-<instance part="R40" gate="G$1" x="78.74" y="132.08" smashed="yes" rot="R270">
+<instance part="R42" gate="G$1" x="78.74" y="132.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="133.5786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="128.778" size="1.778" layer="96"/>
 </instance>
 <instance part="GND72" gate="1" x="78.74" y="119.38" smashed="yes">
 <attribute name="VALUE" x="76.2" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="R37" gate="G$1" x="78.74" y="147.32" smashed="yes" rot="R270">
+<instance part="R39" gate="G$1" x="78.74" y="147.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="148.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="144.018" size="1.778" layer="96"/>
 </instance>
@@ -26005,24 +26005,24 @@ type RDH, grid 15 mm</description>
 <instance part="DNP64" gate="G$1" x="99.06" y="93.98" smashed="yes"/>
 <instance part="DNP65" gate="G$1" x="106.68" y="81.28" smashed="yes"/>
 <instance part="DNP66" gate="G$1" x="185.42" y="91.44" smashed="yes"/>
-<instance part="R39" gate="G$1" x="78.74" y="86.36" smashed="yes" rot="R270">
+<instance part="R41" gate="G$1" x="78.74" y="86.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="87.8586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="83.058" size="1.778" layer="96"/>
 </instance>
 <instance part="GND75" gate="1" x="78.74" y="73.66" smashed="yes">
 <attribute name="VALUE" x="76.2" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="R36" gate="G$1" x="78.74" y="101.6" smashed="yes" rot="R270">
+<instance part="R38" gate="G$1" x="78.74" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.01" y="103.0986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="80.01" y="98.298" size="1.778" layer="96"/>
 </instance>
 <instance part="SW3" gate="G$1" x="162.56" y="182.88" rot="MR0"/>
 <instance part="SW2" gate="G$1" x="162.56" y="137.16" rot="MR0"/>
 <instance part="SW1" gate="G$1" x="162.56" y="91.44" rot="MR0"/>
-<instance part="TP7" gate="G$1" x="177.8" y="182.88"/>
-<instance part="TP8" gate="G$1" x="177.8" y="137.16"/>
-<instance part="TP9" gate="G$1" x="177.8" y="91.44"/>
-<instance part="TP10" gate="G$1" x="177.8" y="76.2"/>
+<instance part="TP12" gate="G$1" x="177.8" y="182.88"/>
+<instance part="TP11" gate="G$1" x="177.8" y="137.16"/>
+<instance part="TP10" gate="G$1" x="177.8" y="91.44"/>
+<instance part="TP13" gate="G$1" x="177.8" y="76.2"/>
 <instance part="GND84" gate="1" x="177.8" y="71.12" smashed="yes">
 <attribute name="VALUE" x="175.26" y="68.58" size="1.778" layer="96"/>
 </instance>
@@ -26036,10 +26036,10 @@ type RDH, grid 15 mm</description>
 <pinref part="RT4" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="185.42" x2="152.4" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="185.42" x2="78.74" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="185.42" x2="78.74" y2="182.88" width="0.1524" layer="91"/>
 <junction x="96.52" y="185.42"/>
-<pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="185.42" x2="78.74" y2="187.96" width="0.1524" layer="91"/>
 <junction x="78.74" y="185.42"/>
 <pinref part="SW3" gate="G$1" pin="NC"/>
@@ -26060,7 +26060,7 @@ type RDH, grid 15 mm</description>
 <wire x1="172.72" y1="182.88" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
 <label x="190.5" y="182.88" size="1.778" layer="95"/>
 <pinref part="SW3" gate="G$1" pin="COM"/>
-<pinref part="TP7" gate="G$1" pin="P$1"/>
+<pinref part="TP12" gate="G$1" pin="P$1"/>
 <wire x1="177.8" y1="182.88" x2="190.5" y2="182.88" width="0.1524" layer="91"/>
 <junction x="177.8" y="182.88"/>
 </segment>
@@ -26069,7 +26069,7 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="78.74" y1="200.66" x2="68.58" y2="200.66" width="0.1524" layer="91"/>
 <label x="68.58" y="200.66" size="1.778" layer="95" rot="R180"/>
-<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="200.66" x2="78.74" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="RT4" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="200.66" x2="91.44" y2="200.66" width="0.1524" layer="91"/>
@@ -26091,7 +26091,7 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <pinref part="GND60" gate="1" pin="GND"/>
-<pinref part="R41" gate="G$1" pin="2"/>
+<pinref part="R43" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="167.64" x2="78.74" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -26107,7 +26107,7 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <pinref part="GND72" gate="1" pin="GND"/>
-<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="R42" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="121.92" x2="78.74" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -26123,12 +26123,12 @@ type RDH, grid 15 mm</description>
 </segment>
 <segment>
 <pinref part="GND75" gate="1" pin="GND"/>
-<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="R41" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="76.2" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND84" gate="1" pin="GND"/>
-<pinref part="TP10" gate="G$1" pin="P$1"/>
+<pinref part="TP13" gate="G$1" pin="P$1"/>
 <wire x1="177.8" y1="73.66" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -26138,10 +26138,10 @@ type RDH, grid 15 mm</description>
 <pinref part="RT3" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R42" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="139.7" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
 <junction x="96.52" y="139.7"/>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="139.7" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 <junction x="78.74" y="139.7"/>
 <pinref part="SW2" gate="G$1" pin="NC"/>
@@ -26162,7 +26162,7 @@ type RDH, grid 15 mm</description>
 <wire x1="172.72" y1="137.16" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
 <label x="190.5" y="137.16" size="1.778" layer="95"/>
 <pinref part="SW2" gate="G$1" pin="COM"/>
-<pinref part="TP8" gate="G$1" pin="P$1"/>
+<pinref part="TP11" gate="G$1" pin="P$1"/>
 <wire x1="177.8" y1="137.16" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
 <junction x="177.8" y="137.16"/>
 </segment>
@@ -26183,10 +26183,10 @@ type RDH, grid 15 mm</description>
 <pinref part="RT2" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="R41" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="93.98" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <junction x="96.52" y="93.98"/>
-<pinref part="R36" gate="G$1" pin="2"/>
+<pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="93.98" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
 <junction x="78.74" y="93.98"/>
 <pinref part="SW1" gate="G$1" pin="NC"/>
@@ -26197,7 +26197,7 @@ type RDH, grid 15 mm</description>
 <wire x1="172.72" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
 <label x="190.5" y="91.44" size="1.778" layer="95"/>
 <pinref part="SW1" gate="G$1" pin="COM"/>
-<pinref part="TP9" gate="G$1" pin="P$1"/>
+<pinref part="TP10" gate="G$1" pin="P$1"/>
 <wire x1="177.8" y1="91.44" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
 <junction x="177.8" y="91.44"/>
 </segment>
@@ -26206,7 +26206,7 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="78.74" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
 <label x="68.58" y="154.94" size="1.778" layer="95" rot="R180"/>
-<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="154.94" x2="78.74" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="RT3" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
@@ -26218,7 +26218,7 @@ type RDH, grid 15 mm</description>
 <segment>
 <wire x1="78.74" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <label x="68.58" y="109.22" size="1.778" layer="95" rot="R180"/>
-<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="R38" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="109.22" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="RT2" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
