@@ -1,0 +1,160 @@
+Partlist
+
+Exported from aqc-rev1.sch at 2/8/2017 6:35:12 PM
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value                       Device                      Package                     Library                                    Sheet
+
+C1       100n                        C-EUC0603                   C0603                       rcl                                        3
+C2       10n                         C-EUC0402                   C0402                       rcl                                        4
+C3       10n                         C-EUC0603                   C0603                       rcl                                        3
+C4       10n                         C-EUC0402                   C0402                       rcl                                        4
+C5       10n                         C-EUC0603                   C0603                       rcl                                        3
+C6       10n                         C-EUC0603                   C0603                       rcl                                        3
+C7       100n                        C-EUC0603                   C0603                       rcl                                        3
+C8       100n                        C-EUC0402                   C0402                       rcl                                        4
+C9       33u, 25V                    CPOL-EUCT7343               CT7343                      rcl                                        3
+C10      10n                         C-EUC0603                   C0603                       rcl                                        4
+C11      100n                        C-EUC0402                   C0402                       rcl                                        4
+C12      100n                        C-EUC0402                   C0402                       rcl                                        4
+C13      10n                         C-EUC0402                   C0402                       rcl                                        4
+C14      100n                        C-EUC0603                   C0603                       rcl                                        3
+C15      100n                        C-EUC0603                   C0603                       rcl                                        3
+C16      10n                         C-EUC0402                   C0402                       rcl                                        4
+C17      10n                         C-EUC0402                   C0402                       rcl                                        3
+C18      10n                         C-EUC0402                   C0402                       rcl                                        3
+C19      100n                        C-EUC0402                   C0402                       rcl                                        4
+C20      100n                        C-EUC0402                   C0402                       rcl                                        3
+C21      100n                        C-EUC0402                   C0402                       rcl                                        5
+C22      10n                         C-EUC0402                   C0402                       rcl                                        5
+C23      1n                          C-EUC0603                   C0603                       rcl                                        5
+C24      100n                        C-EUC0402                   C0402                       rcl                                        4
+C25      10n                         C-EUC0402                   C0402                       rcl                                        3
+C26      10n                         C-EUC0402                   C0402                       rcl                                        3
+C27      10n                         C-EUC0402                   C0402                       rcl                                        4
+C28      100n                        C-EUC0402                   C0402                       rcl                                        3
+C29      10n                         C-EUC0402                   C0402                       rcl                                        5
+C30      100n                        C-EUC0402                   C0402                       rcl                                        5
+C31      10n                         C-EUC0402                   C0402                       rcl                                        5
+C32      100n                        C-EUC0402                   C0402                       rcl                                        5
+C33      10n                         C-EUC0402                   C0402                       rcl                                        5
+C34      100n                        C-EUC0402                   C0402                       rcl                                        5
+C35      10n                         C-EUC0402                   C0402                       rcl                                        5
+C36      10u                         C-EUC1206                   C1206                       rcl                                        2
+C37      10n                         C-EUC0603                   C0603                       rcl                                        2
+C38      10u                         C-EUC1206                   C1206                       rcl                                        2
+C39      100n                        C-EUC0603                   C0603                       rcl                                        2
+C40      10n                         C-EUC0603                   C0603                       rcl                                        2
+C41      10u                         C-EUC1206                   C1206                       rcl                                        2
+C42      100n                        C-EUC0603                   C0603                       rcl                                        2
+C43      10n                         C-EUC0603                   C0603                       rcl                                        2
+C44      10u                         C-EUC1206                   C1206                       rcl                                        2
+C45      10n                         C-EUC0603                   C0603                       rcl                                        2
+C46      10u                         C-EUC1206                   C1206                       rcl                                        2
+C47      10u                         C-EUC1206                   C1206                       rcl                                        2
+D1       SD101BW-TP                  DIODE-SOD123                SOD123                      diode                                      5
+H1       MOUNT-PAD-ROUND3.2          MOUNT-PAD-ROUND3.2          3,2-PAD                     holes                                      2
+H2       MOUNT-PAD-ROUND3.2          MOUNT-PAD-ROUND3.2          3,2-PAD                     holes                                      2
+H3       MOUNT-PAD-ROUND3.2          MOUNT-PAD-ROUND3.2          3,2-PAD                     holes                                      2
+H4       MOUNT-PAD-ROUND3.2          MOUNT-PAD-ROUND3.2          3,2-PAD                     holes                                      2
+IC1      ADCMP582                    ADCMP582                    QFN50P300X300X80-16N        meng                                       4
+IC2      OPA342                      OPA333DBV                   SOT23-5                     meng                                       3
+IC3      NC7SV74K8X                  NC7SV74K8X                  US8_3.1MM_JDEC_MO-187       meng                                       5
+IC4      OPA342                      OPA333DBV                   SOT23-5                     meng                                       3
+IC5      NC7WZ16P6X                  NC7WZ16P6X                  SC70-6L                     meng                                       5
+IC6      LTC1711                     LTC1711                     MSOP8                       meng                                       5
+IC7      DS1100LU-20+                DS1100L                     MSOP8                       meng                                       5
+IC8      LT3032-5                    LT3032                      DFN14-4X3DE                 meng                                       2
+IC9      LT3032-15                   LT3032                      DFN14-4X3DE                 meng                                       2
+J1       VIN_LOGIC                   CONN_MOLEX_3PIN_MINI-FIT_JR CONN_MOLEX_3PIN_MINI-FIT_JR Kramnik's Library                          2
+LED1                                 LEDCHIP-LED0805             CHIP-LED0805                led                                        2
+LED2                                 LEDCHIP-LED0805             CHIP-LED0805                led                                        2
+M1       BSS806N                     BSS806N                     SOT23R_INFINEON             meng                                       5
+Q1       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+Q2       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+Q3       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+Q4       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+Q5       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+Q6       MMBTH81                     MMBTH81LT1SMD               SOT23-BEC                   transistor-pnp                             3
+R1       DNP                         R-EU_R0603                  R0603                       rcl                                        4
+R2       49R9                        R-EU_R0603                  R0603                       rcl                                        4
+R3       49R9                        R-EU_R0603                  R0603                       rcl                                        3
+R4       49R9                        R-EU_R0603                  R0603                       rcl                                        3
+R5       1k                          R-EU_R0603                  R0603                       rcl                                        3
+R6       1k                          R-EU_R0603                  R0603                       rcl                                        3
+R7       150R                        R-EU_R0402                  R0402                       rcl                                        4
+R8       150R                        R-EU_R0402                  R0402                       rcl                                        4
+R9       49R9                        R-EU_R0603                  R0603                       rcl                                        3
+R10      49R9                        R-EU_R0603                  R0603                       rcl                                        3
+R11      1k43                        R-EU_R0603                  R0603                       rcl                                        3
+R12      470R                        R-EU_R0603                  R0603                       rcl                                        3
+R13      49R9                        R-EU_R0603                  R0603                       rcl                                        3
+R14      1k                          R-EU_R0603                  R0603                       rcl                                        3
+R15      10k                         R-EU_R0603                  R0603                       rcl                                        4
+R16      1k                          R-EU_R0603                  R0603                       rcl                                        3
+R17      1k                          R-EU_R0603                  R0603                       rcl                                        3
+R18      470R                        R-EU_R0603                  R0603                       rcl                                        3
+R19      470R                        R-EU_R0603                  R0603                       rcl                                        3
+R20      0R                          R-EU_R0603                  R0603                       rcl                                        3
+R21      DNP                         R-EU_R0603                  R0603                       rcl                                        3
+R22      49R9                        R-EU_R0603                  R0603                       rcl                                        5
+R23      470R                        R-EU_R0603                  R0603                       rcl                                        5
+R24      100R                        R-EU_R0402                  R0402                       rcl                                        4
+R25      100R                        R-EU_R0603                  R0603                       rcl                                        5
+R26      10k                         R-EU_R0603                  R0603                       rcl                                        5
+R27      49R9                        R-EU_R0603                  R0603                       rcl                                        5
+R28      49R9                        R-EU_R0603                  R0603                       rcl                                        5
+R29      DNP                         R-EU_R0603                  R0603                       rcl                                        5
+R30      DNP                         R-EU_R0603                  R0603                       rcl                                        5
+R31      DNP                         R-EU_R0603                  R0603                       rcl                                        4
+R32      DNP                         R-EU_R0603                  R0603                       rcl                                        5
+R33      DNP                         R-EU_R0603                  R0603                       rcl                                        4
+R34      DNP                         R-EU_R0603                  R0603                       rcl                                        5
+R35      DNP                         R-EU_R0603                  R0603                       rcl                                        5
+R36      470R                        R-EU_R0805                  R0805                       resistor                                   2
+R37      470R                        R-EU_R0805                  R0805                       resistor                                   2
+R38      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+R39      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+R40      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+R41      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+R42      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+R43      DNP                         R-EU_R0603                  R0603                       rcl                                        6
+RT1      3269W-1-102LF               BOURNS_3269WX               3269W                       meng                                       4
+RT2      3269W-1-102LF               BOURNS_3269WX               3269W                       meng                                       6
+RT3      3269W-1-102LF               BOURNS_3269WX               3269W                       meng                                       6
+RT4      3269W-1-102LF               BOURNS_3269WX               3269W                       meng                                       6
+SW1      CJS-1200TB                  CJS-1200TB                  CJS-1200TB                  meng                                       6
+SW2      CJS-1200TB                  CJS-1200TB                  CJS-1200TB                  meng                                       6
+SW3      CJS-1200TB                  CJS-1200TB                  CJS-1200TB                  meng                                       6
+T1       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T2       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T3       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T4       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T5       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T6       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+T7       MMBTH10                     MMBTH10LT1-NPN-SOT23-BEC    SOT23-BEC                   transistor                                 3
+TP1      TPTP08R                     TPTP08R                     TP08R                       testpad                                    5
+TP2      VREF_AV_DET                 KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          4
+TP3      GND                         KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          4
+TP4      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP5      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP6      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP7      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP8      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP9      TPTP20R                     TPTP20R                     TP20R                       testpad                                    2
+TP10     VREF_CASCODE_IBIAS          KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          6
+TP11     VREF_DIAMOND_IBIAS          KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          6
+TP12     VREF_ONE_SHOT               KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          6
+TP13     GND                         KEYSTONE_5000               KEYSTONE_5000_MINIATURE     Kramnik's Library                          6
+U1       SN65EPT21DGK                SN65EPT21DGK                SOP65P490X110-8N            Texas Instruments_By_element14_Batch_1     4
+U2       SN65EPT22DGK                SN65EPT22DGK                SOP65P490X110-8N            Texas Instruments_By_element14_Batch_1     4
+U3       TPS78233DDCT                TPS78233DDCT                SOT95P280X110-5N            Texas Instruments_By_element14_Batch_1 (2) 2
+X1       CONN_SPAD                   SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   3
+X2       CONN_PHOTON_COUNTER         SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   5
+X3       CONN_VREF_CASCODE_IBIAS_EXT SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   6
+X4       CONN_VREF_DIAMOND_IBIAS_EXT SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   6
+X5       CONN_VREF_ONE_SHOT_EXT      SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   6
+X6       CONN_FORCE_QUENCH           SMA-142-0711-871/876        J502-ND-142-0711-871/876    con-coax                                   5
