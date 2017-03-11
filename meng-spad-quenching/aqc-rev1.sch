@@ -24802,6 +24802,7 @@ type RDH, grid 15 mm</description>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">AVALANCHE DETECTOR</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">1.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="193.04" y="63.5" size="1.778" layer="98" rot="R180">NOTE: BLANKING_LATCH_EN is active-high as drawn, which is correct (3/1/2017)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="86.36" y="119.38" smashed="yes">
