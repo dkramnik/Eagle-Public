@@ -811,6 +811,55 @@ NS Package M08A</description>
 <rectangle x1="0.9144" y1="-1.3081" x2="1.6645" y2="1.2918" layer="51"/>
 <rectangle x1="-0.3" y1="-0.8999" x2="0.3" y2="0.8999" layer="35"/>
 </package>
+<package name="SO16">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+body 3.9 mm/JEDEC MS-012AC</description>
+<wire x1="-5.395" y1="3.9" x2="5.395" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="5.395" y1="-3.9" x2="-5.395" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="-5.395" y1="-3.9" x2="-5.395" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="4.94" y1="-1.9" x2="-4.94" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.9" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.4" x2="-4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="1.9" x2="4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="1.9" x2="4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="4.94" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="5.395" y1="3.9" x2="5.395" y2="-3.9" width="0.1998" layer="39"/>
+<smd name="2" x="-3.175" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-4.445" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="3.175" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="4.445" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="-3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-4.445" y="0.3175" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-4.445" y="-0.9525" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<rectangle x1="-4.6901" y1="-3.1001" x2="-4.1999" y2="-2" layer="51"/>
+<rectangle x1="-3.4201" y1="-3.1001" x2="-2.9299" y2="-2" layer="51"/>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="2.9299" y1="-3.1001" x2="3.4201" y2="-2" layer="51"/>
+<rectangle x1="4.1999" y1="-3.1001" x2="4.6901" y2="-2" layer="51"/>
+<rectangle x1="4.1999" y1="2" x2="4.6901" y2="3.1001" layer="51"/>
+<rectangle x1="2.9299" y1="2" x2="3.4201" y2="3.1001" layer="51"/>
+<rectangle x1="-3.4201" y1="2" x2="-2.9299" y2="3.1001" layer="51"/>
+<rectangle x1="-4.6901" y1="2" x2="-4.1999" y2="3.1001" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -1086,6 +1135,27 @@ NS Package M08A</description>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="2.54" size="1.778" layer="97">&gt;VALUE</text>
 <rectangle x1="-5.715" y1="-0.9525" x2="0.635" y2="0.9525" layer="94"/>
+</symbol>
+<symbol name="LT1534">
+<pin name="VC" x="-5.08" y="2.54" length="middle"/>
+<pin name="RT" x="-5.08" y="10.16" length="middle"/>
+<pin name="CT" x="-5.08" y="17.78" length="middle"/>
+<pin name="SYNC" x="-5.08" y="27.94" length="middle"/>
+<pin name="!SHDN" x="-5.08" y="33.02" length="middle"/>
+<pin name="VIN" x="12.7" y="40.64" length="middle" rot="R270"/>
+<pin name="COL" x="38.1" y="33.02" length="middle" rot="R180"/>
+<pin name="PGND" x="38.1" y="25.4" length="middle" rot="R180"/>
+<pin name="RVSL" x="38.1" y="17.78" length="middle" rot="R180"/>
+<pin name="RCSL" x="38.1" y="10.16" length="middle" rot="R180"/>
+<pin name="FB" x="38.1" y="2.54" length="middle" rot="R180"/>
+<pin name="NFB" x="22.86" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<wire x1="0" y1="0" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="33.02" y1="0" x2="33.02" y2="35.56" width="0.254" layer="94"/>
+<wire x1="33.02" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="0" y1="35.56" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="15.24" y="40.64" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="38.1" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1467,6 +1537,33 @@ Source: Texas Instruments (Burr-Brown) .. U11 opa333 Operational Amp.pdf</descri
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT1534" prefix="IC">
+<gates>
+<gate name="G$1" symbol="LT1534" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO16">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="12"/>
+<connect gate="G$1" pin="COL" pad="2"/>
+<connect gate="G$1" pin="CT" pad="5"/>
+<connect gate="G$1" pin="FB" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1 8 9 16"/>
+<connect gate="G$1" pin="NFB" pad="10"/>
+<connect gate="G$1" pin="PGND" pad="3"/>
+<connect gate="G$1" pin="RCSL" pad="13"/>
+<connect gate="G$1" pin="RT" pad="6"/>
+<connect gate="G$1" pin="RVSL" pad="14"/>
+<connect gate="G$1" pin="SYNC" pad="4"/>
+<connect gate="G$1" pin="VC" pad="11"/>
+<connect gate="G$1" pin="VIN" pad="15"/>
 </connects>
 <technologies>
 <technology name=""/>
