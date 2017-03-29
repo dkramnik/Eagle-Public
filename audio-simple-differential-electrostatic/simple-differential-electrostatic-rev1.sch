@@ -13513,8 +13513,8 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <plain>
 <text x="223.52" y="30.48" size="3.81" layer="97" font="vector" align="center">TABLE OF CONTENTS</text>
 <text x="266.7" y="10.795" size="2.54" layer="97" font="vector" align="center">1.0</text>
-<text x="223.52" y="10.795" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
-<text x="139.7" y="195.58" size="5.08" layer="97" font="vector" align="center">LINEAR ACTIVE SPAD QUENCHING CIRCUIT</text>
+<text x="223.52" y="10.795" size="3.81" layer="97" font="vector" align="center">1 of 2</text>
+<text x="139.7" y="195.58" size="5.08" layer="97" font="vector" align="center">SIMPLE DIFFERENTIAL ELECTROSTATIC AMPLIFIER BOARD</text>
 <text x="73.66" y="162.56" size="3.81" layer="97" font="vector" align="center">SHEET</text>
 <text x="142.24" y="162.56" size="3.81" layer="97" font="vector" align="center">CONTENTS</text>
 <wire x1="60.96" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="97"/>
@@ -13553,7 +13553,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="215.9" y="180.34" size="1.778" layer="98">(7.56W total)</text>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">POWER SUPPLIES</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">1.0</text>
-<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 2</text>
 </plain>
 <instances>
 <instance part="J2" gate="G$1" x="30.48" y="177.8" rot="MR180"/>
@@ -13970,7 +13970,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </polygon>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">RIGHT CHANNEL</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">1.0</text>
-<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 2</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -14491,7 +14491,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </polygon>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">LEFT CHANNEL</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">1.0</text>
-<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 2</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
