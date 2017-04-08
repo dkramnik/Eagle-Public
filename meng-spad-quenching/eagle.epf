@@ -335,18 +335,48 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zilog.lbr"
 UsedLibrary="C:/Users/Admin/GrabCAD/Eagle Libraries/battlebots.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534_I2C2.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ADI-Phase-2.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/Analog Devices_By_element14_Batch_1.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ArduinoNanoV30.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/C8051F410.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ISP1520BD.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/Kramnik's Library.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/MBED_v2.1.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/SC's Library.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/SMD_Qualifier.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/SiLabs Downloaded.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/SiLabs Test.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/Texas Instruments_By_element14_Batch_1 (2).lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/Texas Instruments_By_element14_Batch_1.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/adafruit.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/charleses_parts_bin.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/con-jack-mod.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ftdichip-3.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/hdmi.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/heatsink-aavid.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/maxim-filter.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/micro-silabs.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/microbuilder.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/oli.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/sc_usercreated.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/silabs-2.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/tc's LIB.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/transistors_gaui.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/tubes.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/tw.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx-xc9.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices_7_6_2014.lbr"
+UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices_7_6_2014_MOD.lbr"
 UsedLibrary="meng.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="1912 -8 2511 391"
-State=1
-Number=0
-
-[Win_2]
 Type="Library Editor"
-Loc="-8 -8 591 391"
-State=1
+Loc="0 0 599 399"
+State=3
 Number=2
 File="meng.lbr"
 View="-12.3139 -2.10684 7.23392 9.70991"
@@ -382,6 +412,12 @@ AddLevel=2
 PadsSameType=0
 Layer=94
 Device="INDUCTOR"
+
+[Win_2]
+Type="Control Panel"
+Loc="1912 -8 2511 391"
+State=1
+Number=0
 
 [Desktop]
 Screen="3840 1200"
