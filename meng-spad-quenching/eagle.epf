@@ -335,6 +335,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zilog.lbr"
 UsedLibrary="C:/Users/Admin/GrabCAD/Eagle Libraries/battlebots.lbr"
+UsedLibrary="meng.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534_I2C2.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ADI-Phase-2.lbr"
@@ -371,7 +372,6 @@ UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices_7_6_2014.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/xilinx_devices_7_6_2014_MOD.lbr"
-UsedLibrary="meng.lbr"
 
 [Win_1]
 Type="Library Editor"
@@ -420,6 +420,6 @@ State=1
 Number=0
 
 [Desktop]
-Screen="3840 1200"
+Screen="5040 1080"
 Window="Win_1"
 Window="Win_2"
