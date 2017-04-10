@@ -8351,6 +8351,14 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <part name="IC2" library="meng" deviceset="74LVT126" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="U$3" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
+<part name="U$4" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
+<part name="DNP18" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP19" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP20" library="meng" deviceset="ARROW_1DIR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8359,6 +8367,8 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <text x="373.38" y="71.12" size="1.778" layer="98">0V to 3.3V</text>
 <text x="373.38" y="109.22" size="1.778" layer="98">0V to 5V</text>
 <text x="373.38" y="149.86" size="1.778" layer="98">0V to -5V</text>
+<text x="27.94" y="152.4" size="1.778" layer="98">250kHz</text>
+<text x="27.94" y="160.02" size="1.778" layer="98">125kHz</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="289.56" y="152.4"/>
@@ -8551,6 +8561,22 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <instance part="GND10" gate="1" x="292.1" y="187.96" smashed="yes">
 <attribute name="VALUE" x="289.56" y="185.42" size="1.778" layer="96"/>
 </instance>
+<instance part="R8" gate="G$1" x="25.4" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.13" y="153.4414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="24.13" y="148.082" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R9" gate="G$1" x="25.4" y="165.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.13" y="168.6814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="24.13" y="163.322" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND20" gate="1" x="25.4" y="119.38" smashed="yes">
+<attribute name="VALUE" x="22.86" y="116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="68.58" y="71.12" rot="R180"/>
+<instance part="U$4" gate="G$1" x="68.58" y="73.66"/>
+<instance part="DNP18" gate="G$1" x="124.46" y="73.66" smashed="yes"/>
+<instance part="DNP19" gate="G$1" x="124.46" y="71.12" smashed="yes"/>
+<instance part="DNP20" gate="G$1" x="124.46" y="63.5" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -8643,9 +8669,6 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <wire x1="88.9" y1="121.92" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$1" pin="FSEL"/>
-<wire x1="43.18" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="157.48" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="142.24" x2="40.64" y2="127" width="0.1524" layer="91"/>
@@ -8657,7 +8680,6 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <wire x1="40.64" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="127" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
 <junction x="76.2" y="142.24"/>
-<junction x="40.64" y="142.24"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="40.64" y1="121.92" x2="40.64" y2="127" width="0.1524" layer="91"/>
 <junction x="40.64" y="127"/>
@@ -8760,6 +8782,11 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <junction x="292.1" y="215.9"/>
 <junction x="292.1" y="220.98"/>
 </segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="25.4" y1="144.78" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PHOTON_COUNTER" class="0">
 <segment>
@@ -8770,6 +8797,11 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <wire x1="124.46" y1="185.42" x2="114.3" y2="185.42" width="0.1524" layer="91"/>
 <junction x="124.46" y="185.42"/>
 <label x="114.3" y="185.42" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="STM32_NUCLEO" gate="G$1" pin="D3/INT1"/>
+<wire x1="76.2" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91"/>
+<label x="63.5" y="71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="FORCE_QUENCH_BUF" class="0">
@@ -8836,6 +8868,11 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <wire x1="254" y1="149.86" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="254" y="149.86" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="STM32_NUCLEO" gate="G$1" pin="ADC3/A3"/>
+<wire x1="116.84" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
+<label x="129.54" y="63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DAC_DIAMOND_IBIAS_SEL" class="0">
 <segment>
@@ -8843,12 +8880,22 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <wire x1="276.86" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
 <label x="254" y="109.22" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="STM32_NUCLEO" gate="G$1" pin="ADC6/A6"/>
+<wire x1="116.84" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<label x="129.54" y="71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DAC_ONE_SHOT_SEL" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A0"/>
 <wire x1="276.86" y1="68.58" x2="254" y2="68.58" width="0.1524" layer="91"/>
 <label x="254" y="68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="STM32_NUCLEO" gate="G$1" pin="ADC7/A7"/>
+<wire x1="116.84" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="129.54" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PP_P3V3" class="0">
@@ -8923,6 +8970,11 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <label x="281.94" y="236.22" size="1.778" layer="95" rot="R180"/>
 <pinref part="IC2" gate="G$1" pin="1A"/>
 </segment>
+<segment>
+<pinref part="STM32_NUCLEO" gate="G$1" pin="D2/INT0"/>
+<wire x1="76.2" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="63.5" y="73.66" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="N$14" class="0">
 <segment>
@@ -8948,7 +9000,8 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="IN"/>
-<wire x1="73.66" y1="157.48" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="157.48" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="157.48" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
@@ -8958,6 +9011,10 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <label x="96.52" y="157.48" size="1.778" layer="95"/>
+<wire x1="76.2" y1="157.48" x2="76.2" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="172.72" x2="25.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="172.72" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="V+"/>
@@ -9049,6 +9106,17 @@ Digikey: http://www.digikey.com/product-detail/en/MAX1681ESA%2B/MAX1681ESA%2B-ND
 <pinref part="IC1" gate="A" pin="-IN"/>
 <wire x1="322.58" y1="109.22" x2="325.12" y2="109.22" width="0.1524" layer="91"/>
 <junction x="353.06" y="96.52"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="FSEL"/>
+<wire x1="43.18" y1="157.48" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="157.48" x2="25.4" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="157.48" x2="25.4" y2="154.94" width="0.1524" layer="91"/>
+<junction x="25.4" y="157.48"/>
 </segment>
 </net>
 </nets>
