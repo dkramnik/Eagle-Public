@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -36,25 +36,25 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -154,6 +154,17 @@
 <vertex x="40" y="36"/>
 <vertex x="40" y="0"/>
 </polygon>
+<text x="13.4488" y="0.9872" size="0.8128" layer="21" font="vector" ratio="16">cryobondr-rev1-aqc</text>
+<polygon width="0.1016" layer="29">
+<vertex x="17.5" y="21"/>
+<vertex x="17.25" y="20.75"/>
+<vertex x="17.25" y="15.25"/>
+<vertex x="17.5" y="15"/>
+<vertex x="22.5" y="15"/>
+<vertex x="22.75" y="15.25"/>
+<vertex x="22.75" y="20.75"/>
+<vertex x="22.5" y="21"/>
+</polygon>
 </plain>
 <libraries>
 <library name="holes">
@@ -171,6 +182,45 @@
 <circle x="0" y="0" radius="3.556" width="1.016" layer="43"/>
 <circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
 <pad name="B3,6" x="0" y="0" drill="3.6" diameter="5.842"/>
+</package>
+</packages>
+</library>
+<library name="meng">
+<packages>
+<package name="MMCX-SMT">
+<smd name="S" x="0" y="0" dx="0.889" dy="0.889" layer="1" roundness="100"/>
+<smd name="G1" x="-1.3335" y="1.3335" dx="0.9398" dy="0.9398" layer="1"/>
+<smd name="G2" x="1.3335" y="1.3335" dx="0.9398" dy="0.9398" layer="1"/>
+<smd name="G3" x="1.3335" y="-1.3335" dx="0.9398" dy="0.9398" layer="1"/>
+<smd name="G4" x="-1.3335" y="-1.3335" dx="0.9398" dy="0.9398" layer="1"/>
+<text x="-2.54" y="3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<wire x1="-1.7272" y1="-1.7272" x2="-1.7272" y2="1.7272" width="0.127" layer="27"/>
+<wire x1="-1.7272" y1="1.7272" x2="1.7272" y2="1.7272" width="0.127" layer="27"/>
+<wire x1="1.7272" y1="1.7272" x2="1.7272" y2="-1.7272" width="0.127" layer="27"/>
+<wire x1="1.7272" y1="-1.7272" x2="-1.7272" y2="-1.7272" width="0.127" layer="27"/>
+</package>
+<package name="QBIT2-WIREBOND-CRYO1">
+<smd name="D1-P-ANODE" x="-0.1832" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D6-N-CATHODE" x="-1.5976" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+<wire x1="-1.5" y1="-3" x2="1.5" y2="-3" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="-3" x2="1.5" y2="3" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="3" x2="-1.5" y2="3" width="0.0762" layer="21"/>
+<wire x1="-1.5" y1="3" x2="-1.5" y2="-3" width="0.0762" layer="21"/>
+<smd name="D1-N-CATHODE" x="0.02" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D2-N-CATHODE" x="0.2232" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D2-P-ANODE" x="0.4264" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D3-N-CATHODE" x="0.6296" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D4-N-CATHODE" x="0.8328" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D4-P-ANODE" x="1.036" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D3-P-ANODE" x="1.2392" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D5-N-CATHODE" x="1.4424" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D5-P-ANODE" x="1.6456" y="4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D6-P-ANODE" x="-1.3944" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D7-N-CATHODE" x="-1.1912" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D7-P-ANODE" x="-0.988" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D8-N-CATHODE" x="-0.7848" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+<smd name="D8-P-ANODE" x="-0.5816" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
 </package>
 </packages>
 </library>
@@ -364,6 +414,21 @@ design rules under a new name.</description>
 <element name="H2" library="holes" package="3,6-PAD" value="MOUNT-PAD-ROUND3.6" x="4" y="10"/>
 <element name="H1" library="holes" package="3,6-PAD" value="MOUNT-PAD-ROUND3.6" x="36" y="10"/>
 <element name="H4" library="holes" package="3,6-PAD" value="MOUNT-PAD-ROUND3.6" x="4" y="26"/>
+<element name="X1" library="meng" package="MMCX-SMT" value="CONN-D3" x="35" y="18" smashed="yes">
+<attribute name="NAME" x="32.46" y="20.2225" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" x="32.46" y="14.825" size="0.8128" layer="27" font="vector" ratio="16"/>
+</element>
+<element name="X2" library="meng" package="MMCX-SMT" value="CONN-D5" x="28" y="31"/>
+<element name="X3" library="meng" package="MMCX-SMT" value="CONN-D4" x="20" y="31"/>
+<element name="X8" library="meng" package="MMCX-SMT" value="CONN-D8" x="28" y="5"/>
+<element name="X7" library="meng" package="MMCX-SMT" value="CONN-D7" x="20" y="5"/>
+<element name="X6" library="meng" package="MMCX-SMT" value="CONN-D6" x="12" y="5"/>
+<element name="IC1" library="meng" package="QBIT2-WIREBOND-CRYO1" value="QBIT2-WIREBOND-CRYO1" x="20" y="18"/>
+<element name="X4" library="meng" package="MMCX-SMT" value="CONN-D2" x="12" y="31"/>
+<element name="X5" library="meng" package="MMCX-SMT" value="CONN-D1" x="5" y="18" smashed="yes">
+<attribute name="NAME" x="2.46" y="20.2225" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" x="2.46" y="14.825" size="0.8128" layer="27" font="vector" ratio="16"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -377,6 +442,208 @@ design rules under a new name.</description>
 <vertex x="40" y="36"/>
 <vertex x="0" y="36"/>
 </polygon>
+<via x="17.75" y="20.5" extent="1-16" drill="0.381"/>
+<via x="17.75" y="19.25" extent="1-16" drill="0.381"/>
+<via x="17.75" y="18" extent="1-16" drill="0.381"/>
+<via x="17.75" y="16.75" extent="1-16" drill="0.381"/>
+<via x="17.75" y="15.5" extent="1-16" drill="0.381"/>
+<via x="22.25" y="20.5" extent="1-16" drill="0.381"/>
+<via x="22.25" y="19.25" extent="1-16" drill="0.381"/>
+<via x="22.25" y="18" extent="1-16" drill="0.381"/>
+<via x="22.25" y="16.75" extent="1-16" drill="0.381"/>
+<via x="22.25" y="15.5" extent="1-16" drill="0.381"/>
+<polygon width="0.1016" layer="1">
+<vertex x="17.25" y="15.25"/>
+<vertex x="17.5" y="15"/>
+<vertex x="22.5" y="15"/>
+<vertex x="22.75" y="15.25"/>
+<vertex x="22.75" y="20.75"/>
+<vertex x="22.5" y="21"/>
+<vertex x="17.5" y="21"/>
+<vertex x="17.25" y="20.75"/>
+</polygon>
+</signal>
+<signal name="D1-P-ANODE">
+<contactref element="IC1" pad="D1-P-ANODE"/>
+<contactref element="X5" pad="G4"/>
+<contactref element="X5" pad="G1"/>
+<contactref element="X5" pad="G2"/>
+<contactref element="X5" pad="G3"/>
+<wire x1="19.8168" y1="22" x2="19.8168" y2="21.9504" width="0.1016" layer="1"/>
+<wire x1="19.8168" y1="21.9504" x2="19.812" y2="21.9456" width="0.1016" layer="1"/>
+<wire x1="19.812" y1="21.9456" x2="11.5824" y2="21.9456" width="0.1016" layer="1"/>
+<wire x1="11.5824" y1="21.9456" x2="8.2591" y2="18.5928" width="0.1016" layer="1"/>
+<wire x1="8.2591" y1="18.5928" x2="7.0742" y2="18.5928" width="0.1016" layer="1"/>
+<wire x1="7.0742" y1="18.5928" x2="6.3335" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="6.3335" y1="19.3335" x2="3.6665" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="3.6665" y1="16.6665" x2="3.6665" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="6.3335" y1="16.6665" x2="3.6665" y2="16.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D1-N-CATHODE">
+<contactref element="IC1" pad="D1-N-CATHODE"/>
+<contactref element="X5" pad="S"/>
+<wire x1="20.02" y1="22" x2="20.02" y2="21.8488" width="0.1016" layer="1"/>
+<wire x1="20.02" y1="21.8488" x2="19.9136" y2="21.7424" width="0.1016" layer="1"/>
+<wire x1="19.9136" y1="21.7424" x2="11.684" y2="21.7424" width="0.1016" layer="1"/>
+<wire x1="11.684" y1="21.7424" x2="8.3312" y2="18.3896" width="0.1016" layer="1"/>
+<wire x1="8.3312" y1="18.3896" x2="5.3896" y2="18.3896" width="0.1016" layer="1"/>
+<wire x1="5.3896" y1="18.3896" x2="5" y2="18" width="0.1016" layer="1"/>
+</signal>
+<signal name="D2-P-ANODE">
+<contactref element="IC1" pad="D2-P-ANODE"/>
+<contactref element="X4" pad="G4"/>
+<contactref element="X4" pad="G1"/>
+<contactref element="X4" pad="G2"/>
+<contactref element="X4" pad="G3"/>
+<wire x1="20.4264" y1="22" x2="20.4264" y2="22.5736" width="0.1016" layer="1"/>
+<wire x1="20.4264" y1="22.5736" x2="13.3335" y2="29.6665" width="0.1016" layer="1"/>
+<wire x1="10.6665" y1="29.6665" x2="10.6665" y2="32.3335" width="0.1016" layer="1"/>
+<wire x1="10.6665" y1="32.3335" x2="13.3335" y2="32.3335" width="0.1016" layer="1"/>
+<wire x1="13.3335" y1="32.3335" x2="13.3335" y2="29.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D2-N-CATHODE">
+<contactref element="IC1" pad="D2-N-CATHODE"/>
+<contactref element="X4" pad="S"/>
+<wire x1="20.2232" y1="22" x2="20.2232" y2="22.4488" width="0.1016" layer="1"/>
+<wire x1="20.2232" y1="22.4488" x2="13.716" y2="28.956" width="0.1016" layer="1"/>
+<wire x1="13.716" y1="28.956" x2="12.7" y2="28.956" width="0.1016" layer="1"/>
+<wire x1="12.7" y1="28.956" x2="12" y2="29.656" width="0.1016" layer="1"/>
+<wire x1="12" y1="31" x2="12" y2="29.656" width="0.1016" layer="1"/>
+</signal>
+<signal name="D3-P-ANODE">
+<contactref element="IC1" pad="D3-P-ANODE"/>
+<contactref element="X1" pad="G4"/>
+<contactref element="X1" pad="G1"/>
+<contactref element="X1" pad="G3"/>
+<contactref element="X1" pad="G2"/>
+<wire x1="21.2392" y1="22" x2="21.2392" y2="21.7376" width="0.1016" layer="1"/>
+<wire x1="21.2392" y1="21.7376" x2="21.336" y2="21.6408" width="0.1016" layer="1"/>
+<wire x1="21.336" y1="21.6408" x2="29.2608" y2="21.6408" width="0.1016" layer="1"/>
+<wire x1="29.2608" y1="21.6408" x2="32.3088" y2="18.5928" width="0.1016" layer="1"/>
+<wire x1="32.3088" y1="18.5928" x2="32.9258" y2="18.5928" width="0.1016" layer="1"/>
+<wire x1="32.9258" y1="18.5928" x2="33.6665" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="36.3335" y1="19.3335" x2="33.6665" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="36.3335" y1="16.6665" x2="36.3335" y2="19.3335" width="0.1016" layer="1"/>
+<wire x1="33.6665" y1="16.6665" x2="36.3335" y2="16.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D3-N-CATHODE">
+<contactref element="IC1" pad="D3-N-CATHODE"/>
+<contactref element="X1" pad="S"/>
+<wire x1="20.6296" y1="22" x2="20.6296" y2="21.7376" width="0.1016" layer="1"/>
+<wire x1="20.6296" y1="21.7376" x2="20.9296" y2="21.4376" width="0.1016" layer="1"/>
+<wire x1="20.9296" y1="21.4376" x2="29.1592" y2="21.4376" width="0.1016" layer="1"/>
+<wire x1="29.1592" y1="21.4376" x2="32.2072" y2="18.3896" width="0.1016" layer="1"/>
+<wire x1="32.2072" y1="18.3896" x2="34.6104" y2="18.3896" width="0.1016" layer="1"/>
+<wire x1="34.6104" y1="18.3896" x2="35" y2="18" width="0.1016" layer="1"/>
+</signal>
+<signal name="D4-P-ANODE">
+<contactref element="IC1" pad="D4-P-ANODE"/>
+<contactref element="X3" pad="G4"/>
+<contactref element="X3" pad="G1"/>
+<contactref element="X3" pad="G2"/>
+<contactref element="X3" pad="G3"/>
+<wire x1="21.036" y1="22" x2="21.036" y2="29.369" width="0.1016" layer="1"/>
+<wire x1="21.036" y1="29.369" x2="21.3335" y2="29.6665" width="0.1016" layer="1"/>
+<wire x1="21.3335" y1="32.3335" x2="21.3335" y2="29.6665" width="0.1016" layer="1"/>
+<wire x1="18.6665" y1="32.3335" x2="21.3335" y2="32.3335" width="0.1016" layer="1"/>
+<wire x1="18.6665" y1="29.6665" x2="18.6665" y2="32.3335" width="0.1016" layer="1"/>
+</signal>
+<signal name="D4-N-CATHODE">
+<contactref element="IC1" pad="D4-N-CATHODE"/>
+<contactref element="X3" pad="S"/>
+<wire x1="20.8328" y1="22" x2="20.8328" y2="28.8432" width="0.1016" layer="1"/>
+<wire x1="20.8328" y1="28.8432" x2="20" y2="29.676" width="0.1016" layer="1"/>
+<wire x1="20" y1="31" x2="20" y2="29.676" width="0.1016" layer="1"/>
+</signal>
+<signal name="D5-N-CATHODE">
+<contactref element="IC1" pad="D5-N-CATHODE"/>
+<contactref element="X2" pad="S"/>
+<wire x1="21.4424" y1="22" x2="21.4424" y2="22.56" width="0.1016" layer="1"/>
+<wire x1="28" y1="31" x2="26.6312" y2="31" width="0.1016" layer="1"/>
+<wire x1="26.6312" y1="31" x2="25.908" y2="30.2768" width="0.1016" layer="1"/>
+<wire x1="25.908" y1="30.2768" x2="25.908" y2="27.0256" width="0.1016" layer="1"/>
+<wire x1="25.908" y1="27.0256" x2="21.4424" y2="22.56" width="0.1016" layer="1"/>
+</signal>
+<signal name="D5-P-ANODE">
+<contactref element="IC1" pad="D5-P-ANODE"/>
+<contactref element="X2" pad="G4"/>
+<contactref element="X2" pad="G1"/>
+<contactref element="X2" pad="G2"/>
+<contactref element="X2" pad="G3"/>
+<wire x1="26.6665" y1="29.6665" x2="26.6665" y2="29.6129" width="0.1016" layer="1"/>
+<wire x1="26.6665" y1="29.6129" x2="26.1112" y2="29.0576" width="0.1016" layer="1"/>
+<wire x1="26.1112" y1="29.0576" x2="26.1112" y2="26.924" width="0.1016" layer="1"/>
+<wire x1="26.1112" y1="26.924" x2="21.6456" y2="22.4584" width="0.1016" layer="1"/>
+<wire x1="21.6456" y1="22" x2="21.6456" y2="22.4584" width="0.1016" layer="1"/>
+<wire x1="26.6665" y1="32.3335" x2="29.3335" y2="32.3335" width="0.1016" layer="1"/>
+<wire x1="29.3335" y1="32.3335" x2="29.3335" y2="29.6665" width="0.1016" layer="1"/>
+<wire x1="29.3335" y1="29.6665" x2="26.6665" y2="29.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D6-N-CATHODE">
+<contactref element="IC1" pad="D6-N-CATHODE"/>
+<contactref element="X6" pad="S"/>
+<wire x1="18.4024" y1="14" x2="18.4024" y2="13.8304" width="0.1016" layer="1"/>
+<wire x1="18.4024" y1="13.8304" x2="12.5984" y2="8.0264" width="0.1016" layer="1"/>
+<wire x1="12.5984" y1="8.0264" x2="12.5984" y2="5.5984" width="0.1016" layer="1"/>
+<wire x1="12.5984" y1="5.5984" x2="12" y2="5" width="0.1016" layer="1"/>
+</signal>
+<signal name="D6-P-ANODE">
+<contactref element="IC1" pad="D6-P-ANODE"/>
+<contactref element="X6" pad="G4"/>
+<contactref element="X6" pad="G1"/>
+<contactref element="X6" pad="G2"/>
+<contactref element="X6" pad="G3"/>
+<wire x1="18.6056" y1="14" x2="18.6056" y2="13.7288" width="0.1016" layer="1"/>
+<wire x1="18.6056" y1="13.7288" x2="12.8016" y2="7.9248" width="0.1016" layer="1"/>
+<wire x1="12.8016" y1="7.9248" x2="12.8016" y2="6.8654" width="0.1016" layer="1"/>
+<wire x1="12.8016" y1="6.8654" x2="13.3335" y2="6.3335" width="0.1016" layer="1"/>
+<wire x1="13.3335" y1="6.3335" x2="13.3335" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="10.6665" y1="3.6665" x2="13.3335" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="10.6665" y1="6.3335" x2="10.6665" y2="3.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D7-N-CATHODE">
+<contactref element="IC1" pad="D7-N-CATHODE"/>
+<contactref element="X7" pad="S"/>
+<wire x1="20" y1="5" x2="20" y2="8.956" width="0.1016" layer="1"/>
+<wire x1="20" y1="8.956" x2="18.8088" y2="10.1472" width="0.1016" layer="1"/>
+<wire x1="18.8088" y1="14" x2="18.8088" y2="10.1472" width="0.1016" layer="1"/>
+</signal>
+<signal name="D7-P-ANODE">
+<contactref element="IC1" pad="D7-P-ANODE"/>
+<contactref element="X7" pad="G4"/>
+<contactref element="X7" pad="G1"/>
+<contactref element="X7" pad="G2"/>
+<contactref element="X7" pad="G3"/>
+<wire x1="19.012" y1="14" x2="19.012" y2="10.2488" width="0.1016" layer="1"/>
+<wire x1="19.012" y1="10.2488" x2="20.2184" y2="9.0424" width="0.1016" layer="1"/>
+<wire x1="20.2184" y1="9.0424" x2="20.2184" y2="7.4486" width="0.1016" layer="1"/>
+<wire x1="20.2184" y1="7.4486" x2="21.3335" y2="6.3335" width="0.1016" layer="1"/>
+<wire x1="21.3335" y1="6.3335" x2="21.3335" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="18.6665" y1="3.6665" x2="21.3335" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="18.6665" y1="6.3335" x2="18.6665" y2="3.6665" width="0.1016" layer="1"/>
+</signal>
+<signal name="D8-N-CATHODE">
+<contactref element="IC1" pad="D8-N-CATHODE"/>
+<contactref element="X8" pad="S"/>
+<wire x1="19.2152" y1="14" x2="19.2152" y2="13.7032" width="0.1016" layer="1"/>
+<wire x1="19.2152" y1="13.7032" x2="23.0632" y2="9.8552" width="0.1016" layer="1"/>
+<wire x1="23.0632" y1="9.8552" x2="25.5016" y2="9.8552" width="0.1016" layer="1"/>
+<wire x1="25.5016" y1="9.8552" x2="28" y2="7.3568" width="0.1016" layer="1"/>
+<wire x1="28" y1="5" x2="28" y2="7.3568" width="0.1016" layer="1"/>
+</signal>
+<signal name="D8-P-ANODE">
+<contactref element="IC1" pad="D8-P-ANODE"/>
+<contactref element="X8" pad="G4"/>
+<contactref element="X8" pad="G1"/>
+<contactref element="X8" pad="G2"/>
+<contactref element="X8" pad="G3"/>
+<wire x1="19.4184" y1="14" x2="19.4184" y2="13.8048" width="0.1016" layer="1"/>
+<wire x1="19.4184" y1="13.8048" x2="23.1648" y2="10.0584" width="0.1016" layer="1"/>
+<wire x1="23.1648" y1="10.0584" x2="25.6086" y2="10.0584" width="0.1016" layer="1"/>
+<wire x1="25.6086" y1="10.0584" x2="29.3335" y2="6.3335" width="0.1016" layer="1"/>
+<wire x1="26.6665" y1="6.3335" x2="26.6665" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="29.3335" y1="3.6665" x2="26.6665" y2="3.6665" width="0.1016" layer="1"/>
+<wire x1="29.3335" y1="6.3335" x2="29.3335" y2="3.6665" width="0.1016" layer="1"/>
 </signal>
 </signals>
 </board>
