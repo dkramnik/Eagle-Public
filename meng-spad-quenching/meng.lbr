@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1337,6 +1337,19 @@ Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-14207018
 <smd name="D7-P-ANODE" x="-0.988" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
 <smd name="D8-N-CATHODE" x="-0.7848" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
 <smd name="D8-P-ANODE" x="-0.5816" y="-4" dx="0.1016" dy="0.2032" layer="1"/>
+</package>
+<package name="MMCX-SMT-BIGPADS">
+<smd name="S" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100"/>
+<smd name="G1" x="-1.6256" y="1.6256" dx="1.524" dy="1.524" layer="1"/>
+<smd name="G2" x="1.6256" y="1.6256" dx="1.524" dy="1.524" layer="1"/>
+<smd name="G3" x="1.6256" y="-1.6256" dx="1.524" dy="1.524" layer="1"/>
+<smd name="G4" x="-1.6256" y="-1.6256" dx="1.524" dy="1.524" layer="1"/>
+<text x="-2.54" y="3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<wire x1="-1.7272" y1="-1.7272" x2="-1.7272" y2="1.7272" width="0.127" layer="27"/>
+<wire x1="-1.7272" y1="1.7272" x2="1.7272" y2="1.7272" width="0.127" layer="27"/>
+<wire x1="1.7272" y1="1.7272" x2="1.7272" y2="-1.7272" width="0.127" layer="27"/>
+<wire x1="1.7272" y1="-1.7272" x2="-1.7272" y2="-1.7272" width="0.127" layer="27"/>
 </package>
 </packages>
 <symbols>
