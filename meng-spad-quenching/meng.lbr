@@ -1351,6 +1351,15 @@ Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-14207018
 <wire x1="1.7272" y1="1.7272" x2="1.7272" y2="-1.7272" width="0.127" layer="27"/>
 <wire x1="1.7272" y1="-1.7272" x2="-1.7272" y2="-1.7272" width="0.127" layer="27"/>
 </package>
+<package name="JOHNSON-129-0701-20X">
+<pad name="SIG" x="0" y="0" drill="1.0414"/>
+<pad name="G1" x="-2.54" y="0" drill="1.0414"/>
+<pad name="G2" x="2.54" y="0" drill="1.0414"/>
+<circle x="0" y="0" radius="1.5875" width="0.127" layer="21"/>
+<rectangle x1="-2.54" y1="-0.5207" x2="2.54" y2="0.5207" layer="21"/>
+<text x="-3.81" y="3.175" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-3.81" y="2.2225" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -2564,6 +2573,22 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G$1" pin="D7-P-ANODE" pad="D7-P-ANODE"/>
 <connect gate="G$1" pin="D8-N-CATHODE" pad="D8-N-CATHODE"/>
 <connect gate="G$1" pin="D8-P-ANODE" pad="D8-P-ANODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP-SCOPE" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BNC-FGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JOHNSON-129-0701-20X">
+<connects>
+<connect gate="G$1" pin="1" pad="SIG"/>
+<connect gate="G$1" pin="GND" pad="G1 G2"/>
 </connects>
 <technologies>
 <technology name=""/>
