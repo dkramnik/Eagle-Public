@@ -23258,6 +23258,131 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 </deviceset>
 </devicesets>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+<package name="SOT23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; - 6 Pin</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.2032" layer="51"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.2032" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.2032" layer="51"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.8" x2="1.45" y2="0.8" width="0.2032" layer="21"/>
+<circle x="-0.95" y="-0.35" radius="0.1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="1.651" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="1.651" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP4725">
+<pin name="VOUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="SDA" x="-12.7" y="0" length="short"/>
+<pin name="SCL" x="-12.7" y="2.54" length="short"/>
+<pin name="A0" x="-12.7" y="-2.54" length="short" direction="in"/>
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="10.16" size="1.778" layer="94">MCP4725</text>
+<text x="-7.62" y="6.35" size="1.778" layer="94">12-Bit DAC</text>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<text x="-8.89" y="-8.89" size="1.778" layer="94">VDD: 2.7-5.5V</text>
+<text x="-8.89" y="-11.43" size="1.778" layer="94">-40°C-125°C</text>
+<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DAC_MCP4725" prefix="U" uservalue="yes">
+<description>&lt;b&gt;MCP4725 - 12-Bit I2C DAC with on-board EEPROM&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Settling Time: 6 µs&lt;/li&gt;
+&lt;li&gt;2.7-5.5V Supply&lt;/li&gt;
+&lt;li&gt;100kHz, 400kHz, 3.4 Mbps I²C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;EEPROM can be used to store a specific output voltage which will be set coming out of reset&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;I²C Address&lt;/b&gt;: 1100 A2 A1 A0&lt;/p&gt;
+&lt;p&gt;A0 is set via the A0 pin, A2 and A1 are hard-wired on the chip depending on the model chosen:&lt;/p&gt;
+&lt;p&gt;
+&lt;table cellpadding="5" border="1" cellspacing="5"&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Part Number&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;b&gt;A2 A1&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;MCP4725A0T-E/CH&lt;/td&gt;
+  &lt;td&gt;0 0&lt;/td&gt;
+  &lt;td&gt;AJNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;MCP4725A1T-E/CH&lt;/td&gt;
+  &lt;td&gt;0 1&lt;/td&gt;
+  &lt;td&gt;APNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;MCP4725A2T-E/CH&lt;/td&gt;
+  &lt;td&gt;1 0&lt;/td&gt;
+  &lt;td&gt;AQNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;MCP4725A3T-E/CH&lt;/td&gt;
+  &lt;td&gt;1 1&lt;/td&gt;
+  &lt;td&gt;ARNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP4725" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="A0" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23673,6 +23798,12 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="GND106" library="supply1" deviceset="GND" device=""/>
 <part name="T10" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
 <part name="T11" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
+<part name="DNP87" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP88" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP89" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP90" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP91" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="U4" library="microbuilder" deviceset="DAC_MCP4725" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26553,6 +26684,11 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="D5" gate="1" x="66.04" y="124.46"/>
 <instance part="DNP85" gate="G$1" x="43.18" y="144.78" smashed="yes"/>
 <instance part="DNP86" gate="G$1" x="152.4" y="144.78" smashed="yes"/>
+<instance part="DNP87" gate="G$1" x="68.58" y="96.52" smashed="yes" rot="R180"/>
+<instance part="DNP88" gate="G$1" x="177.8" y="96.52" smashed="yes" rot="R180"/>
+<instance part="DNP89" gate="G$1" x="177.8" y="177.8" smashed="yes" rot="R180"/>
+<instance part="DNP90" gate="G$1" x="68.58" y="177.8" smashed="yes" rot="R180"/>
+<instance part="DNP91" gate="G$1" x="198.12" y="134.62" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -27081,6 +27217,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="GND84" gate="1" x="177.8" y="71.12" smashed="yes">
 <attribute name="VALUE" x="175.26" y="68.58" size="1.778" layer="96"/>
 </instance>
+<instance part="U4" gate="G$1" x="33.02" y="139.7"/>
 </instances>
 <busses>
 </busses>
