@@ -25916,6 +25916,8 @@ TS-003</description>
 <part name="C81" library="rcl" deviceset="C-EU" device="C0805" value="4.7u"/>
 <part name="GND158" library="supply1" deviceset="GND" device=""/>
 <part name="C111" library="rcl" deviceset="CPOL-EU" device="CT7343" value="47u, 20V"/>
+<part name="L7" library="meng" deviceset="INDUCTOR" device="0603" value="25n"/>
+<part name="L8" library="meng" deviceset="INDUCTOR" device="0603" value="25n"/>
 </parts>
 <sheets>
 <sheet>
@@ -30637,7 +30639,6 @@ See pg. 7 of FTDI AN_146</text>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">POSITIVE DC/DC SMPS</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">2.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
-<text x="121.92" y="137.16" size="1.778" layer="98">25nH</text>
 <text x="182.88" y="127" size="1.778" layer="98">Select filter order</text>
 <text x="172.72" y="177.8" size="1.778" layer="98">Bypass 2nd stage filter</text>
 <text x="124.46" y="170.18" size="1.778" layer="98">47u, 20V = Panasonic EEF-CX1D470R</text>
@@ -30738,6 +30739,10 @@ See pg. 7 of FTDI AN_146</text>
 </instance>
 <instance part="GND127" gate="1" x="66.04" y="154.94"/>
 <instance part="C81" gate="G$1" x="66.04" y="165.1"/>
+<instance part="L7" gate="G$1" x="127" y="134.62" smashed="yes">
+<attribute name="NAME" x="116.84" y="137.16" size="1.778" layer="95"/>
+<attribute name="VALUE" x="127" y="137.16" size="1.778" layer="97"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -30769,21 +30774,16 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="129.54" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="127" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
 <junction x="134.62" y="119.38"/>
-<wire x1="109.22" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="134.62" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="134.62" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="127" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
 <junction x="134.62" y="127"/>
-<junction x="134.62" y="134.62"/>
-<wire x1="118.11" y1="135.89" x2="119.38" y2="134.62" width="0.1524" layer="91" curve="90"/>
-<wire x1="118.11" y1="135.89" x2="119.38" y2="137.16" width="0.1524" layer="91" curve="-90"/>
-<wire x1="120.65" y1="135.89" x2="119.38" y2="137.16" width="0.1524" layer="91" curve="90"/>
-<wire x1="120.65" y1="135.89" x2="119.38" y2="134.62" width="0.1524" layer="91" curve="-90"/>
-<pinref part="IC18" gate="G$1" pin="PGND"/>
 <pinref part="R42" gate="G$1" pin="2"/>
 <pinref part="R43" gate="G$1" pin="2"/>
 <pinref part="C68" gate="G$1" pin="1"/>
 <pinref part="GND125" gate="1" pin="GND"/>
+<pinref part="L7" gate="G$1" pin="P$2"/>
+<wire x1="134.62" y1="134.62" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="134.62" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<junction x="134.62" y="134.62"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="127" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
@@ -30867,7 +30867,7 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="109.22" y1="127" x2="119.38" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="BOOST_SW_NODE" class="0">
 <segment>
 <wire x1="109.22" y1="142.24" x2="111.76" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
@@ -31021,6 +31021,13 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="66.04" y="170.18"/>
 </segment>
 </net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="IC18" gate="G$1" pin="PGND"/>
+<pinref part="L7" gate="G$1" pin="P$1"/>
+<wire x1="109.22" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -31028,7 +31035,6 @@ See pg. 7 of FTDI AN_146</text>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">NEGATIVE DC/DC SMPS</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">2.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
-<text x="147.32" y="129.54" size="1.778" layer="98">25nH</text>
 <text x="124.46" y="96.52" size="1.778" layer="98">-2.5V Nom.</text>
 <text x="167.64" y="167.64" size="1.778" layer="98">Coupling Cap Possible Alternate PN: RNU1C101MDS1JX</text>
 <text x="167.64" y="170.18" size="1.778" layer="98">Coupling Cap PN: EEF-CX1C680R</text>
@@ -31109,6 +31115,10 @@ See pg. 7 of FTDI AN_146</text>
 </instance>
 <instance part="C45" gate="G$1" x="127" y="152.4"/>
 <instance part="GND69" gate="1" x="127" y="142.24"/>
+<instance part="L8" gate="G$1" x="152.4" y="127" smashed="yes">
+<attribute name="NAME" x="142.24" y="129.54" size="1.778" layer="95"/>
+<attribute name="VALUE" x="152.4" y="129.54" size="1.778" layer="97"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -31140,21 +31150,16 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="154.94" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="119.38" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <junction x="160.02" y="111.76"/>
-<wire x1="134.62" y1="127" x2="144.78" y2="127" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="127" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="119.38" x2="160.02" y2="127" width="0.1524" layer="91"/>
 <junction x="160.02" y="119.38"/>
-<junction x="160.02" y="127"/>
-<wire x1="143.51" y1="128.27" x2="144.78" y2="127" width="0.1524" layer="91" curve="90"/>
-<wire x1="143.51" y1="128.27" x2="144.78" y2="129.54" width="0.1524" layer="91" curve="-90"/>
-<wire x1="146.05" y1="128.27" x2="144.78" y2="129.54" width="0.1524" layer="91" curve="90"/>
-<wire x1="146.05" y1="128.27" x2="144.78" y2="127" width="0.1524" layer="91" curve="-90"/>
-<pinref part="IC19" gate="G$1" pin="PGND"/>
 <pinref part="GND53" gate="1" pin="GND"/>
 <pinref part="C43" gate="G$1" pin="2"/>
 <pinref part="R58" gate="G$1" pin="2"/>
 <pinref part="R59" gate="G$1" pin="2"/>
+<pinref part="L8" gate="G$1" pin="P$2"/>
+<wire x1="160.02" y1="127" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<junction x="160.02" y="127"/>
 </segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="C"/>
@@ -31356,6 +31361,13 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="C45" gate="G$1" pin="1"/>
 <wire x1="127" y1="154.94" x2="127" y2="157.48" width="0.1524" layer="91"/>
 <junction x="127" y="157.48"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="L8" gate="G$1" pin="P$1"/>
+<pinref part="IC19" gate="G$1" pin="PGND"/>
+<wire x1="144.78" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
