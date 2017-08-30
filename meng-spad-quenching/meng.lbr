@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1688,6 +1688,18 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="KEYSTONE-7774">
+<pad name="4" x="2.8194" y="2.54" drill="1.7018" diameter="3.175"/>
+<pad name="3" x="8.255" y="2.54" drill="1.7018" diameter="3.175"/>
+<pad name="2" x="8.255" y="-2.54" drill="1.7018" diameter="3.175"/>
+<pad name="1" x="2.8194" y="-2.54" drill="1.7018" diameter="3.175"/>
+<wire x1="0" y1="3.175" x2="8.89" y2="3.175" width="0.127" layer="21"/>
+<wire x1="8.89" y1="3.175" x2="8.89" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-3.175" x2="0" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.175" x2="0" y2="3.175" width="0.127" layer="21"/>
+<text x="0" y="5.715" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="0" y="4.7625" size="0.8128" layer="26" font="vector" ratio="16">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -2538,6 +2550,18 @@ MAX3223-MAX3243.pdf</description>
 <pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="TAB" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="-2.54" y="-10.16" length="middle" rot="R90"/>
+</symbol>
+<symbol name="SCREW-TERMINAL-1PIN">
+<pin name="1" x="-5.08" y="0" visible="off" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="1.905" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0.9525" x2="3.4925" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.9525" x2="3.4925" y2="0.9525" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3723,6 +3747,23 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KEYSTONE-7774" prefix="X">
+<gates>
+<gate name="G$1" symbol="SCREW-TERMINAL-1PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KEYSTONE-7774">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2 3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="KEYSTONE-7774" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

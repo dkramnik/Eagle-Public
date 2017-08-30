@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="3" fill="1" visible="yes" active="no"/>
@@ -745,6 +745,18 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="KEYSTONE-7774">
+<pad name="4" x="2.8194" y="2.54" drill="1.7018" diameter="3.175"/>
+<pad name="3" x="8.255" y="2.54" drill="1.7018" diameter="3.175"/>
+<pad name="2" x="8.255" y="-2.54" drill="1.7018" diameter="3.175"/>
+<pad name="1" x="2.8194" y="-2.54" drill="1.7018" diameter="3.175"/>
+<wire x1="0" y1="3.175" x2="8.89" y2="3.175" width="0.127" layer="21"/>
+<wire x1="8.89" y1="3.175" x2="8.89" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-3.175" x2="0" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.175" x2="0" y2="3.175" width="0.127" layer="21"/>
+<text x="0" y="5.715" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="0" y="4.7625" size="0.8128" layer="26" font="vector" ratio="16">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -1401,6 +1413,18 @@ MAX3223-MAX3243.pdf</description>
 <pin name="TAB" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="-2.54" y="-10.16" length="middle" rot="R90"/>
 </symbol>
+<symbol name="SCREW-TERMINAL-1PIN">
+<pin name="1" x="-5.08" y="0" visible="off" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="1.905" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0.9525" x2="3.4925" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.9525" x2="3.4925" y2="0.9525" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADCMP582" prefix="IC">
@@ -2002,6 +2026,23 @@ http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KEYSTONE-7774" prefix="X">
+<gates>
+<gate name="G$1" symbol="SCREW-TERMINAL-1PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KEYSTONE-7774">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2 3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="KEYSTONE-7774" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -25624,8 +25665,8 @@ TS-003</description>
 <part name="GND112" library="supply1" deviceset="GND" device=""/>
 <part name="GND114" library="supply1" deviceset="GND" device=""/>
 <part name="C90" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="R36" library="resistor" deviceset="R-EU_" device="R0603" value="22R"/>
-<part name="R73" library="resistor" deviceset="R-EU_" device="R0603" value="22R"/>
+<part name="R36" library="resistor" deviceset="R-EU_" device="R0402" value="22R"/>
+<part name="R73" library="resistor" deviceset="R-EU_" device="R0402" value="22R"/>
 <part name="C91" library="rcl" deviceset="C-EU" device="C0402" value="47p"/>
 <part name="C92" library="rcl" deviceset="C-EU" device="C0402" value="47p"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
@@ -25918,6 +25959,9 @@ TS-003</description>
 <part name="C111" library="rcl" deviceset="CPOL-EU" device="CT7343" value="47u, 20V"/>
 <part name="L7" library="meng" deviceset="INDUCTOR" device="0603" value="25n"/>
 <part name="L8" library="meng" deviceset="INDUCTOR" device="0603" value="25n"/>
+<part name="X3" library="meng" deviceset="KEYSTONE-7774" device="" value="KEYSTONE-7774"/>
+<part name="X4" library="meng" deviceset="KEYSTONE-7774" device="" value="KEYSTONE-7774"/>
+<part name="GND159" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25992,6 +26036,17 @@ TS-003</description>
 <instance part="GND37" gate="1" x="165.1" y="7.62" smashed="yes">
 <attribute name="VALUE" x="162.56" y="5.08" size="1.778" layer="96"/>
 </instance>
+<instance part="X3" gate="G$1" x="195.58" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="187.96" y="63.5" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="187.96" y="60.96" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X4" gate="G$1" x="195.58" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="187.96" y="53.34" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="187.96" y="50.8" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND159" gate="1" x="203.2" y="45.72" smashed="yes">
+<attribute name="VALUE" x="200.66" y="43.18" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26014,6 +26069,16 @@ TS-003</description>
 <pinref part="H1" gate="G$1" pin="MOUNT"/>
 <wire x1="165.1" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
 <junction x="165.1" y="27.94"/>
+</segment>
+<segment>
+<pinref part="X4" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="50.8" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="GND159" gate="1" pin="GND"/>
+<wire x1="203.2" y1="50.8" x2="203.2" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="50.8" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
+<junction x="203.2" y="50.8"/>
 </segment>
 </net>
 </nets>
