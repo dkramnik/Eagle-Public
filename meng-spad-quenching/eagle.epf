@@ -375,7 +375,7 @@ UsedLibrary="meng.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1912 -8 2511 391"
+Loc="-8 -8 591 391"
 State=1
 Number=0
 
