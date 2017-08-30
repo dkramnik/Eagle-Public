@@ -25687,10 +25687,10 @@ TS-003</description>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0603" value="2k2"/>
 <part name="DNP58" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R0603" value="47R"/>
-<part name="C25" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C29" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C87" library="rcl" deviceset="C-EU" device="C0402" value="4.7u"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C87" library="rcl" deviceset="C-EU" device="C0603" value="4.7u"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
@@ -25705,7 +25705,7 @@ TS-003</description>
 <part name="DNP70" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP79" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP93" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C88" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C88" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
 <part name="DNP94" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP95" library="meng" deviceset="ARROW_1DIR" device=""/>
