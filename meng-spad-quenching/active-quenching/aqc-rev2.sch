@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="3" fill="1" visible="yes" active="no"/>
@@ -25658,7 +25658,7 @@ TS-003</description>
 <part name="GND139" library="supply1" deviceset="GND" device=""/>
 <part name="DNP109" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP110" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="PROG" library="SparkFun-Connectors" deviceset="JST_VERTICAL" device=""/>
+<part name="PROG" library="SparkFun-Connectors" deviceset="JST_VERTICAL" device="" value="JST_VERT"/>
 <part name="IC20" library="meng" deviceset="STM32F405RG" device="" value="STM32F411RE"/>
 <part name="IC27" library="meng" deviceset="USBLC6" device="" value="USBLC6-2SC6Y"/>
 <part name="GND112" library="supply1" deviceset="GND" device=""/>
@@ -25680,8 +25680,8 @@ TS-003</description>
 <part name="IC28" library="meng" deviceset="MAX572X" device=""/>
 <part name="GND74" library="supply1" deviceset="GND" device=""/>
 <part name="GND113" library="supply1" deviceset="GND" device=""/>
-<part name="C93" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C98" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C93" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C98" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND118" library="supply1" deviceset="GND" device=""/>
 <part name="GND119" library="supply1" deviceset="GND" device=""/>
 <part name="R82" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
@@ -25762,7 +25762,7 @@ TS-003</description>
 <part name="C89" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="GND75" library="supply1" deviceset="GND" device=""/>
 <part name="DNP106" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C94" library="rcl" deviceset="C-EU" device="C0805" value="4u7"/>
+<part name="C94" library="rcl" deviceset="C-EU" device="C0603" value="4u7"/>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="C95" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -25942,14 +25942,12 @@ TS-003</description>
 <part name="C106" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C107" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="GND155" library="supply1" deviceset="GND" device=""/>
-<part name="C108" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="GND156" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="microbuilder" deviceset="MOSFET-P" device="WIDE" value="IRLML6402TRPBF"/>
 <part name="FRAME13" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="C109" library="rcl" deviceset="C-EU" device="C0805" value="4u7"/>
+<part name="C109" library="rcl" deviceset="C-EU" device="C0603" value="4u7"/>
 <part name="GND157" library="supply1" deviceset="GND" device=""/>
-<part name="R68" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R69" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="R68" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
+<part name="R69" library="resistor" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="C110" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="DNP9" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND127" library="supply1" deviceset="GND" device=""/>
@@ -26103,9 +26101,9 @@ See pg. 7 of FTDI AN_146</text>
 <instance part="FRAME13" gate="G$2" x="172.72" y="0"/>
 <instance part="X8" gate="G$1" x="68.58" y="91.44" rot="MR0"/>
 <instance part="GND107" gate="1" x="71.12" y="73.66"/>
-<instance part="L1" gate="G$1" x="93.98" y="144.78" smashed="yes">
-<attribute name="NAME" x="86.36" y="149.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="86.36" y="147.32" size="1.778" layer="97"/>
+<instance part="L1" gate="G$1" x="96.52" y="144.78" smashed="yes">
+<attribute name="NAME" x="88.9" y="149.86" size="1.778" layer="95"/>
+<attribute name="VALUE" x="88.9" y="147.32" size="1.778" layer="97"/>
 </instance>
 <instance part="L2" gate="G$1" x="83.82" y="83.82" smashed="yes">
 <attribute name="NAME" x="76.2" y="88.9" size="1.778" layer="95"/>
@@ -26154,11 +26152,6 @@ See pg. 7 of FTDI AN_146</text>
 <attribute name="VALUE" x="85.344" y="135.001" size="1.778" layer="96"/>
 </instance>
 <instance part="GND155" gate="1" x="83.82" y="127"/>
-<instance part="C108" gate="G$1" x="99.06" y="139.7" smashed="yes">
-<attribute name="NAME" x="100.584" y="140.081" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.584" y="135.001" size="1.778" layer="96"/>
-</instance>
-<instance part="GND156" gate="1" x="99.06" y="127"/>
 <instance part="DNP16" gate="G$1" x="182.88" y="144.78" smashed="yes"/>
 <instance part="IC8" gate="G$1" x="157.48" y="142.24"/>
 <instance part="GND148" gate="1" x="154.94" y="127" smashed="yes">
@@ -26273,11 +26266,6 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="83.82" y1="129.54" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND156" gate="1" pin="GND"/>
-<pinref part="C108" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="129.54" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND148" gate="1" pin="GND"/>
 <pinref part="IC8" gate="G$1" pin="GND"/>
 <wire x1="154.94" y1="129.54" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
@@ -26344,7 +26332,7 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="73.66" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <label x="74.295" y="96.52" size="0.8128" layer="95"/>
 <pinref part="C107" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="144.78" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="142.24" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <junction x="83.82" y="144.78"/>
 </segment>
@@ -26362,11 +26350,7 @@ See pg. 7 of FTDI AN_146</text>
 <net name="USB_VDD" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="P$2"/>
-<wire x1="96.52" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
 <label x="129.54" y="147.32" size="1.778" layer="95" rot="R180"/>
-<pinref part="C108" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="142.24" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
-<junction x="99.06" y="144.78"/>
 <pinref part="IC8" gate="G$1" pin="IN"/>
 <wire x1="142.24" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C75" gate="G$1" pin="1"/>
