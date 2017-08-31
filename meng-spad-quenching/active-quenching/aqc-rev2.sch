@@ -25433,7 +25433,7 @@ TS-003</description>
 <part name="T6" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
 <part name="DNP39" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND56" library="supply1" deviceset="GND" device=""/>
 <part name="DNP40" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
@@ -25689,7 +25689,7 @@ TS-003</description>
 <part name="R85" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="R86" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="DNP112" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC4" library="meng" deviceset="TLV272" device="DGK"/>
@@ -27579,14 +27579,14 @@ See pg. 7 of FTDI AN_146</text>
 <label x="160.02" y="106.68" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="CASC_MIDPT" class="0">
 <segment>
 <pinref part="T7" gate="G$1" pin="C"/>
 <pinref part="T5" gate="G$1" pin="E"/>
 <wire x1="106.68" y1="127" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="CASC_BIAS_C" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="T7" gate="G$1" pin="E"/>
@@ -27598,7 +27598,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="106.68" y="99.06"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="CASC_BIAS_B" class="0">
 <segment>
 <pinref part="T6" gate="G$1" pin="B"/>
 <wire x1="86.36" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
@@ -27624,7 +27624,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="203.2" y="101.6"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="CASC_BIAS_E" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="T6" gate="G$1" pin="E"/>
@@ -27660,7 +27660,7 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="228.6" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="CASC_BIAS_VGND" class="0">
 <segment>
 <pinref part="R85" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="81.28" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
