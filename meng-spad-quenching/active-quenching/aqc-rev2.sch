@@ -25941,6 +25941,7 @@ TS-003</description>
 <part name="R70" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="R71" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="DNP11" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26197,6 +26198,10 @@ See pg. 7 of FTDI AN_146</text>
 <instance part="GND160" gate="1" x="165.1" y="71.12" smashed="yes">
 <attribute name="VALUE" x="162.56" y="68.58" size="1.778" layer="96"/>
 </instance>
+<instance part="TP4" gate="G$1" x="180.34" y="149.86" smashed="yes">
+<attribute name="NAME" x="179.07" y="151.13" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="181.61" y="148.59" size="1.778" layer="97"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26381,10 +26386,14 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="172.72" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
 <junction x="172.72" y="144.78"/>
 <pinref part="C77" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="144.78" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="139.7" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
 <junction x="177.8" y="144.78"/>
 <label x="187.96" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="180.34" y1="144.78" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
+<junction x="180.34" y="144.78"/>
 </segment>
 </net>
 <net name="USBD_TVS_N" class="1">
@@ -26500,25 +26509,21 @@ See pg. 7 of FTDI AN_146</text>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="172.72" y="0"/>
-<instance part="TP9" gate="G$1" x="195.58" y="228.6" smashed="yes">
-<attribute name="NAME" x="194.31" y="229.87" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="196.85" y="227.33" size="1.778" layer="97"/>
+<instance part="TP9" gate="G$1" x="162.56" y="119.38" smashed="yes">
+<attribute name="NAME" x="161.29" y="120.65" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="163.83" y="118.11" size="1.778" layer="97"/>
 </instance>
-<instance part="TP5" gate="G$1" x="205.74" y="228.6" smashed="yes">
-<attribute name="NAME" x="204.47" y="229.87" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="207.01" y="227.33" size="1.778" layer="97"/>
+<instance part="TP5" gate="G$1" x="147.32" y="119.38" smashed="yes">
+<attribute name="NAME" x="146.05" y="120.65" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="148.59" y="118.11" size="1.778" layer="97"/>
 </instance>
-<instance part="TP6" gate="G$1" x="215.9" y="228.6" smashed="yes">
-<attribute name="NAME" x="214.63" y="229.87" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="217.17" y="227.33" size="1.778" layer="97"/>
+<instance part="TP6" gate="G$1" x="259.08" y="177.8" smashed="yes">
+<attribute name="NAME" x="257.81" y="179.07" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="260.35" y="176.53" size="1.778" layer="97"/>
 </instance>
-<instance part="TP8" gate="G$1" x="185.42" y="228.6" smashed="yes">
-<attribute name="NAME" x="184.15" y="229.87" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="186.69" y="227.33" size="1.778" layer="97"/>
-</instance>
-<instance part="TP4" gate="G$1" x="160.02" y="228.6" smashed="yes">
-<attribute name="NAME" x="158.75" y="229.87" size="1.778" layer="95"/>
-<attribute name="TP_SIGNAL_NAME" x="161.29" y="227.33" size="1.778" layer="97"/>
+<instance part="TP8" gate="G$1" x="147.32" y="177.8" smashed="yes">
+<attribute name="NAME" x="146.05" y="179.07" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="148.59" y="176.53" size="1.778" layer="97"/>
 </instance>
 <instance part="IC24" gate="G$1" x="68.58" y="160.02" smashed="yes">
 <attribute name="NAME" x="68.58" y="180.34" size="1.778" layer="95"/>
@@ -26649,6 +26654,9 @@ See pg. 7 of FTDI AN_146</text>
 <attribute name="NAME" x="138.176" y="109.601" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="138.176" y="104.521" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="GND11" gate="1" x="162.56" y="86.36" smashed="yes">
+<attribute name="VALUE" x="160.02" y="83.82" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -26741,6 +26749,11 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="C105" gate="G$1" pin="2"/>
 <pinref part="C106" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="162.56" y1="88.9" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PP_N5V0_ANALOG" class="0">
 <segment>
@@ -26765,6 +26778,10 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="111.76" y1="111.76" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
 <junction x="111.76" y="114.3"/>
 <junction x="132.08" y="114.3"/>
+<wire x1="139.7" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
+<junction x="139.7" y="114.3"/>
 </segment>
 </net>
 <net name="LDO_P5V0_NR_SS_CH1" class="0">
@@ -26804,7 +26821,8 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="111.76" y1="172.72" x2="116.84" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="172.72" x2="132.08" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="172.72" x2="139.7" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="172.72" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="172.72" x2="175.26" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
@@ -26829,6 +26847,9 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="C74" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="170.18" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <junction x="157.48" y="172.72"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="147.32" y1="172.72" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<junction x="147.32" y="172.72"/>
 </segment>
 </net>
 <net name="PP_P5V0_ANALOG" class="0">
@@ -26854,6 +26875,10 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="223.52" y1="170.18" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
 <junction x="223.52" y="172.72"/>
 <junction x="243.84" y="172.72"/>
+<wire x1="251.46" y1="172.72" x2="259.08" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="259.08" y1="172.72" x2="259.08" y2="175.26" width="0.1524" layer="91"/>
+<junction x="251.46" y="172.72"/>
 </segment>
 </net>
 <net name="LDO_N10V0_FB_CH1" class="0">
