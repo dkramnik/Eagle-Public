@@ -25382,8 +25382,8 @@ TS-003</description>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="Q7" library="transistor-pnp" deviceset="MMBTH81*" device="SMD" technology="LT1" value="MMBTH81"/>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
-<part name="C50" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C51" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
+<part name="C50" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C51" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="GND95" library="supply1" deviceset="GND" device=""/>
 <part name="GND96" library="supply1" deviceset="GND" device=""/>
 <part name="DNP74" library="meng" deviceset="ARROW_1DIR" device=""/>
