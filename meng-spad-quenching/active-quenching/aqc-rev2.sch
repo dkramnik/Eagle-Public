@@ -25831,6 +25831,8 @@ TS-003</description>
 <part name="GND115" library="supply1" deviceset="GND" device=""/>
 <part name="DNP54" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP57" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="GND116" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29856,7 +29858,7 @@ See pg. 7 of FTDI AN_146</text>
 <instance part="GND31" gate="1" x="147.32" y="83.82" smashed="yes">
 <attribute name="VALUE" x="144.78" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="DNP56" gate="G$1" x="93.98" y="99.06" smashed="yes"/>
+<instance part="DNP56" gate="G$1" x="83.82" y="99.06" smashed="yes"/>
 <instance part="R21" gate="G$1" x="106.68" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="107.95" y="90.3986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="107.95" y="85.598" size="1.778" layer="96"/>
@@ -29901,6 +29903,13 @@ See pg. 7 of FTDI AN_146</text>
 <instance part="GND85" gate="1" x="236.22" y="86.36" smashed="yes">
 <attribute name="VALUE" x="233.68" y="83.82" size="1.778" layer="96"/>
 </instance>
+<instance part="C42" gate="G$1" x="88.9" y="93.98" smashed="yes">
+<attribute name="NAME" x="90.424" y="94.361" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.424" y="89.281" size="1.778" layer="96"/>
+</instance>
+<instance part="GND116" gate="1" x="88.9" y="83.82" smashed="yes">
+<attribute name="VALUE" x="86.36" y="81.28" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -29939,11 +29948,15 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
 <junction x="99.06" y="99.06"/>
-<wire x1="99.06" y1="99.06" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<label x="91.44" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="99.06" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<label x="78.74" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R33" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="106.68" y="99.06"/>
+<pinref part="C42" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="96.52" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
+<junction x="88.9" y="99.06"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -29998,6 +30011,11 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="GND85" gate="1" pin="GND"/>
 <pinref part="TP3" gate="G$1" pin="P$1"/>
 <wire x1="236.22" y1="88.9" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND116" gate="1" pin="GND"/>
+<pinref part="C42" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="86.36" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VREF_DIAMOND_IBIAS" class="0">
