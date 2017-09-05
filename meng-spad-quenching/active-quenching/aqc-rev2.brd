@@ -24760,6 +24760,41 @@ MAX3223-MAX3243.pdf</description>
 <vertex x="9.1" y="4.5"/>
 </polygon>
 </package>
+<package name="J502-ND-142-0711-871/876">
+<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.047&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
+Johnson Components&lt;br&gt;
+Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
+<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
+<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
+<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
+<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
+<smd name="1" x="2.5654" y="0" dx="5.08" dy="1.905" layer="1"/>
+<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
+<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
+<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
+<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
+<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -25910,49 +25945,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-</library>
-<library name="con-coax">
-<description>&lt;b&gt;Coax Connectors&lt;/b&gt;&lt;p&gt;
-Radiall  and M/A COM.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="J502-ND-142-0711-871/876">
-<description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.047&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
-Johnson Components&lt;br&gt;
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-<wire x1="0" y1="5.588" x2="0" y2="-5.588" width="0" layer="20"/>
-<wire x1="-1.55" y1="-4.65" x2="-1.55" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="-2" x2="-3.7" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="-2" x2="-4.45" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="-2.75" x2="-8.25" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-2.75" x2="-8.25" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="-1.9" x2="-9.425" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="-1.9" x2="-9.425" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-9.425" y1="1.9" x2="-8.25" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="1.9" x2="-8.25" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-8.25" y1="2.75" x2="-4.45" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-4.45" y1="2.75" x2="-3.7" y2="2" width="0.2032" layer="21"/>
-<wire x1="-3.7" y1="2" x2="-1.55" y2="2" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="2" x2="-1.55" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="-3.85" x2="-0.1" y2="3.85" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="4.65" x2="-0.1" y2="4.65" width="0.2032" layer="21"/>
-<wire x1="-0.1" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="21"/>
-<wire x1="-1.55" y1="4.65" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="-1.55" y2="-4.65" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-4.65" x2="4.65" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="-3.85" x2="-0.1" y2="-3.85" width="0.2032" layer="51"/>
-<wire x1="-0.1" y1="3.85" x2="4.65" y2="3.85" width="0.2032" layer="51"/>
-<wire x1="4.65" y1="3.85" x2="4.65" y2="4.65" width="0.2032" layer="51"/>
-<smd name="1" x="2.5654" y="0" dx="5.08" dy="1.905" layer="1"/>
-<smd name="G@1" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@2" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="1"/>
-<smd name="G@4" x="2.5654" y="-4.4196" dx="5.08" dy="2.286" layer="16"/>
-<smd name="G@3" x="2.5654" y="4.4196" dx="5.08" dy="2.286" layer="16"/>
-<text x="0.635" y="6.35" size="1.778" layer="25">&gt;NAME</text>
-<text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
 </packages>
 </library>
@@ -27755,14 +27747,14 @@ design rules under a new name.</description>
 <element name="R15" library="rcl" package="R0603" value="10k" x="29.845" y="28.8925" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.75" y="28.575" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="X1" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_SPAD" x="1.5875" y="37.465" smashed="yes">
+<element name="X1" library="meng" package="J502-ND-142-0711-871/876" value="CONN_SPAD" x="1.5875" y="37.465" smashed="yes">
 <attribute name="MF" value="JOHNSON COMPONENTS" x="32.0675" y="-10.795" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="142-0711-871" x="32.0675" y="-10.795" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="7.3025" y="42.2275" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="OC_FARNELL" value="unknown" x="32.0675" y="-10.795" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="01C1639" x="32.0675" y="-10.795" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X2" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_PHOTON_COUNTER" x="118.4275" y="37.465" smashed="yes" rot="R180">
+<element name="X2" library="meng" package="J502-ND-142-0711-871/876" value="CONN_PHOTON_COUNTER" x="118.4275" y="37.465" smashed="yes" rot="R180">
 <attribute name="MF" value="JOHNSON COMPONENTS" x="34.6075" y="47.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="142-0711-871" x="34.6075" y="47.625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="112.7125" y="33.9725" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -28005,7 +27997,7 @@ design rules under a new name.</description>
 <element name="R22" library="rcl" package="R0603" value="49R9" x="135.89" y="15.875" smashed="yes" rot="R180">
 <attribute name="NAME" x="134.62" y="17.4625" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="X6" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_FORCE_QUENCH" x="118.4275" y="15.875" smashed="yes" rot="R180">
+<element name="X6" library="meng" package="J502-ND-142-0711-871/876" value="CONN_FORCE_QUENCH" x="118.4275" y="15.875" smashed="yes" rot="R180">
 <attribute name="MF" value="JOHNSON COMPONENTS" x="118.4275" y="15.875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="142-0711-871" x="118.4275" y="15.875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="112.7125" y="12.3825" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -28069,7 +28061,7 @@ design rules under a new name.</description>
 <element name="R46" library="rcl" package="R0603" value="0R" x="17.78" y="19.3675" smashed="yes">
 <attribute name="NAME" x="19.685" y="21.2725" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="X7" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_PULLDN_SENSE" x="1.5875" y="15.875" smashed="yes">
+<element name="X7" library="meng" package="J502-ND-142-0711-871/876" value="CONN_PULLDN_SENSE" x="1.5875" y="15.875" smashed="yes">
 <attribute name="MF" value="JOHNSON COMPONENTS" x="1.5875" y="15.875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="142-0711-871" x="1.5875" y="15.875" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="7.3025" y="20.6375" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -28170,10 +28162,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="100.33" y="65.7225" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="IC24" library="Kramnik's Library" package="MSOP-8_POWER_PAD" value="TPS7A4901" x="56.8325" y="8.255" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.61" y="12.525" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="62.3725" y="6.175" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="IC25" library="Kramnik's Library" package="MSOP-8_POWER_PAD" value="TPS7A4901" x="43.18" y="8.255" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.9575" y="12.525" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="48.72" y="6.175" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="IC22" library="Kramnik's Library" package="MSOP-8_POWER_PAD" value="TPS7A3001" x="71.4375" y="31.75" smashed="yes">
 <attribute name="NAME" x="70.945" y="37.29" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -28255,10 +28247,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.227" y="66.8655" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R85" library="rcl" package="R0603" value="100k" x="-98.425" y="-33.655" smashed="yes">
-<attribute name="NAME" x="-98.7425" y="-32.7025" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="-96.52" y="-33.9725" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R86" library="rcl" package="R0603" value="100k" x="-98.425" y="-38.4175" smashed="yes">
-<attribute name="NAME" x="-99.06" y="-37.465" size="0.8128" layer="25" font="vector" ratio="16"/>
+<element name="R86" library="rcl" package="R0603" value="100k" x="-98.425" y="-35.8775" smashed="yes">
+<attribute name="NAME" x="-96.52" y="-36.195" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C17" library="rcl" package="C0603" value="100n" x="36.83" y="64.4525" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.7825" y="66.9925" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -28534,7 +28526,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="56.1975" y="11.43" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C70" library="rcl" package="C0805" value="10u" x="53.0225" y="10.795" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.07" y="12.065" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="51.435" y="9.8425" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R62" library="resistor" package="R0603" value="11k8" x="53.975" y="4.7625" smashed="yes">
 <attribute name="NAME" x="52.3875" y="3.81" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -28558,7 +28550,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="42.545" y="11.43" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C73" library="rcl" package="C0805" value="10u" x="39.37" y="10.795" smashed="yes" rot="R180">
-<attribute name="NAME" x="38.4175" y="12.065" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="37.7825" y="9.8425" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="C74" library="rcl" package="C0603" value="100n" x="46.6725" y="10.4775" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.72" y="11.43" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -28647,7 +28639,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="12.3825" y="54.3075" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="11.3275" y="44.1325" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="X5" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_SMU" x="1.5875" y="59.055" smashed="yes">
+<element name="X5" library="meng" package="J502-ND-142-0711-871/876" value="CONN_SMU" x="1.5875" y="59.055" smashed="yes">
 <attribute name="MF" value="JOHNSON COMPONENTS" x="1.5875" y="59.055" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="142-0711-871" x="1.5875" y="59.055" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="7.3025" y="63.8175" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -30296,7 +30288,7 @@ design rules under a new name.</description>
 <contactref element="IC28" pad="2"/>
 <contactref element="R86" pad="2"/>
 <contactref element="TP10" pad="P$1"/>
-<wire x1="19.3675" y1="69.85" x2="-97.575" y2="-38.4175" width="0" layer="19" extent="1-1"/>
+<wire x1="19.3675" y1="69.85" x2="-97.575" y2="-35.8775" width="0" layer="19" extent="1-1"/>
 <wire x1="49.16" y1="57.7247" x2="19.3675" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF_ONE_SHOT">
@@ -31275,7 +31267,7 @@ design rules under a new name.</description>
 <contactref element="R85" pad="2"/>
 <contactref element="IC2" pad="4"/>
 <contactref element="R86" pad="1"/>
-<wire x1="-97.575" y1="-33.655" x2="-99.275" y2="-38.4175" width="0" layer="19" extent="1-1"/>
+<wire x1="-97.575" y1="-33.655" x2="-99.275" y2="-35.8775" width="0" layer="19" extent="1-1"/>
 <wire x1="40.6375" y1="65.7585" x2="-97.575" y2="-33.655" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF_SLEW_UP">
@@ -31872,10 +31864,10 @@ design rules under a new name.</description>
 <via x="77.1525" y="64.135" extent="1-16" drill="0.35" alwaysstop="yes"/>
 <wire x1="77.1525" y1="64.135" x2="77.1525" y2="66.04" width="0.2032" layer="15"/>
 <wire x1="77.1525" y1="66.04" x2="68.8975" y2="74.295" width="0.2032" layer="15"/>
-<wire x1="9.2075" y1="74.295" x2="8.89" y2="73.9775" width="0.2032" layer="15"/>
-<wire x1="8.89" y1="73.9775" x2="8.89" y2="61.595" width="0.2032" layer="15"/>
-<wire x1="8.89" y1="61.595" x2="9.8425" y2="60.6425" width="0.2032" layer="15"/>
-<wire x1="68.8975" y1="74.295" x2="9.2075" y2="74.295" width="0.2032" layer="15"/>
+<wire x1="8.89" y1="74.295" x2="8.5725" y2="73.9775" width="0.2032" layer="15"/>
+<wire x1="8.5725" y1="73.9775" x2="8.5725" y2="61.9125" width="0.2032" layer="15"/>
+<wire x1="8.5725" y1="61.9125" x2="9.8425" y2="60.6425" width="0.2032" layer="15"/>
+<wire x1="68.8975" y1="74.295" x2="8.89" y2="74.295" width="0.2032" layer="15"/>
 <via x="9.8425" y="60.6425" extent="1-16" drill="0.35" alwaysstop="yes"/>
 <wire x1="9.8425" y1="60.6425" x2="11.3275" y2="60.6425" width="0.2032" layer="1"/>
 <wire x1="11.3275" y1="60.6425" x2="11.43" y2="60.745" width="0.2032" layer="1"/>
