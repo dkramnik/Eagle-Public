@@ -25668,7 +25668,7 @@ TS-003</description>
 <part name="DNP139" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND135" library="supply1" deviceset="GND" device=""/>
 <part name="DNP141" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C82" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C82" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND140" library="supply1" deviceset="GND" device=""/>
 <part name="IC13" library="meng" deviceset="TLV271" device="DBV"/>
 <part name="IC15" library="meng" deviceset="ALD1106" device="" value="ALD1106"/>
