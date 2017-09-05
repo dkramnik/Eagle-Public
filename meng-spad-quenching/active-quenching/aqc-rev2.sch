@@ -25833,6 +25833,8 @@ TS-003</description>
 <part name="DNP57" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C42" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND116" library="supply1" deviceset="GND" device=""/>
+<part name="DNP61" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP69" library="meng" deviceset="ARROW_1DIR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26370,7 +26372,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="177.8" y="172.72"/>
 </segment>
 </net>
-<net name="!MCU_SMPS_PWREN" class="0">
+<net name="!MCU_SMPS_PRECHG" class="0">
 <segment>
 <pinref part="R69" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="157.48" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
@@ -30413,6 +30415,8 @@ See pg. 7 of FTDI AN_146</text>
 </instance>
 <instance part="DNP54" gate="G$1" x="177.8" y="63.5"/>
 <instance part="DNP57" gate="G$1" x="177.8" y="60.96"/>
+<instance part="DNP61" gate="G$1" x="109.22" y="101.6" rot="R180"/>
+<instance part="DNP69" gate="G$1" x="109.22" y="104.14" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -30825,7 +30829,7 @@ See pg. 7 of FTDI AN_146</text>
 <label x="182.88" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="!MCU_SMPS_PWREN" class="0">
+<net name="!MCU_SMPS_PRECHG" class="0">
 <segment>
 <pinref part="IC20" gate="G$1" pin="PA3/UART2_RX"/>
 <wire x1="114.3" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
@@ -30844,6 +30848,20 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="IC20" gate="G$1" pin="PB13/I2S2_CK"/>
 <wire x1="172.72" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="182.88" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!MCU_SHDN_BOOST" class="0">
+<segment>
+<pinref part="IC20" gate="G$1" pin="PA2/UART2_TX"/>
+<wire x1="114.3" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<label x="104.14" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="!MCU_SHDN_CUK" class="0">
+<segment>
+<pinref part="IC20" gate="G$1" pin="PA1"/>
+<wire x1="114.3" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<label x="104.14" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -31130,7 +31148,7 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="TP20" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="!SHDN_BOOST" class="0">
+<net name="!MCU_SHDN_BOOST" class="0">
 <segment>
 <pinref part="IC18" gate="G$1" pin="!SHDN"/>
 <wire x1="66.04" y1="142.24" x2="58.42" y2="142.24" width="0.1524" layer="91"/>
@@ -31533,7 +31551,7 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="TP21" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="!SHDN_CUK" class="0">
+<net name="!MCU_SHDN_CUK" class="0">
 <segment>
 <pinref part="IC19" gate="G$1" pin="!SHDN"/>
 <wire x1="91.44" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
