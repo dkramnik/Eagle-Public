@@ -25564,7 +25564,7 @@ TS-003</description>
 <part name="DNP103" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP104" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP105" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="S2" library="Kramnik's Library" deviceset="TAC_SWITCH" device="PTH" value="RESET"/>
+<part name="S2" library="Kramnik's Library" deviceset="TAC_SWITCH" device="PTH" value="MCU_RESET"/>
 <part name="GND73" library="supply1" deviceset="GND" device=""/>
 <part name="C89" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="GND75" library="supply1" deviceset="GND" device=""/>
