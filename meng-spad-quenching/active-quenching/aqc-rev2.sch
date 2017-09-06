@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="3" fill="1" visible="yes" active="no"/>
@@ -25216,9 +25216,9 @@ TS-003</description>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2"/>
 <part name="H4" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="TP9" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP5" library="testpad" deviceset="TP" device="TP20R"/>
-<part name="TP6" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP9" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
+<part name="TP5" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
 <part name="IC3" library="meng" deviceset="NC7SV74K8X" device="" value="NC7SV74K8X"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -25307,7 +25307,7 @@ TS-003</description>
 <part name="R30" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="R34" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="DNP17" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="TP8" library="testpad" deviceset="TP" device="TP20R"/>
+<part name="TP8" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
 <part name="DNP42" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP48" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP51" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -25327,7 +25327,7 @@ TS-003</description>
 <part name="GND78" library="supply1" deviceset="GND" device=""/>
 <part name="DNP1" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP49" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="TP4" library="testpad" deviceset="TP" device="TP20R">
+<part name="TP4" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R">
 <attribute name="TP_SIGNAL_NAME" value=""/>
 </part>
 <part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
@@ -25392,7 +25392,7 @@ TS-003</description>
 <part name="DNP77" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC14" library="74xx-little-de" deviceset="74*1G04" device="DBV" technology="AHC"/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
-<part name="C55" library="rcl" deviceset="C-EU" device="C0402" value="10p"/>
+<part name="C55" library="rcl" deviceset="C-EU" device="C0603" value="10p"/>
 <part name="DNP78" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="T9" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
 <part name="R49" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
@@ -29144,6 +29144,8 @@ See pg. 7 of FTDI AN_146</text>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">SLEW AND DELAY GENERATORS</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">2.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="93.98" y="124.46" size="1.778" layer="98">Film</text>
+<text x="210.82" y="124.46" size="1.778" layer="98">Film</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
