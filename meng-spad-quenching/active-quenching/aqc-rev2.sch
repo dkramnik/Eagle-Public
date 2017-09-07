@@ -27314,7 +27314,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="170.18" y="124.46"/>
 </segment>
 </net>
-<net name="PP_P15V0" class="0">
+<net name="PP_P15V0_ANALOG" class="0">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="137.16" y1="137.16" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
@@ -27875,7 +27875,7 @@ See pg. 7 of FTDI AN_146</text>
 <label x="152.4" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PP_P15V0" class="0">
+<net name="PP_P15V0_ANALOG" class="0">
 <segment>
 <pinref part="IC16" gate="_M1" pin="S"/>
 <wire x1="121.92" y1="187.96" x2="121.92" y2="193.04" width="0.1524" layer="91"/>
