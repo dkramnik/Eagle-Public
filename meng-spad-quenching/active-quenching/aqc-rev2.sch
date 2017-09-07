@@ -27231,7 +27231,7 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="IC2" gate="G$1" pin="V-"/>
 </segment>
 </net>
-<net name="PP_P5V0" class="0">
+<net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="B"/>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -27743,7 +27743,7 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="172.72" y1="60.96" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PP_P5V0" class="0">
+<net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <wire x1="91.44" y1="104.14" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C82" gate="G$1" pin="1"/>
@@ -28229,7 +28229,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="91.44" y="91.44"/>
 </segment>
 </net>
-<net name="PP_P5V0" class="0">
+<net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCCI"/>
 <wire x1="96.52" y1="154.94" x2="96.52" y2="175.26" width="0.1524" layer="91"/>
@@ -29500,7 +29500,7 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="IC4" gate="_A" pin="OUT"/>
 </segment>
 </net>
-<net name="PP_P5V0" class="0">
+<net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="200.66" x2="76.2" y2="203.2" width="0.1524" layer="91"/>
@@ -30087,7 +30087,7 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="63.5" y="185.42"/>
 </segment>
 </net>
-<net name="PP_P5V0" class="0">
+<net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="185.42" x2="38.1" y2="185.42" width="0.1524" layer="91"/>
