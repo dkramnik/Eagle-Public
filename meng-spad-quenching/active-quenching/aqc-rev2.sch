@@ -27236,26 +27236,6 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="180.34" y1="172.72" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PP_N5V0" class="0">
-<segment>
-<wire x1="93.98" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
-<label x="35.56" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="86.36" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="83.82" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
-<junction x="66.04" y="66.04"/>
-<pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="63.5" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<junction x="68.58" y="66.04"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="66.04" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="68.58" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
-<junction x="86.36" y="66.04"/>
-<pinref part="IC2" gate="G$1" pin="V-"/>
-</segment>
-</net>
 <net name="PP_P5V0_ANALOG" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="B"/>
@@ -27683,6 +27663,26 @@ See pg. 7 of FTDI AN_146</text>
 <wire x1="157.48" y1="66.04" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R77" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="PP_N5V0_ANALOG" class="0">
+<segment>
+<wire x1="93.98" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="35.56" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="83.82" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<junction x="66.04" y="66.04"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="63.5" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<junction x="68.58" y="66.04"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="66.04" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="68.58" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<junction x="86.36" y="66.04"/>
+<pinref part="IC2" gate="G$1" pin="V-"/>
 </segment>
 </net>
 </nets>
