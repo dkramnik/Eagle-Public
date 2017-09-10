@@ -25264,7 +25264,6 @@ TS-003</description>
 </part>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
-<part name="DNP68" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
@@ -25422,7 +25421,6 @@ TS-003</description>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
-<part name="DNP112" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC4" library="meng" deviceset="TLV272" device="DGK"/>
 <part name="DNP113" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC12" library="meng" deviceset="TLV272" device="DGK"/>
@@ -28640,7 +28638,6 @@ See pg. 7 of FTDI AN_146</text>
 <attribute name="NAME" x="80.01" y="125.9586" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="80.01" y="121.158" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="DNP68" gate="G$1" x="198.12" y="132.08" smashed="yes" rot="R180"/>
 <instance part="TP1" gate="G$1" x="119.38" y="152.4" smashed="yes">
 <attribute name="NAME" x="118.11" y="146.05" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="120.65" y="151.13" size="1.778" layer="97"/>
@@ -28661,7 +28658,6 @@ See pg. 7 of FTDI AN_146</text>
 <instance part="GND87" gate="1" x="99.06" y="10.16" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="101.6" y="7.62" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="DNP112" gate="G$1" x="238.76" y="132.08" smashed="yes"/>
 <instance part="D1" gate="1" x="76.2" y="134.62"/>
 <instance part="TP7" gate="G$1" x="119.38" y="157.48" smashed="yes">
 <attribute name="NAME" x="118.11" y="158.75" size="1.778" layer="95"/>
@@ -28896,6 +28892,9 @@ See pg. 7 of FTDI AN_146</text>
 <junction x="165.1" y="127"/>
 <pinref part="TP7" gate="G$1" pin="TP"/>
 <junction x="119.38" y="154.94"/>
+<pinref part="IC7" gate="G$1" pin="IN"/>
+<wire x1="165.1" y1="154.94" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
+<junction x="165.1" y="154.94"/>
 </segment>
 </net>
 <net name="VREF_ONE_SHOT" class="0">
@@ -29038,28 +29037,6 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="DELAY_IN" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="OUT1"/>
-<wire x1="220.98" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="OUT2"/>
-<wire x1="220.98" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="83.82" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="91.44" x2="233.68" y2="91.44" width="0.1524" layer="91"/>
-<junction x="223.52" y="91.44"/>
-<wire x1="233.68" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="91.44" x2="233.68" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="132.08" x2="175.26" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="132.08" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="IC7" gate="G$1" pin="IN"/>
-<wire x1="175.26" y1="154.94" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
-<junction x="233.68" y="91.44"/>
-<label x="243.84" y="132.08" size="1.778" layer="95"/>
-<wire x1="233.68" y1="132.08" x2="243.84" y2="132.08" width="0.1524" layer="91"/>
-<junction x="233.68" y="132.08"/>
-</segment>
-</net>
 <net name="!FORCE_QUENCH" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="!PRE"/>
@@ -29125,6 +29102,18 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="IC6" gate="G$1" pin="V+"/>
 <junction x="104.14" y="104.14"/>
 <junction x="96.52" y="104.14"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="IC5" gate="G$1" pin="OUT1"/>
+<wire x1="220.98" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
+<junction x="223.52" y="91.44"/>
+<wire x1="223.52" y1="83.82" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="OUT2"/>
+<wire x1="220.98" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -29687,7 +29676,7 @@ See pg. 7 of FTDI AN_146</text>
 <pinref part="IC12" gate="_A" pin="OUT"/>
 </segment>
 </net>
-<net name="DELAY_IN" class="0">
+<net name="LOGIC_QUENCH" class="0">
 <segment>
 <pinref part="IC14" gate="A" pin="I"/>
 <wire x1="180.34" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
