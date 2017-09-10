@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.00625" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="3" fill="1" visible="no" active="yes"/>
@@ -4025,7 +4025,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.0525" y="32.7025" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="T2" library="transistor" package="SOT23-BEC" value="MMBTH10" x="29.845" y="33.9725" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.655" y="32.0675" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="33.655" y="31.75" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="Q3" library="transistor-pnp" package="SOT23-BEC" value="MMBTH81" x="25.0825" y="30.7975" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.035" y="28.8925" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -4049,7 +4049,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="30.48" y="30.7975" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R49" library="rcl" package="R0603" value="49R9" x="31.75" y="36.83" smashed="yes">
-<attribute name="NAME" x="33.655" y="33.9725" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="33.655" y="33.655" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C58" library="rcl" package="C0603" value="10n" x="26.67" y="34.925" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.035" y="36.83" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -4067,7 +4067,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="33.9725" y="45.085" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="C59" library="rcl" package="C0603" value="100n" x="34.925" y="36.83" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.655" y="34.925" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="33.655" y="34.6075" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R65" library="rcl" package="R0603" value="470R" x="39.0525" y="44.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.9575" y="48.5775" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -4172,7 +4172,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.61" y="36.5125" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C52" library="rcl" package="C0603" value="100n" x="33.02" y="33.9725" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.655" y="33.02" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="33.655" y="32.7025" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="LED2" library="led" package="CHIP-LED0805" value="" x="118.11" y="48.5775" smashed="yes">
 <attribute name="NAME" x="119.6975" y="46.6725" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -4245,7 +4245,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="49.53" y="54.2925" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="Q4" library="transistor-pnp" package="SOT23-BEC" value="MMBTH81" x="41.275" y="36.83" smashed="yes" rot="R180">
-<attribute name="NAME" x="42.2275" y="34.925" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="42.06875" y="34.925" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R50" library="rcl" package="R0603" value="470R" x="38.1" y="37.1475" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.735" y="34.925" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -4408,7 +4408,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="48.5775" y="59.69" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="IC16" library="meng" package="SOT23-5" value="TLV271DBV" x="43.4975" y="53.0225" smashed="yes">
-<attribute name="NAME" x="45.593" y="56.007" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="NAME" x="45.9105" y="56.007" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R69" library="rcl" package="R0603" value="100k" x="39.0525" y="48.895" smashed="yes">
 <attribute name="NAME" x="37.7825" y="49.8475" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -4438,7 +4438,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="59.055" y="48.895" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R85" library="rcl" package="R0603" value="47R" x="61.2775" y="61.9125" smashed="yes" rot="R270">
-<attribute name="NAME" x="62.23" y="61.2775" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="62.23" y="60.16625" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="U1" library="microbuilder" package="SOT23-6" value="" x="17.78" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.4785" y="15.24" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -8975,13 +8975,14 @@ design rules under a new name.</description>
 <approved hash="7,39,e0032bf9f6c4c286"/>
 <approved hash="7,39,8918a8bf8a095416"/>
 <approved hash="18,29,ea47db86adf99c38"/>
+<approved hash="18,29,945cb8634e1c6223"/>
 <approved hash="18,29,73346a85a7a29765"/>
 <approved hash="18,29,bdc48d6b8d6bbdc4"/>
-<approved hash="18,29,a0e290499049a0e2"/>
-<approved hash="18,29,613a5de3b7e6c29c"/>
-<approved hash="18,29,bf5788fa88fabf57"/>
-<approved hash="18,29,c389b7ffa5f09c29"/>
 <approved hash="18,29,a2758fd88fd8a275"/>
+<approved hash="18,29,c389b7ffa5f09c29"/>
+<approved hash="18,29,bf5788fa88fabf57"/>
+<approved hash="18,29,613a5de3b7e6c29c"/>
+<approved hash="18,29,a0e290499049a0e2"/>
 <approved hash="18,29,b802ab6cd15a395c"/>
 <approved hash="18,29,b79df48211de481a"/>
 <approved hash="18,29,357d83dd1993c7da"/>
@@ -8992,13 +8993,119 @@ design rules under a new name.</description>
 <approved hash="18,29,2ca2a64f1b202b18"/>
 <approved hash="18,29,f802dd1d1e5b7305"/>
 <approved hash="18,29,b3ae545c545cb3ae"/>
-<approved hash="18,29,3cf2d120d1203cf2"/>
-<approved hash="18,29,b5776aa56aa5b577"/>
 <approved hash="18,29,365bd789d789365b"/>
-<approved hash="18,29,a73e70d370d3a73e"/>
+<approved hash="18,29,b5776aa56aa5b577"/>
+<approved hash="18,29,3cf2d120d1203cf2"/>
+<approved hash="18,29,ba1c77f177f1ba1c"/>
 <approved hash="18,29,a5ad75427542a5ad"/>
 <approved hash="18,29,b88b68606860b88b"/>
-<approved hash="18,29,ba1c77f177f1ba1c"/>
+<approved hash="18,29,a73e70d370d3a73e"/>
+<approved hash="18,29,57f675843ae5bbde"/>
+<approved hash="18,29,85ef04d88b95afa2"/>
+<approved hash="18,29,a63722f17d964a1d"/>
+<approved hash="18,29,b22183a61ca49827"/>
+<approved hash="18,29,f5699162ed6e8b5d"/>
+<approved hash="18,29,79dd1d9661e207d1"/>
+<approved hash="18,29,d25695a6bca61c52"/>
+<approved hash="18,29,234d83736a942b6d"/>
+<approved hash="18,29,6eba6779e779eeba"/>
+<approved hash="18,29,e216e362ed6e8f16"/>
+<approved hash="18,29,79dd19dd6bdd6ad1"/>
+<approved hash="18,29,67139e6d9e75670b"/>
+<approved hash="18,29,9846079407949846"/>
+<approved hash="18,29,9e9f396d396d9e9f"/>
+<approved hash="18,29,1b6abab8bab81b6a"/>
+<approved hash="18,29,11c3bc11bc1111c3"/>
+<approved hash="18,29,3f15bd51659df1d9"/>
+<approved hash="18,29,080a9a84826c0021"/>
+<approved hash="18,29,3ac7450a390644cb"/>
+<approved hash="18,29,ad52d185ad91d346"/>
+<approved hash="18,29,15707d87fd677b50"/>
+<approved hash="18,29,046c8251c294adac"/>
+<approved hash="18,29,6434fc777d980a1f"/>
+<approved hash="18,29,b328c2a582aa1b26"/>
+<approved hash="18,29,1f4eba82068fa15d"/>
+<approved hash="18,29,68face0f72fbd6ce"/>
+<approved hash="18,29,262e3f62bf62a62e"/>
+<approved hash="18,29,a289a385ad91cf89"/>
+<approved hash="18,29,3ac74ac738c729cb"/>
+<approved hash="18,29,450cb3f2b3f3450d"/>
+<approved hash="18,29,03a600ea80ea83a6"/>
+<approved hash="18,29,87037c0f72fb2a03"/>
+<approved hash="18,29,1f4eb54907490c5d"/>
+<approved hash="18,29,250c92f292f5250b"/>
+<approved hash="18,29,f567bfd73fd77567"/>
+<approved hash="18,29,4fe13550b550cfe1"/>
+<approved hash="18,29,7bf03923b923fbf0"/>
+<approved hash="18,29,f404bc743c747404"/>
+<approved hash="18,29,f26db6dd36dd726d"/>
+<approved hash="18,29,71593388b388f159"/>
+<approved hash="18,29,71b832ebb2ebf1b8"/>
+<approved hash="18,29,f2ccb63c363c72cc"/>
+<approved hash="18,29,82873b74aa1a575f"/>
+<approved hash="18,29,20bee5de08b78347"/>
+<approved hash="18,29,e4e9b3f656a7b8e7"/>
+<approved hash="18,29,4382b7721771e381"/>
+<approved hash="18,29,1f019bf13a0cbefc"/>
+<approved hash="18,29,ed7d6f8dcf8b4d7b"/>
+<approved hash="18,29,b9f83308930619f6"/>
+<approved hash="18,29,94770487a4853475"/>
+<approved hash="18,29,60f2e8024801c0f1"/>
+<approved hash="18,29,3f71bd811d9c9f6c"/>
+<approved hash="18,29,0bec811c211babeb"/>
+<approved hash="18,29,5298f29756054e08"/>
+<approved hash="18,29,f75974d033d1ce01"/>
+<approved hash="18,29,5564ae544e57b567"/>
+<approved hash="18,29,09e782d7632ae81a"/>
+<approved hash="18,29,fb9b76ab96ad1b9d"/>
+<approved hash="18,29,af1e2a2eca204f10"/>
+<approved hash="18,29,82911da1fda36293"/>
+<approved hash="18,29,7614f12411279617"/>
+<approved hash="18,29,2997a4a744bac98a"/>
+<approved hash="18,29,1d0a983a783dfd0d"/>
+<approved hash="18,29,f6044bbf845f46e0"/>
+<approved hash="18,29,5bfb359c4d9f5f04"/>
+<approved hash="18,29,ace78f94fc1f866a"/>
+<approved hash="18,29,8a921ea9a18fb375"/>
+<approved hash="18,29,f11f91ee11ee711f"/>
+<approved hash="18,29,6e6a153a953aee6a"/>
+<approved hash="18,29,67811b519b51e781"/>
+<approved hash="18,29,eab6980518056ab6"/>
+<approved hash="18,29,c92a8afb0afb492a"/>
+<approved hash="18,29,4a1e0fae8faeca1e"/>
+<approved hash="18,29,4c7705078507cc77"/>
+<approved hash="18,29,c383805000504383"/>
+<approved hash="18,29,4d1406a486a4cd14"/>
+<approved hash="18,29,4abf0f4f8f4fcabf"/>
+<approved hash="18,29,f7928c230c237792"/>
+<approved hash="18,29,c9cb8b980b9849cb"/>
+<approved hash="18,29,280254d58521b11b"/>
+<approved hash="18,29,97500702070d975f"/>
+<approved hash="18,29,180c827e82711803"/>
+<approved hash="18,29,9df901ab01a49df6"/>
+<approved hash="18,29,1ed5bc87bc881eda"/>
+<approved hash="18,29,677323a2a3a2e773"/>
+<approved hash="18,29,e24fa0ff20ff624f"/>
+<approved hash="18,29,6d9825cba5cbed98"/>
+<approved hash="18,29,e426bf563f566426"/>
+<approved hash="18,29,a60c15ce93313d6d"/>
+<approved hash="18,29,3ca9e4f25a0e95ed"/>
+<approved hash="18,29,12268cccf9ad6c9d"/>
+<approved hash="18,29,a4ce061870f9db69"/>
+<approved hash="18,29,ce1683c603c64e16"/>
+<approved hash="18,29,588809798979d888"/>
+<approved hash="18,29,432100928092c321"/>
+<approved hash="18,29,c7fd8dad0dad47fd"/>
+<approved hash="18,29,1cd7217c02671e36"/>
+<approved hash="18,29,4a60e432e4324a60"/>
+<approved hash="18,29,40c9e29be29b40c9"/>
+<approved hash="18,29,c53c614e614ec53c"/>
+<approved hash="18,29,c3e55fb75fb7c3e5"/>
+<approved hash="18,29,0bfdc84d484c8bfc"/>
+<approved hash="18,29,842a4d79cd78042b"/>
+<approved hash="18,29,8ec14b10cb110ec0"/>
+<approved hash="18,29,0d94d7e457e58d95"/>
+<approved hash="18,29,cd48b263c279b2b2"/>
 <approved hash="19,1,3f50ce4ed2cd23d3"/>
 <approved hash="19,1,33f0c2eec24b3355"/>
 <approved hash="19,1,63f1e2efe2496357"/>
