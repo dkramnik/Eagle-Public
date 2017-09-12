@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="8.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -24060,6 +24061,8 @@
 <text x="85.4075" y="53.34" size="0.8128" layer="21" font="vector" ratio="16">-5V Ind.</text>
 <text x="85.4075" y="49.8475" size="0.8128" layer="21" font="vector" ratio="16">+5V Ind.</text>
 <text x="19.3675" y="86.36" size="1.778" layer="21" font="vector" ratio="12">+</text>
+<dimension x1="0" y1="0" x2="0" y2="88.9" x3="-11.43" y3="44.45" textsize="1.778" layer="20" unit="inch" precision="3"/>
+<dimension x1="0" y1="88.9" x2="127" y2="88.9" x3="63.5" y3="100.33" textsize="1.778" layer="20" unit="inch" precision="3"/>
 </plain>
 <libraries>
 <library name="meng">
@@ -26873,7 +26876,7 @@ chip</description>
 <clearance class="1" value="0.254"/>
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -26959,6 +26962,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -27057,24 +27063,24 @@ design rules under a new name.</description>
 <attribute name="NAME" x="20.0025" y="46.6725" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="X1" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_SPAD" x="0" y="62.23" smashed="yes">
-<attribute name="OC_NEWARK" value="01C1639" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="0.635" y="69.5325" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="OC_FARNELL" value="unknown" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="30.48" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="0.635" y="68.58" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
 <element name="X2" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_PHOTON_COUNTER" x="0" y="26.67" smashed="yes">
-<attribute name="OC_NEWARK" value="01C1639" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="0.635" y="19.3675" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="OC_FARNELL" value="unknown" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="83.82" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="0.635" y="18.415" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
 <element name="IC8" library="meng" package="DFN14-4X3DE" value="LT3032-5" x="59.69" y="73.025" smashed="yes">
-<attribute name="VALUE" value="LT3032" x="133.35" y="1.905" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="57.15" y="75.2475" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" value="LT3032" x="133.35" y="1.905" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C36" library="rcl" package="C1206" value="10u" x="54.9275" y="73.025" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.2925" y="75.565" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -27089,20 +27095,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.4675" y="67.945" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="U1" library="Texas Instruments_By_element14_Batch_1" package="SOP65P490X110-8N" value="SN65EPT21DGK" x="30.1625" y="42.2275" smashed="yes" rot="R90">
-<attribute name="PACKAGE" value="MSOP-8" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="74R6512" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN65EPT21DGK" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUPPLIER" value="Texas Instruments" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="-" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="26.0731" y="40.005" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0"/>
+<attribute name="OC_FARNELL" value="-" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="74R6512" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PACKAGE" value="MSOP-8" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUPPLIER" value="Texas Instruments" x="73.3425" y="117.1575" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U3" library="Texas Instruments_By_element14_Batch_1 (2)" package="SOT95P280X110-5N" value="TPS78233DDCT" x="65.405" y="63.8175" smashed="yes">
-<attribute name="PACKAGE" value="TSOT-23-5" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="45P8307" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TPS78233DDCT" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER" value="Texas Instruments" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1710835" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="64.8081" y="65.7225" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0"/>
+<attribute name="OC_FARNELL" value="1710835" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="45P8307" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="TSOT-23-5" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="Texas Instruments" x="122.555" y="1.5875" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C42" library="rcl" package="C0603" value="100n" x="68.8975" y="63.8175" smashed="yes" rot="R270">
 <attribute name="NAME" x="67.945" y="65.7225" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -27147,12 +27153,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="4.7625" y="45.72" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="U2" library="Texas Instruments_By_element14_Batch_1" package="SOP65P490X110-8N" value="SN65EPT22DGK" x="37.1475" y="42.2275" smashed="yes" rot="R90">
-<attribute name="PACKAGE" value="MSOP-8" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="45P8158" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SN65EPT22DGK" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUPPLIER" value="Texas Instruments" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="-" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="39.0906" y="40.9575" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0"/>
+<attribute name="OC_FARNELL" value="-" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="45P8158" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PACKAGE" value="MSOP-8" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUPPLIER" value="Texas Instruments" x="99.3775" y="75.2475" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C27" library="rcl" package="C0402" value="10n" x="34.29" y="42.2275" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.3375" y="44.7675" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -27168,28 +27174,28 @@ design rules under a new name.</description>
 <element name="H1" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="3.81" y="85.09" smashed="yes"/>
 <element name="H4" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="123.19" y="3.81" smashed="yes"/>
 <element name="J1" library="Kramnik's Library" package="CONN_MOLEX_3PIN_MINI-FIT_JR" value="VIN_LOGIC" x="91.7575" y="72.39" smashed="yes" rot="R90">
-<attribute name="VALUE" value="MOLEX_0039302031" x="137.4775" y="119.38" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="89.8525" y="80.3275" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" value="MOLEX_0039302031" x="137.4775" y="119.38" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="89.8525" y="79.375" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
 <element name="TP9" library="testpad" package="TP20R" value="TPTP20R" x="76.2" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="76.2" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="75.2475" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="76.2" y="82.55" size="1" layer="37"/>
 </element>
 <element name="TP5" library="testpad" package="TP20R" value="TPTP20R" x="55.88" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="55.88" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="54.9275" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="55.88" y="82.55" size="1" layer="37"/>
 </element>
 <element name="TP6" library="testpad" package="TP20R" value="TPTP20R" x="60.96" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="60.96" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="60.0075" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="60.96" y="82.55" size="1" layer="37"/>
 </element>
 <element name="R33" library="rcl" package="R0603" value="DNP" x="50.8" y="31.4325" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7525" y="30.48" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="IC3" library="meng" package="US8_3.1MM_JDEC_MO-187" value="NC7SV74K8X" x="30.1625" y="56.1975" smashed="yes" rot="R270">
-<attribute name="VALUE" value="NC7SV74K8X" x="-39.6875" y="-27.6225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="27.94" y="57.785" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="VALUE" value="NC7SV74K8X" x="-39.6875" y="-27.6225" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R1" library="rcl" package="R0603" value="DNP" x="7.62" y="49.8475" smashed="yes">
 <attribute name="NAME" x="4.7625" y="50.165" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -27363,8 +27369,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.2925" y="52.705" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="IC9" library="meng" package="DFN14-4X3DE" value="LT3032-15" x="70.8025" y="73.025" smashed="yes">
-<attribute name="VALUE" value="LT3032" x="63.1825" y="80.645" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="68.2625" y="75.2475" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" value="LT3032" x="63.1825" y="80.645" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C44" library="rcl" package="C1206" value="10u" x="72.0725" y="77.47" smashed="yes">
 <attribute name="NAME" x="71.12" y="78.74" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -27385,12 +27391,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="68.8975" y="67.945" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="TP7" library="testpad" package="TP20R" value="TPTP20R" x="66.04" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="66.04" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="65.0875" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="66.04" y="82.55" size="1" layer="37"/>
 </element>
 <element name="TP8" library="testpad" package="TP20R" value="TPTP20R" x="71.12" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="71.12" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="70.1675" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="71.12" y="82.55" size="1" layer="37"/>
 </element>
 <element name="R20" library="rcl" package="R0603" value="0R" x="30.1625" y="65.7225" smashed="yes">
 <attribute name="NAME" x="32.0675" y="65.405" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -27411,11 +27417,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="103.8225" y="38.735" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="X5" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_VREF_ONE_SHOT_EXT" x="127" y="35.56" smashed="yes" rot="R180">
-<attribute name="OC_NEWARK" value="01C1639" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="126.365" y="43.815" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="127" y="35.56" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="126.365" y="42.8625" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R43" library="rcl" package="R0603" value="DNP" x="109.22" y="30.1625" smashed="yes">
@@ -27428,11 +27434,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="108.585" y="56.515" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="X4" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_VREF_DIAMOND_IBIAS_EXT" x="127" y="53.34" smashed="yes" rot="R180">
-<attribute name="OC_NEWARK" value="01C1639" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="126.365" y="61.595" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="134.62" y="63.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="126.365" y="60.6425" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R42" library="rcl" package="R0603" value="DNP" x="109.22" y="47.9425" smashed="yes">
@@ -27445,11 +27451,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="103.8225" y="74.295" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="X3" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_VREF_CASCODE_IBIAS_EXT" x="127" y="71.12" smashed="yes" rot="R180">
-<attribute name="OC_NEWARK" value="01C1639" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="126.365" y="79.375" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="134.62" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="126.365" y="78.4225" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R41" library="rcl" package="R0603" value="DNP" x="109.22" y="65.7225" smashed="yes">
@@ -27477,18 +27483,18 @@ design rules under a new name.</description>
 <attribute name="NAME" x="45.72" y="64.4525" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="TP4" library="testpad" package="TP20R" value="TPTP20R" x="50.8" y="85.09" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="50.8" y="82.55" size="1" layer="37"/>
 <attribute name="NAME" x="49.8475" y="87.3125" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="50.8" y="82.55" size="1" layer="37"/>
 </element>
 <element name="R22" library="rcl" package="R0603" value="49R9" x="30.1625" y="61.2775" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.575" y="62.23" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="X6" library="con-coax" package="J502-ND-142-0711-871/876" value="CONN_FORCE_QUENCH" x="127" y="17.78" smashed="yes" rot="R180">
-<attribute name="OC_NEWARK" value="01C1639" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="142-0711-871" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="JOHNSON COMPONENTS" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="142-0711-871" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="126.365" y="25.0825" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="01C1639" x="127" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="126.365" y="26.035" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R27" library="rcl" package="R0603" value="49R9" x="38.735" y="50.8" smashed="yes" rot="R180">
@@ -27546,8 +27552,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="113.665" y="20.6375" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="TP1" library="testpad" package="TP08R" value="TPTP08R" x="27.94" y="54.61" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="27.94" y="52.705" size="1" layer="37"/>
 <attribute name="NAME" x="27.2875" y="55.1624" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="27.94" y="52.705" size="1" layer="37"/>
 </element>
 <element name="TP2" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="VREF_AV_DET" x="41.275" y="30.48" smashed="yes">
 <attribute name="NAME" x="39.6875" y="31.115" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -27632,8 +27638,6 @@ design rules under a new name.</description>
 <contactref element="C35" pad="2"/>
 <contactref element="IC9" pad="4"/>
 <contactref element="IC9" pad="5"/>
-<contactref element="IC9" pad="4"/>
-<contactref element="IC9" pad="5"/>
 <contactref element="C46" pad="2"/>
 <contactref element="C44" pad="2"/>
 <contactref element="C47" pad="2"/>
@@ -27646,21 +27650,18 @@ design rules under a new name.</description>
 <contactref element="X5" pad="G@2"/>
 <contactref element="X5" pad="G@3"/>
 <contactref element="X5" pad="G@4"/>
-<contactref element="X5" pad="G@1"/>
 <contactref element="R43" pad="2"/>
 <contactref element="X4" pad="G@1"/>
 <contactref element="X4" pad="G@2"/>
 <contactref element="X4" pad="G@3"/>
 <contactref element="X4" pad="G@4"/>
 <contactref element="RT3" pad="3"/>
-<contactref element="X4" pad="G@1"/>
 <contactref element="R42" pad="2"/>
 <contactref element="X3" pad="G@1"/>
 <contactref element="X3" pad="G@2"/>
 <contactref element="X3" pad="G@3"/>
 <contactref element="X3" pad="G@4"/>
 <contactref element="RT2" pad="3"/>
-<contactref element="X3" pad="G@1"/>
 <contactref element="R41" pad="2"/>
 <contactref element="R33" pad="1"/>
 <polygon width="0.4064" layer="2">
@@ -27761,7 +27762,6 @@ design rules under a new name.</description>
 <contactref element="X6" pad="G@2"/>
 <contactref element="X6" pad="G@3"/>
 <contactref element="X6" pad="G@4"/>
-<contactref element="X6" pad="G@1"/>
 <via x="36.5125" y="64.77" extent="1-16" drill="0.3"/>
 <via x="36.83" y="67.31" extent="1-16" drill="0.3"/>
 <via x="36.83" y="68.58" extent="1-16" drill="0.3"/>

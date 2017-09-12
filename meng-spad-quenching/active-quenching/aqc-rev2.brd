@@ -275,6 +275,8 @@ Fall 2017</text>
 <text x="104.775" y="14.2875" size="0.8128" layer="21" font="vector" ratio="16">NFB_BOOST</text>
 <text x="105.0925" y="28.575" size="0.8128" layer="21" font="vector" ratio="16">FB_CUK</text>
 <text x="103.505" y="21.9075" size="0.8128" layer="21" font="vector" ratio="16">SYNC_CUK</text>
+<dimension x1="0" y1="0" x2="0" y2="74.93" x3="-8.89" y3="37.465" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
+<dimension x1="0" y1="74.93" x2="120.015" y2="74.93" x3="60.0075" y3="83.82" textsize="1.778" layer="20" unit="inch" precision="3" visible="yes"/>
 </plain>
 <libraries>
 <library name="meng">
