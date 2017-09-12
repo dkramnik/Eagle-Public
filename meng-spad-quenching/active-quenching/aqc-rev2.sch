@@ -31654,10 +31654,10 @@ See pg. 7 of FTDI AN_146</text>
 <approved hash="104,8,185.42,114.3,IC7P,GND,N$45,,,"/>
 <approved hash="104,8,185.42,129.54,IC7P,VCC,N$44,,,"/>
 <approved hash="104,8,220.98,129.54,IC4P,VCC,PP_P3V3,,,"/>
-<approved hash="104,4,66.04,99.06,IC16,V+,PP_P5V0_ANALOG,,,"/>
-<approved hash="104,4,66.04,83.82,IC16,V-,PP_N5V0_ANALOG,,,"/>
-<approved hash="104,8,55.88,175.26,IC17_A,V+,PP_P5V0_ANALOG,,,"/>
-<approved hash="104,8,55.88,160.02,IC17_A,V-,PP_N5V0_ANALOG,,,"/>
+<approved hash="104,4,66.04,99.06,IC17,V+,PP_P5V0_ANALOG,,,"/>
+<approved hash="104,4,66.04,83.82,IC17,V-,PP_N5V0_ANALOG,,,"/>
+<approved hash="104,8,55.88,175.26,IC16_A,V+,PP_P5V0_ANALOG,,,"/>
+<approved hash="104,8,55.88,160.02,IC16_A,V-,PP_N5V0_ANALOG,,,"/>
 <approved hash="104,8,165.1,175.26,IC9_A,V+,PP_P5V0_ANALOG,,,"/>
 <approved hash="104,8,165.1,160.02,IC9_A,V-,PP_N5V0_ANALOG,,,"/>
 <approved hash="104,9,137.16,73.66,U1,VDD,PP_P3V3_DAC2,,,"/>
@@ -31672,12 +31672,14 @@ See pg. 7 of FTDI AN_146</text>
 <approved hash="113,6,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,9,139.596,107.846,FRAME6,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME7,,,,,"/>
+<approved hash="113,10,235.383,186.69,LED2,,,,,"/>
 <approved hash="113,8,139.596,107.846,FRAME5,,,,,"/>
 <approved hash="113,10,139.596,107.846,FRAME8,,,,,"/>
 <approved hash="113,11,139.596,107.846,FRAME10,,,,,"/>
 <approved hash="113,12,139.596,107.846,FRAME11,,,,,"/>
 <approved hash="113,5,139.596,107.846,FRAME12,,,,,"/>
 <approved hash="113,2,139.596,107.846,FRAME13,,,,,"/>
+<approved hash="113,10,227.763,186.69,LED1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
