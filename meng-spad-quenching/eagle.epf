@@ -1,12 +1,12 @@
 [Eagle]
-Version="06 01 00"
+Version="08 03 01"
 Platform="Windows"
-Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
 Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Admin/GrabCAD/Eagle Libraries/battlebots.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/41xx.lbr"
@@ -334,7 +334,6 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.1.0/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Admin/GrabCAD/Eagle Libraries/battlebots.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/4534_I2C2.lbr"
 UsedLibrary="C:/Users/Admin/Dropbox (Personal)/eagle/Downloaded Libraries/ADI-Phase-2.lbr"
@@ -375,7 +374,7 @@ UsedLibrary="meng.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 599 399"
+Loc="1912 -8 3831 1169"
 State=1
 Number=0
 

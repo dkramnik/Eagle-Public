@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="3" fill="1" visible="no" active="no"/>
@@ -25457,7 +25457,7 @@ TS-003</description>
 <part name="C84" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C91" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C92" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C81" library="rcl" deviceset="C-EU" device="C0603" value="4.7u"/>
+<part name="C81" library="rcl" deviceset="C-EU" device="C0603" value="4u7"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
@@ -25601,7 +25601,7 @@ TS-003</description>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="DNP142" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP143" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C68" library="rcl" deviceset="C-EU" device="C0603" value="33n\"/>
+<part name="C68" library="rcl" deviceset="C-EU" device="C0603" value="33n"/>
 <part name="C69" library="rcl" deviceset="C-EU" device="C0603" value="DNP"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -25617,7 +25617,7 @@ TS-003</description>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="1300p"/>
 <part name="C67" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C53" library="rcl" deviceset="C-EU" device="C0805" value="4.7u"/>
+<part name="C53" library="rcl" deviceset="C-EU" device="C0805" value="4u7"/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="R35" library="rcl" deviceset="R-EU_" device="R0603" value="16k9"/>
 <part name="R54" library="rcl" deviceset="R-EU_" device="R0603" value="2k"/>
@@ -25677,7 +25677,7 @@ TS-003</description>
 <part name="C82" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="DNP9" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND127" library="supply1" deviceset="GND" device=""/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="4.7u"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="4u7"/>
 <part name="GND158" library="supply1" deviceset="GND" device=""/>
 <part name="C31" library="rcl" deviceset="CPOL-EU" device="CT7343" value="47u, 20V"/>
 <part name="L1" library="meng" deviceset="INDUCTOR" device="0603" value="25n"/>

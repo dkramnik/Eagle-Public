@@ -4461,7 +4461,7 @@ design rules under a new name.</description>
 <element name="C92" library="rcl" package="C0603" value="100n" x="84.1375" y="51.435" smashed="yes">
 <attribute name="NAME" x="86.0425" y="52.07" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C81" library="rcl" package="C0603" value="4.7u" x="82.8675" y="46.6725" smashed="yes" rot="R90">
+<element name="C81" library="rcl" package="C0603" value="4u7" x="82.8675" y="46.6725" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.82" y="47.3075" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C108" library="rcl" package="C0603" value="100n" x="70.8025" y="65.0875" smashed="yes" rot="R90">
@@ -4627,7 +4627,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.685" y="59.69" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="21.2725" y="54.61" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
-<element name="C68" library="rcl" package="C0603" value="33n\" x="101.6" y="37.7825" smashed="yes" rot="R90">
+<element name="C68" library="rcl" package="C0603" value="33n" x="101.6" y="37.7825" smashed="yes" rot="R90">
 <attribute name="NAME" x="100.965" y="40.64" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C69" library="rcl" package="C0603" value="DNP" x="103.8225" y="37.7825" smashed="yes" rot="R90">
@@ -4642,7 +4642,7 @@ design rules under a new name.</description>
 <element name="C67" library="rcl" package="C0603" value="100n" x="92.71" y="37.7825" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.805" y="40.64" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C53" library="rcl" package="C0805" value="4.7u" x="103.8225" y="32.0675" smashed="yes" rot="R270">
+<element name="C53" library="rcl" package="C0805" value="4u7" x="103.8225" y="32.0675" smashed="yes" rot="R270">
 <attribute name="NAME" x="105.0925" y="32.385" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C40" library="rcl" package="C0603" value="10n" x="94.615" y="25.7175" smashed="yes" rot="R270">
@@ -4760,7 +4760,7 @@ design rules under a new name.</description>
 <element name="C82" library="rcl" package="C0603" value="100n" x="89.8525" y="46.6725" smashed="yes" rot="R270">
 <attribute name="NAME" x="89.2175" y="44.1325" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C16" library="rcl" package="C0805" value="4.7u" x="103.8225" y="12.3825" smashed="yes" rot="R270">
+<element name="C16" library="rcl" package="C0805" value="4u7" x="103.8225" y="12.3825" smashed="yes" rot="R270">
 <attribute name="NAME" x="105.0925" y="12.7" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C31" library="rcl" package="CT7343" value="47u, 20V" x="82.8675" y="20.32" smashed="yes" rot="R180">
