@@ -25702,13 +25702,13 @@ TS-003</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="M3" library="meng" deviceset="BSS806N" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R84" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R84" library="rcl" deviceset="R-EU_" device="R0603" value="100R"/>
 <part name="D8" library="diode" deviceset="BAS40" device=""/>
 <part name="DNP12" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP26" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="M2" library="meng" deviceset="BSS806N" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="R83" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R83" library="rcl" deviceset="R-EU_" device="R0603" value="100R"/>
 <part name="D7" library="diode" deviceset="BAS40" device=""/>
 <part name="DNP52" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP53" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -30842,7 +30842,7 @@ See pg. 7 of FTDI AN_146</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">2.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
 <text x="124.46" y="96.52" size="1.778" layer="98">-2.5V Nom.</text>
-<text x="167.64" y="167.64" size="1.778" layer="98">Coupling Cap Possible Alternate PN: RNU1C101MDS1JX</text>
+<text x="167.64" y="167.64" size="1.778" layer="98">Coupling Cap Possible Alternate TH PN: RNU1C101MDS1JX</text>
 <text x="167.64" y="170.18" size="1.778" layer="98">Coupling Cap PN: EEF-CX1C680R</text>
 </plain>
 <instances>

@@ -4808,7 +4808,7 @@ design rules under a new name.</description>
 <element name="M3" library="meng" package="SOT23R_INFINEON" value="BSS806N" x="14.605" y="69.215" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.16" y="70.485" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="R84" library="rcl" package="R0603" value="100" x="11.43" y="69.215" smashed="yes" rot="R270">
+<element name="R84" library="rcl" package="R0603" value="100R" x="11.43" y="69.215" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.4775" y="71.12" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="D8" library="diode" package="SOT23" value="BAS40" x="14.605" y="65.405" smashed="yes" rot="R90">
@@ -4817,7 +4817,7 @@ design rules under a new name.</description>
 <element name="M2" library="meng" package="SOT23R_INFINEON" value="BSS806N" x="14.605" y="61.595" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.16" y="62.865" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="R83" library="rcl" package="R0603" value="100" x="11.43" y="61.595" smashed="yes" rot="R270">
+<element name="R83" library="rcl" package="R0603" value="100R" x="11.43" y="61.595" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.4775" y="59.055" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="D7" library="diode" package="SOT23" value="BAS40" x="14.605" y="57.785" smashed="yes" rot="R90">
