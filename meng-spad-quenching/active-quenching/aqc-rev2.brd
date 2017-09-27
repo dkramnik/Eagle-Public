@@ -4654,7 +4654,7 @@ design rules under a new name.</description>
 <element name="R54" library="rcl" package="R0603" value="2k" x="99.3775" y="37.7825" smashed="yes" rot="R270">
 <attribute name="NAME" x="98.425" y="39.37" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R48" library="resistor" package="R0603" value="1k41" x="80.9625" y="35.2425" smashed="yes" rot="R90">
+<element name="R48" library="resistor" package="R0603" value="1k4" x="80.9625" y="35.2425" smashed="yes" rot="R90">
 <attribute name="NAME" x="79.9465" y="40.0685" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R55" library="resistor" package="R0603" value="1k" x="80.9625" y="38.4175" smashed="yes" rot="R90">

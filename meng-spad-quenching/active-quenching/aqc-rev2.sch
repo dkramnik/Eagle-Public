@@ -25621,7 +25621,7 @@ TS-003</description>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="R35" library="rcl" deviceset="R-EU_" device="R0603" value="16k9"/>
 <part name="R54" library="rcl" deviceset="R-EU_" device="R0603" value="2k"/>
-<part name="R48" library="resistor" deviceset="R-EU_" device="R0603" value="1k41"/>
+<part name="R48" library="resistor" deviceset="R-EU_" device="R0603" value="1k4"/>
 <part name="R55" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="C60" library="rcl" deviceset="C-EU" device="C0805" value="10u, 10V"/>
 <part name="R34" library="resistor" deviceset="R-EU_" device="R0603" value="100R"/>
