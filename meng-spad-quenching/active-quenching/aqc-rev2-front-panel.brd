@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -156,12 +156,41 @@
 </layers>
 <board>
 <plain>
-<text x="-21.59" y="1.27" size="1.27" layer="25" align="bottom-center">IV TEST</text>
-<text x="0" y="1.27" size="1.27" layer="25" align="bottom-center">SPAD</text>
-<text x="21.59" y="1.27" size="1.27" layer="25" align="bottom-center">COMP</text>
-<text x="10.795" y="0" size="1.27" layer="25" align="bottom-center">PROBE</text>
-<text x="0" y="7.62" size="1.27" layer="25" align="bottom-center">Linear Active Quenching Circuit</text>
-<text x="-10.795" y="0" size="1.27" layer="25" align="bottom-center">GND</text>
+<text x="-27.94" y="1.905" size="1.27" layer="25" align="bottom-center">IV TEST</text>
+<text x="0" y="1.905" size="1.27" layer="25" align="bottom-center">SPAD</text>
+<text x="27.305" y="1.905" size="1.27" layer="25" align="bottom-center">COMP</text>
+<text x="15.875" y="1.905" size="1.27" layer="25" align="bottom-center">PROBE</text>
+<text x="0" y="7.62" size="1.778" layer="25" align="bottom-center">Linear Active Quenching Circuit</text>
+<text x="-15.875" y="1.905" size="1.27" layer="25" align="bottom-center">GND</text>
+<circle x="-21.59" y="-3.868928125" radius="4.064" width="0.1524" layer="21"/>
+<circle x="0" y="-3.868928125" radius="4.064" width="0.1524" layer="21"/>
+<circle x="21.59" y="-3.868928125" radius="4.064" width="0.1524" layer="21"/>
+<circle x="10.795" y="-1.468628125" radius="2.38125" width="0.1524" layer="21"/>
+<circle x="-23.1775" y="0" radius="0.127" width="0.254" layer="21"/>
+<wire x1="-23.1775" y1="0" x2="-24.4475" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-24.4475" y1="1.27" x2="-31.115" y2="1.27" width="0.127" layer="21"/>
+<circle x="-13.0175" y="0.635" radius="0.127" width="0.254" layer="21"/>
+<circle x="0" y="0.3175" radius="0.127" width="0.254" layer="21"/>
+<circle x="12.065" y="0.635" radius="0.127" width="0.254" layer="21"/>
+<circle x="23.1775" y="0" radius="0.127" width="0.254" layer="21"/>
+<wire x1="-13.0175" y1="0.635" x2="-13.6525" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-13.6525" y1="1.27" x2="-17.78" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="0.3175" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="24.4475" y1="1.27" x2="23.1775" y2="0" width="0.127" layer="21"/>
+<wire x1="29.845" y1="1.27" x2="24.4475" y2="1.27" width="0.127" layer="21"/>
+<wire x1="12.7" y1="1.27" x2="12.065" y2="0.635" width="0.127" layer="21"/>
+<wire x1="18.7325" y1="1.27" x2="12.7" y2="1.27" width="0.127" layer="21"/>
+<polygon width="0.3048" layer="30">
+<vertex x="-33.9725" y="-13.335"/>
+<vertex x="-33.9725" y="13.335"/>
+<vertex x="-33.9725" y="13.6525"/>
+<vertex x="33.9725" y="13.6525"/>
+<vertex x="33.9725" y="-13.335"/>
+<vertex x="33.9725" y="-13.6525"/>
+<vertex x="-33.9725" y="-13.6525"/>
+</polygon>
 </plain>
 <libraries>
 <library name="meng">
@@ -179,6 +208,25 @@
 <pad name="3" x="30.01" y="9.51" drill="3.5" diameter="6.4516"/>
 <pad name="1" x="-30.01" y="-9.51" drill="3.5" diameter="6.4516"/>
 <pad name="2" x="30.01" y="-9.51" drill="3.5" diameter="6.4516"/>
+</package>
+</packages>
+</library>
+<library name="holes">
+<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="3,2-PAD">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.2 mm, round</description>
+<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
+<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
+<circle x="0" y="0" radius="3.683" width="1.27" layer="39"/>
+<circle x="0" y="0" radius="3.683" width="1.27" layer="40"/>
+<circle x="0" y="0" radius="3.556" width="1.016" layer="43"/>
+<circle x="0" y="0" radius="1.7" width="0.1524" layer="21"/>
+<pad name="B3,2" x="0" y="0" drill="3.2" diameter="5.842"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,2</text>
 </package>
 </packages>
 </library>
@@ -372,6 +420,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="X1" library="meng" package="HAMMOND_1455J1201_SIDE_PANEL" value="HAMMOND_1455J1201_SIDE_PANEL" x="0" y="0"/>
+<element name="H1" library="holes" package="3,2-PAD" value="MOUNT-PAD-ROUND3.2" x="-10.795" y="-1.963928125"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -394,6 +443,8 @@ design rules under a new name.</description>
 </polygon>
 <via x="0" y="-3.868928125" extent="1-16" drill="6.35" diameter="7.62"/>
 <via x="21.59" y="-3.868928125" extent="1-16" drill="6.35" diameter="7.62"/>
+<contactref element="H1" pad="B3,2"/>
+<via x="10.795" y="-1.468628125" extent="1-16" drill="3.175"/>
 </signal>
 </signals>
 </board>
