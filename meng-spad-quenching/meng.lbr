@@ -1849,6 +1849,20 @@ MAX3223-MAX3243.pdf</description>
 <text x="-2.2225" y="3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-2.2225" y="2.8575" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
+<package name="HAMMOND_1455J1201_SIDE_PANEL">
+<wire x1="30.01" y1="-13.5" x2="-30.01" y2="-13.5" width="0" layer="20"/>
+<wire x1="-30.01" y1="-13.5" x2="-34" y2="-9.51" width="0" layer="20" curve="-90"/>
+<wire x1="-34" y1="-9.51" x2="-34" y2="9.51" width="0" layer="20"/>
+<wire x1="-34" y1="9.51" x2="-30.01" y2="13.5" width="0" layer="20" curve="-90"/>
+<wire x1="-30.01" y1="13.5" x2="30.01" y2="13.5" width="0" layer="20"/>
+<wire x1="30.01" y1="13.5" x2="34" y2="9.51" width="0" layer="20" curve="-90"/>
+<wire x1="34" y1="9.51" x2="34" y2="-9.51" width="0" layer="20"/>
+<wire x1="34" y1="-9.51" x2="30.01" y2="-13.5" width="0" layer="20" curve="-90"/>
+<pad name="4" x="-30.01" y="9.51" drill="3.5" diameter="6.4516"/>
+<pad name="3" x="30.01" y="9.51" drill="3.5" diameter="6.4516"/>
+<pad name="1" x="-30.01" y="-9.51" drill="3.5" diameter="6.4516"/>
+<pad name="2" x="30.01" y="-9.51" drill="3.5" diameter="6.4516"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -2765,6 +2779,15 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="2.54" y1="1.5875" x2="2.54" y2="3.4925" width="0.254" layer="94"/>
 <text x="-2.54" y="7.62" size="1.778" layer="95" ratio="16">&gt;NAME</text>
 <text x="-2.54" y="5.08" size="1.778" layer="96" ratio="16">&gt;VALUE</text>
+</symbol>
+<symbol name="GNDPAD">
+<pin name="GND" x="-5.08" y="0" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4019,6 +4042,23 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HAMMOND_1455J1201_SIDE_PANEL" prefix="X">
+<gates>
+<gate name="G$1" symbol="GNDPAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HAMMOND_1455J1201_SIDE_PANEL">
+<connects>
+<connect gate="G$1" pin="GND" pad="1 2 3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="HAMMOND_1455J1201_SIDE_PANEL" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

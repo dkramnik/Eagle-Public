@@ -25149,7 +25149,7 @@ TS-003</description>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="M1" library="meng" deviceset="BSS806N" device=""/>
-<part name="C66" library="rcl" deviceset="C-EU" device="C0603" value="1n"/>
+<part name="C66" library="rcl" deviceset="C-EU" device="C0603" value="470p"/>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
@@ -25166,10 +25166,10 @@ TS-003</description>
 <part name="Q3" library="transistor-pnp" deviceset="MMBTH81*" device="SMD" technology="LT1" value="MMBTH81"/>
 <part name="Q5" library="transistor-pnp" deviceset="MMBTH81*" device="SMD" technology="LT1" value="MMBTH81"/>
 <part name="T3" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
-<part name="R49" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
-<part name="R59" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
-<part name="R46" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
-<part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
+<part name="R49" library="rcl" deviceset="R-EU_" device="R0603" value="100R"/>
+<part name="R59" library="rcl" deviceset="R-EU_" device="R0603" value="200R"/>
+<part name="R46" library="rcl" deviceset="R-EU_" device="R0603" value="100R"/>
+<part name="R43" library="rcl" deviceset="R-EU_" device="R0603" value="200R"/>
 <part name="R50" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
 <part name="C57" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
@@ -29287,11 +29287,11 @@ TS-003</description>
 <plain>
 <text x="220.98" y="76.2" size="1.778" layer="98">Digikey P/N EG5350CT-ND</text>
 <text x="223.52" y="114.3" size="1.778" layer="98">STM32F446RE = 0R (VSS)</text>
-<text x="223.52" y="111.76" size="1.778" layer="98">STM32F405RG = 100n (VCAP_2)</text>
+<text x="223.52" y="109.22" size="1.778" layer="98">STM32F405RG = 100n (VCAP_2)</text>
 <text x="76.2" y="78.74" size="1.778" layer="98">STM32F446RE = 0R (VSS)</text>
-<text x="76.2" y="76.2" size="1.778" layer="98">STM32F405RG = 100n (VCAP_1)</text>
+<text x="76.2" y="73.66" size="1.778" layer="98">STM32F405RG = 100n (VCAP_1)</text>
 <text x="12.7" y="78.74" size="1.778" layer="98">STM32F446RE = 100n (VCAP_1)</text>
-<text x="12.7" y="76.2" size="1.778" layer="98">STM32F405RG = DNP (PB11)</text>
+<text x="12.7" y="73.66" size="1.778" layer="98">STM32F405RG = DNP (PB11)</text>
 <text x="116.84" y="68.58" size="1.778" layer="98">STM32F405 &amp; STM32F446 compatible package</text>
 <text x="198.12" y="134.62" size="1.778" layer="98">MOSI</text>
 <text x="198.12" y="132.08" size="1.778" layer="98">MISO</text>
@@ -29307,6 +29307,9 @@ TS-003</description>
 <text x="223.52" y="27.94" size="3.81" layer="97" font="vector" align="center">STM32 ARM MICROCONTROLLER</text>
 <text x="266.7" y="8.255" size="2.54" layer="97" font="vector" align="center">2.0</text>
 <text x="223.52" y="8.255" size="3.81" layer="97" font="vector" align="center">1 of 1</text>
+<text x="76.2" y="76.2" size="1.778" layer="98">STM32F411RE = 0R (VSS)</text>
+<text x="12.7" y="76.2" size="1.778" layer="98">STM32F411RE = 100n (VCAP_1)</text>
+<text x="223.52" y="111.76" size="1.778" layer="98">STM32F411RE = 0R (VSS)</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
@@ -31131,7 +31134,7 @@ See pg. 7 of FTDI AN_146</text>
 <segment>
 <pinref part="IC11" gate="G$1" pin="!SHDN"/>
 <wire x1="91.44" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
-<label x="78.74" y="134.62" size="1.778" layer="95" rot="R180"/>
+<label x="78.74" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TP_SYNC_CUK" class="0">
