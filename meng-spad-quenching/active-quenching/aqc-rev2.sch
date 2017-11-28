@@ -25177,7 +25177,7 @@ TS-003</description>
 <part name="R32" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="DNP29" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP34" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R56" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
+<part name="R56" library="rcl" deviceset="R-EU_" device="R0603" value="220R"/>
 <part name="T4" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
 <part name="T5" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
 <part name="C64" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
@@ -25187,7 +25187,7 @@ TS-003</description>
 <part name="R64" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
 <part name="DNP36" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="T6" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBTH10LT1" value="MMBTH10"/>
-<part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="470R"/>
+<part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="220R"/>
 <part name="DNP39" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C95" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND56" library="supply1" deviceset="GND" device=""/>
