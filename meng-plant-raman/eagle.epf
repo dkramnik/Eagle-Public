@@ -1,0 +1,56 @@
+[Eagle]
+Version="08 04 01"
+Platform="Mac OS X"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/4534.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/4534_I2C2.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/ADI-Phase-2.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/Analog Devices_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/ArduinoNanoV30.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/C8051F410.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/ISP1520BD.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/Kramnik's Library.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/MBED_v2.1.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/SC's Library.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/SMD_Qualifier.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/SiLabs Downloaded.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/SiLabs Test.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/Texas Instruments_By_element14_Batch_1 (2).lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/Texas Instruments_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/adafruit.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/charleses_parts_bin.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/cheetah_driver_2.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/con-jack-mod.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/ftdichip-3.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/hdmi.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/heatsink-aavid.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/maxim-filter.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/micro-silabs.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/microbuilder.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/oli.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/sc_usercreated.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/silabs-2.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/tc's LIB.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/transistors_gaui.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/tubes.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/tw.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/xilinx-xc9.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/xilinx_devices.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/xilinx_devices_7_6_2014.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/Downloaded Libraries/xilinx_devices_7_6_2014_MOD.lbr"
+UsedLibrary="/Users/Admin/Dropbox/eagle/qia-pack-private/qia-pack-dev.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="240 179 1439 818"
+State=1
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"

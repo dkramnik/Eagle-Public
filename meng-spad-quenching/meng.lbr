@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1863,6 +1863,66 @@ MAX3223-MAX3243.pdf</description>
 <pad name="1" x="-35.01" y="-9.51" drill="3.5" diameter="6.4516"/>
 <pad name="2" x="35.01" y="-9.51" drill="3.5" diameter="6.4516"/>
 </package>
+<package name="CBI-564-0X00-XXX">
+<pad name="BOT_A" x="-1.27" y="-2.54" drill="1.0922"/>
+<pad name="BOT_K" x="1.27" y="-2.54" drill="1.0922"/>
+<pad name="MID_K" x="1.27" y="0" drill="1.0922"/>
+<pad name="MID_A" x="-1.27" y="0" drill="1.0922"/>
+<pad name="TOP_A" x="-1.27" y="2.54" drill="1.0922"/>
+<pad name="TOP_K" x="1.27" y="2.54" drill="1.0922"/>
+<wire x1="-2.54" y1="-6.985" x2="-1.4986" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-6.985" x2="1.4986" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-6.985" x2="2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-6.985" x2="2.54" y2="4.572" width="0.127" layer="21"/>
+<wire x1="2.54" y1="4.572" x2="-2.54" y2="4.572" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="4.572" x2="-2.54" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-1.4986" y1="-6.985" x2="-1.4986" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-6.985" x2="1.4986" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-8.255" x2="-1.4986" y2="-8.255" width="0.127" layer="21" curve="-180"/>
+<text x="-2.54" y="6.0325" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-2.54" y="5.08" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+</package>
+<package name="SENSE1-WIREBOND-VLAQC-TEST1">
+<smd name="AQCR4_GUARD_RING" x="-1.1684" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<wire x1="-1.5" y1="-3" x2="1.5" y2="-3" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="-3" x2="1.5" y2="3" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="3" x2="-1.5" y2="3" width="0.0762" layer="21"/>
+<wire x1="-1.5" y1="3" x2="-1.5" y2="-3" width="0.0762" layer="21"/>
+<smd name="AQCR4_HOLDOFF_IBIAS" x="-0.8636" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_GND" x="-0.5588" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.0762" layer="21"/>
+<wire x1="1" y1="-1.5" x2="1" y2="1.5" width="0.0762" layer="21"/>
+<wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.0762" layer="21"/>
+<wire x1="-1" y1="1.5" x2="-1" y2="-1.5" width="0.0762" layer="21"/>
+<smd name="SPAD1_ANODE" x="0.254" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_CATHODE" x="0.5588" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_ANODE" x="0.8636" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_CATHODE" x="1.1684" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_CATHODE" x="1.524" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_ANODE" x="1.8288" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_CATHODE" x="2.1336" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_ANODE" x="2.4384" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_GUARD_RING" x="-2.4384" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_HOLDOFF_IBIAS" x="-2.1336" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_GND" x="-1.8288" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_SPAD_CATHODE" x="-1.143" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_VDD2V5" x="-0.8382" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_AV_DET" x="-0.5334" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_HEATER1" x="0.2794" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_HEATER2" x="0.5842" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_HEATER1" x="0.889" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_HEATER2" x="1.1938" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_HEATER1" x="1.5494" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_HEATER2" x="1.8542" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_HEATER1" x="2.159" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_HEATER2" x="2.4638" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_SPAD_CATHODE" x="-2.413" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_VDD2V5" x="-2.1082" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_AV_DET" x="-1.8034" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<circle x="-2.4384" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
+<circle x="-1.1684" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
+<circle x="0.254" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADCMP580/1/2">
@@ -2788,6 +2848,69 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="10.16" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 <text x="0" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="LED-3X">
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="22.86" y2="10.16" width="0.254" layer="94"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="BOT_A" x="-5.08" y="2.54" length="middle"/>
+<pin name="MID_A" x="-5.08" y="5.08" length="middle"/>
+<pin name="TOP_A" x="-5.08" y="7.62" length="middle"/>
+<pin name="TOP_K" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="MID_K" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="BOT_K" x="27.94" y="2.54" length="middle" rot="R180"/>
+<text x="0" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SENSE1_AQC_REV3/4">
+<pin name="GND" x="-5.08" y="2.54" length="middle"/>
+<pin name="HOLDOFF_IBIAS" x="-5.08" y="5.08" length="middle"/>
+<pin name="GUARD_RING" x="-5.08" y="7.62" length="middle"/>
+<pin name="AV_DET" x="45.72" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD2V5" x="45.72" y="5.08" length="middle" rot="R180"/>
+<pin name="SPAD_CATHODE" x="45.72" y="7.62" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="40.64" y2="10.16" width="0.254" layer="94"/>
+<wire x1="40.64" y1="10.16" x2="40.64" y2="0" width="0.254" layer="94"/>
+<wire x1="40.64" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SENSE1-SPAD-WITH-HEATER">
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="4.7625" y1="-0.3175" x2="5.3975" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="5.3975" y1="-0.9525" x2="4.7625" y2="-1.5875" width="0.254" layer="94"/>
+<wire x1="4.7625" y1="-1.5875" x2="5.3975" y2="-2.2225" width="0.254" layer="94"/>
+<wire x1="4.7625" y1="-0.3175" x2="5.3975" y2="0.3175" width="0.254" layer="94"/>
+<wire x1="5.3975" y1="0.3175" x2="4.7625" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="4.7625" y1="0.9525" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.3975" y1="-2.2225" x2="4.7625" y2="-2.8575" width="0.254" layer="94"/>
+<wire x1="4.7625" y1="-2.8575" x2="5.3975" y2="-3.4925" width="0.254" layer="94"/>
+<wire x1="5.3975" y1="-3.4925" x2="5.08" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
+<pin name="SPAD_CATHODE" x="-10.16" y="5.08" visible="pad" length="middle"/>
+<pin name="SPAD_ANODE" x="-10.16" y="-7.62" visible="pad" length="middle"/>
+<pin name="SPAD_HEATER1" x="15.24" y="-7.62" visible="pad" length="middle" rot="R180"/>
+<pin name="SPAD_HEATER2" x="15.24" y="5.08" visible="pad" length="middle" rot="R180"/>
+<text x="-5.08" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4058,6 +4181,77 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="HAMMOND_1455J1201_SIDE_PANEL" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CBI-564-0X00-XXX-3LED" prefix="LED" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED-3X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CBI-564-0X00-XXX">
+<connects>
+<connect gate="G$1" pin="BOT_A" pad="BOT_A"/>
+<connect gate="G$1" pin="BOT_K" pad="BOT_K"/>
+<connect gate="G$1" pin="MID_A" pad="MID_A"/>
+<connect gate="G$1" pin="MID_K" pad="MID_K"/>
+<connect gate="G$1" pin="TOP_A" pad="TOP_A"/>
+<connect gate="G$1" pin="TOP_K" pad="TOP_K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="564-0x00-xxx" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SENSE1-WIREBOND-VLAQC-TEST1" prefix="IC">
+<gates>
+<gate name="_AQCR3" symbol="SENSE1_AQC_REV3/4" x="0" y="0"/>
+<gate name="_AQCR4" symbol="SENSE1_AQC_REV3/4" x="0" y="-20.32"/>
+<gate name="_SPAD1" symbol="SENSE1-SPAD-WITH-HEATER" x="5.08" y="-38.1"/>
+<gate name="_SPAD2" symbol="SENSE1-SPAD-WITH-HEATER" x="5.08" y="-66.04"/>
+<gate name="_SPAD3" symbol="SENSE1-SPAD-WITH-HEATER" x="5.08" y="-93.98"/>
+<gate name="_SPAD4" symbol="SENSE1-SPAD-WITH-HEATER" x="5.08" y="-121.92"/>
+</gates>
+<devices>
+<device name="" package="SENSE1-WIREBOND-VLAQC-TEST1">
+<connects>
+<connect gate="_AQCR3" pin="AV_DET" pad="AQCR3_AV_DET"/>
+<connect gate="_AQCR3" pin="GND" pad="AQCR3_GND"/>
+<connect gate="_AQCR3" pin="GUARD_RING" pad="AQCR3_GUARD_RING"/>
+<connect gate="_AQCR3" pin="HOLDOFF_IBIAS" pad="AQCR3_HOLDOFF_IBIAS"/>
+<connect gate="_AQCR3" pin="SPAD_CATHODE" pad="AQCR3_SPAD_CATHODE"/>
+<connect gate="_AQCR3" pin="VDD2V5" pad="AQCR3_VDD2V5"/>
+<connect gate="_AQCR4" pin="AV_DET" pad="AQCR4_AV_DET"/>
+<connect gate="_AQCR4" pin="GND" pad="AQCR4_GND"/>
+<connect gate="_AQCR4" pin="GUARD_RING" pad="AQCR4_GUARD_RING"/>
+<connect gate="_AQCR4" pin="HOLDOFF_IBIAS" pad="AQCR4_HOLDOFF_IBIAS"/>
+<connect gate="_AQCR4" pin="SPAD_CATHODE" pad="AQCR4_SPAD_CATHODE"/>
+<connect gate="_AQCR4" pin="VDD2V5" pad="AQCR4_VDD2V5"/>
+<connect gate="_SPAD1" pin="SPAD_ANODE" pad="SPAD1_ANODE"/>
+<connect gate="_SPAD1" pin="SPAD_CATHODE" pad="SPAD1_CATHODE"/>
+<connect gate="_SPAD1" pin="SPAD_HEATER1" pad="SPAD1_HEATER1"/>
+<connect gate="_SPAD1" pin="SPAD_HEATER2" pad="SPAD1_HEATER2"/>
+<connect gate="_SPAD2" pin="SPAD_ANODE" pad="SPAD2_ANODE"/>
+<connect gate="_SPAD2" pin="SPAD_CATHODE" pad="SPAD2_CATHODE"/>
+<connect gate="_SPAD2" pin="SPAD_HEATER1" pad="SPAD2_HEATER1"/>
+<connect gate="_SPAD2" pin="SPAD_HEATER2" pad="SPAD2_HEATER2"/>
+<connect gate="_SPAD3" pin="SPAD_ANODE" pad="SPAD3_ANODE"/>
+<connect gate="_SPAD3" pin="SPAD_CATHODE" pad="SPAD3_CATHODE"/>
+<connect gate="_SPAD3" pin="SPAD_HEATER1" pad="SPAD3_HEATER1"/>
+<connect gate="_SPAD3" pin="SPAD_HEATER2" pad="SPAD3_HEATER2"/>
+<connect gate="_SPAD4" pin="SPAD_ANODE" pad="SPAD4_ANODE"/>
+<connect gate="_SPAD4" pin="SPAD_CATHODE" pad="SPAD4_CATHODE"/>
+<connect gate="_SPAD4" pin="SPAD_HEATER1" pad="SPAD4_HEATER1"/>
+<connect gate="_SPAD4" pin="SPAD_HEATER2" pad="SPAD4_HEATER2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="SENSE1" constant="no"/>
 </technology>
 </technologies>
 </device>
