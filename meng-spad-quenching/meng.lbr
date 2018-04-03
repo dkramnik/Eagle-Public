@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1883,45 +1883,45 @@ MAX3223-MAX3243.pdf</description>
 <text x="-2.54" y="5.08" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
 <package name="SENSE1-WIREBOND-VLAQC-TEST1">
-<smd name="AQCR4_GUARD_RING" x="-1.1684" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<wire x1="-1.5" y1="-3" x2="1.5" y2="-3" width="0.0762" layer="21"/>
-<wire x1="1.5" y1="-3" x2="1.5" y2="3" width="0.0762" layer="21"/>
-<wire x1="1.5" y1="3" x2="-1.5" y2="3" width="0.0762" layer="21"/>
-<wire x1="-1.5" y1="3" x2="-1.5" y2="-3" width="0.0762" layer="21"/>
-<smd name="AQCR4_HOLDOFF_IBIAS" x="-0.8636" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR4_GND" x="-0.5588" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_GUARD_RING" x="-1.1684" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<wire x1="-1.5" y1="-2" x2="1.5" y2="-2" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="-2" x2="1.5" y2="2" width="0.0762" layer="21"/>
+<wire x1="1.5" y1="2" x2="-1.5" y2="2" width="0.0762" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-1.5" y2="-2" width="0.0762" layer="21"/>
+<smd name="AQCR4_HOLDOFF_IBIAS" x="-0.8636" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_GND" x="-0.5588" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
 <wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.0762" layer="21"/>
 <wire x1="1" y1="-1.5" x2="1" y2="1.5" width="0.0762" layer="21"/>
 <wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.0762" layer="21"/>
 <wire x1="-1" y1="1.5" x2="-1" y2="-1.5" width="0.0762" layer="21"/>
-<smd name="SPAD1_ANODE" x="0.254" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD1_CATHODE" x="0.5588" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD2_ANODE" x="0.8636" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD2_CATHODE" x="1.1684" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD3_CATHODE" x="1.524" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD3_ANODE" x="1.8288" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD4_CATHODE" x="2.1336" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD4_ANODE" x="2.4384" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_GUARD_RING" x="-2.4384" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_HOLDOFF_IBIAS" x="-2.1336" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_GND" x="-1.8288" y="-4.064" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR4_SPAD_CATHODE" x="-1.143" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR4_VDD2V5" x="-0.8382" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR4_AV_DET" x="-0.5334" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD1_HEATER1" x="0.2794" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD1_HEATER2" x="0.5842" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD2_HEATER1" x="0.889" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD2_HEATER2" x="1.1938" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD3_HEATER1" x="1.5494" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD3_HEATER2" x="1.8542" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD4_HEATER1" x="2.159" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="SPAD4_HEATER2" x="2.4638" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_SPAD_CATHODE" x="-2.413" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_VDD2V5" x="-2.1082" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<smd name="AQCR3_AV_DET" x="-1.8034" y="4.0386" dx="0.1524" dy="0.3048" layer="1"/>
-<circle x="-2.4384" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
-<circle x="-1.1684" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
-<circle x="0.254" y="-4.445" radius="0.03591875" width="0.0762" layer="21"/>
+<smd name="SPAD1_ANODE" x="0.254" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_CATHODE" x="0.5588" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_ANODE" x="0.8636" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_CATHODE" x="1.1684" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_CATHODE" x="1.524" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_ANODE" x="1.8288" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_CATHODE" x="2.1336" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_ANODE" x="2.4384" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_GUARD_RING" x="-2.4384" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_HOLDOFF_IBIAS" x="-2.1336" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_GND" x="-1.8288" y="-3.064" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_SPAD_CATHODE" x="-1.143" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_VDD2V5" x="-0.8382" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR4_AV_DET" x="-0.5334" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_HEATER1" x="0.2794" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD1_HEATER2" x="0.5842" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_HEATER1" x="0.889" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD2_HEATER2" x="1.1938" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_HEATER1" x="1.5494" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD3_HEATER2" x="1.8542" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_HEATER1" x="2.159" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="SPAD4_HEATER2" x="2.4638" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_SPAD_CATHODE" x="-2.413" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_VDD2V5" x="-2.1082" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<smd name="AQCR3_AV_DET" x="-1.8034" y="3.0386" dx="0.1524" dy="0.3048" layer="1"/>
+<circle x="-2.4384" y="-3.445" radius="0.03591875" width="0.0762" layer="21"/>
+<circle x="-1.1684" y="-3.445" radius="0.03591875" width="0.0762" layer="21"/>
+<circle x="0.254" y="-3.445" radius="0.03591875" width="0.0762" layer="21"/>
 </package>
 </packages>
 <symbols>
