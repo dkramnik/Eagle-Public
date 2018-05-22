@@ -7514,6 +7514,10 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="246.38" y="147.32" size="1.778" layer="98">Mates to:
+105-0772-001</text>
+<text x="246.38" y="124.46" size="1.778" layer="98">Mates to:
+105-0773-001</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7673,6 +7677,10 @@ Source: AVX .. aphvc.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
