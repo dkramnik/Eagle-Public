@@ -1,29 +1,44 @@
-classdef leaf_heater_system
+classdef leaf_heater_system < handle
     % A leaf heater control system consisting of a leaf-heater temp. sensor PCB and a Keysight B2902A sourcemeter
     
-    properties
+    properties ( Access = private )
         sourcemeter_obj
         temp_sensor_obj
+        sourcemeter_default_addr = 23;  % Change this if necessary
         
         % Control loop settings
-        temp_setpoint = 40;
-        control_loop_period = 0.1;
-        timer = timer();
-        hysteresis_max = 1;
-        hysteresis_min = -1;
-        saturation_max = 2;
-        saturation_min = 0;
-        gain_P
-        gain_D
+        controller = struct( ...
+            'temp_setpoint', 20, ...
+            'control_loop_period', 0.1, ...
+            'timer', timer( ), ...
+            'hyst_up', 0.01, ...
+            'hyst_down', -0.01, ...
+            'default_current_level', 0.75, ...
+            'output_state', 0 );
+        
+        % Create a struct for storing input and output data
+        data = struct( ...
+            'time_array', [ ], ...
+            'temp_array', [ ], ...
+            'output_array', [ ] );
     end
     
     methods
-        function obj = leaf_heater_system( sourcemeter_addr, temp_sensor_index )
-            %
-            temp_sensor_open_serial( obj, temp_sensor_index );
+        function obj = leaf_heater_system( sourcemeter_addr_input, temp_sensor_index_input )
+            % Connect to both required instruments
+            sourcemeter_open_gpib( obj, sourcemeter_addr_input );
+            temp_sensor_open_serial( obj, temp_sensor_index_input );
+            
+            % Initialize control loop timer (but don't start yet)
+            obj.controller.timer.BusyMode = 'error';   % Throw error if callback takes too long
+            obj.controller.timer.ExecutionMode = 'fixedRate';
+            obj.controller.timer.Period = 0.1;
+            obj.controller.timer.TimerFcn = { @obj.control_loop_callback };
+            set( obj.controller.timer, 'UserData', tic );
         end
         
         function delete( obj )
+            fprintf( obj.sourcemeter_obj, ':OUTP OFF' );
             fclose( obj.sourcemeter_obj );
             fclose( obj.temp_sensor_obj );
         end
@@ -31,17 +46,58 @@ classdef leaf_heater_system
         temp_sensor_open_serial( obj, temp_index )
         sourcemeter_open_gpib( obj, sourcemeter_addr )
         
-        start_control_loop( obj )
-        stop_control_loop( obj )
+        function control_loop_start( obj )
+            fprintf( obj.sourcemeter_obj, ':OUTP ON' );
+            start( obj.controller.timer );
+        end
+        function control_loop_stop( obj )
+            fprintf( obj.sourcemeter_obj, ':OUTP OFF' );
+            stop( obj.controller.timer );
+        end
+        function set_temp_setpoint( obj, setpoint_input )
+            obj.controller.temp_setpoint = setpoint_input;
+        end
         
-        temp_sensor_get_temp( obj )
+        function current_temp = temp_sensor_get_temp( obj )
+            fprintf( obj.temp_sensor_obj, 'TEMP?' );
+            current_temp = str2double( fgetl( obj.temp_sensor_obj ) );
+        end
+        
+        function data = get_data( obj )
+            data = obj.data;
+        end
         
         sourcemeter_set_current( obj, current_setpoint )
         sourcemeter_set_voltage( obj, voltage_setpoint )
         current_measurement = sourcemeter_get_current( obj )
         voltage_measurement = sourcemeter_get_voltage( obj )
         
-        control_loop_callback( obj )
+        % ( ~, ~ ) tosses the timer-related input arguments
+        function control_loop_callback( obj, ~, ~ )
+            current_temp = obj.temp_sensor_get_temp( );
+            
+            if( abs( current_temp - obj.controller.temp_setpoint ) < 5 )
+                current_level = obj.controller.default_current_level / 1.5;
+            else
+                current_level = obj.controller.default_current_level;
+            end
+            
+            if( obj.controller.output_state == 0 ) % CCS is off, temp is decreasing
+                if( current_temp < obj.controller.temp_setpoint + obj.controller.hyst_down )
+                    fprintf( obj.sourcemeter_obj, [ ':SOUR1:CURR ' num2str( current_level ) ] );
+                    obj.controller.output_state = 1;
+                end
+            else                               % CCS is on, temp is increasing
+                if( current_temp > obj.controller.temp_setpoint + obj.controller.hyst_up )
+                    fprintf( obj.sourcemeter_obj, [ ':SOUR1:CURR ' num2str( current_level / 100 ) ] );
+                    obj.controller.output_state = 0;
+                end
+            end
+            
+            obj.data.time_array( end + 1 ) = toc( get( obj.controller.timer, 'UserData' ) );
+            obj.data.temp_array( end + 1 ) = current_temp;
+            obj.data.output_array( end + 1 ) = current_level;
+        end
     end
 end
 
