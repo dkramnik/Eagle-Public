@@ -1,3 +1,4 @@
+delete( timerfindall );
 delete( instrfind );
 close all
 clear
@@ -8,38 +9,19 @@ sys_heater = leaf_heater_system( [ ], [ ] );    % Use default inst. addresses
 sys_heater.set_temp_setpoint( 50 );
 sys_heater.control_loop_start( );
 
-% Start collecting and plotting data
-fig_temp = figure( );
-lw = 1.25;
-ms = 4;
-fs = 14;
-set( gca, 'fontsize', fs );
-for i = 1 : 1000
-    pause( 0.1 );
-    data_sample = sys_heater.get_data( );
-    if( size( data_sample.time_array ) == size( data_sample.output_array ) )
-        plot( data_sample.time_array, data_sample.temp_array, 'o--', 'linewidth', lw, 'markersize', ms );
-        %ylim( [ 0 100 ] );
-        grid on;
-    end
-end
-sys_heater.set_temp_setpoint( 20 );
-for i = 1 : 1000
-    pause( 0.1 );
-    data_sample = sys_heater.get_data( );
-    if( size( data_sample.time_array ) == size( data_sample.output_array ) )
-        plot( data_sample.time_array, data_sample.temp_array, 'o--', 'linewidth', lw, 'markersize', ms );
-        %ylim( [ 0 100 ] );
-        grid on;
-    end
-end
+disp( 'Starting with setpoint at 50C' );
+sys_heater.enable_plotting( );
+pause( 100 );
 
-sys_heater.control_loop_stop( );
+disp( 'Changing setpoint to 40C' );
+sys_heater.set_temp_setpoint( 40 );
+pause( 100 );
 
-sys_heater.delete( );
-
+disp( 'Changing setpoint to 30C' );
+sys_heater.set_temp_setpoint( 30 );
+pause( 150 );
 %%
-plot( data_sample.time_array, data_sample.temp_array, 'o--', 'linewidth', lw, 'markersize', ms );
-grid on;
-xlabel( 'Time [s]' );
-ylabel( 'Temperature [C]' );
+disp( 'Stopping' );
+sys_heater.disable_plotting( );
+sys_heater.control_loop_stop( );
+sys_heater.delete( );

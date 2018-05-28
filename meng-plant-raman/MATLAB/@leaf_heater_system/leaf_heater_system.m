@@ -11,6 +11,7 @@ classdef leaf_heater_system < handle
             'temp_setpoint', 20, ...
             'control_loop_period', 0.1, ...
             'timer', timer( ), ...
+            'busy_flag', false, ...
             'hyst_up', 0.01, ...
             'hyst_down', -0.01, ...
             'default_current_level', 0.75, ...
@@ -21,6 +22,13 @@ classdef leaf_heater_system < handle
             'time_array', [ ], ...
             'temp_array', [ ], ...
             'output_array', [ ] );
+        
+        plotter = struct( ...
+            'timer', timer( ), ...
+            'figure', [ ], ...
+            'lw', 1.25, ...
+            'ms', 4, ...
+            'fs', 14 );
     end
     
     methods
@@ -33,14 +41,23 @@ classdef leaf_heater_system < handle
             obj.controller.timer.BusyMode = 'error';   % Throw error if callback takes too long
             obj.controller.timer.ExecutionMode = 'fixedRate';
             obj.controller.timer.Period = 0.1;
-            obj.controller.timer.TimerFcn = { @obj.control_loop_callback };
+            obj.controller.timer.TimerFcn = { @obj.controller_callback };
             set( obj.controller.timer, 'UserData', tic );
+            
+            % Initialize plotter timer (but don't start yet)
+            obj.plotter.timer.BusyMode = 'error';   % Throw error if callback takes too long
+            obj.plotter.timer.ExecutionMode = 'fixedRate';
+            obj.plotter.timer.Period = 0.1;
+            obj.plotter.timer.TimerFcn = { @obj.plotter_callback };
         end
         
         function delete( obj )
             fprintf( obj.sourcemeter_obj, ':OUTP OFF' );
             fclose( obj.sourcemeter_obj );
             fclose( obj.temp_sensor_obj );
+            
+            delete( obj.controller.timer );
+            delete( obj.plotter.timer );
         end
         
         temp_sensor_open_serial( obj, temp_index )
@@ -58,6 +75,17 @@ classdef leaf_heater_system < handle
             obj.controller.temp_setpoint = setpoint_input;
         end
         
+        function enable_plotting( obj )
+            obj.plotter.figure = figure( );
+            set( gca, 'fontsize', obj.plotter.fs );
+            xlabel( 'Time [s]' );
+            ylabel( 'Temperature [C]' );
+            start( obj.plotter.timer );
+        end
+        function disable_plotting( obj )
+            stop( obj.plotter.timer );
+        end
+        
         function current_temp = temp_sensor_get_temp( obj )
             fprintf( obj.temp_sensor_obj, 'TEMP?' );
             current_temp = str2double( fgetl( obj.temp_sensor_obj ) );
@@ -73,7 +101,8 @@ classdef leaf_heater_system < handle
         voltage_measurement = sourcemeter_get_voltage( obj )
         
         % ( ~, ~ ) tosses the timer-related input arguments
-        function control_loop_callback( obj, ~, ~ )
+        function controller_callback( obj, ~, ~ )
+            obj.controller.busy_flag = true;
             current_temp = obj.temp_sensor_get_temp( );
             
             if( abs( current_temp - obj.controller.temp_setpoint ) < 5 )
@@ -97,6 +126,16 @@ classdef leaf_heater_system < handle
             obj.data.time_array( end + 1 ) = toc( get( obj.controller.timer, 'UserData' ) );
             obj.data.temp_array( end + 1 ) = current_temp;
             obj.data.output_array( end + 1 ) = current_level;
+            obj.controller.busy_flag = false;
+        end
+        
+        % ( ~, ~ ) tosses the timer-related input arguments
+        function plotter_callback( obj, ~, ~ )
+            if ~obj.controller.busy_flag    % Check to make sure controller callback isn't running
+                plot( obj.data.time_array, obj.data.temp_array, ...
+                    'o--', 'linewidth', obj.plotter.lw, 'markersize', obj.plotter.ms );
+                grid on;
+            end
         end
     end
 end
