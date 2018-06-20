@@ -34318,7 +34318,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C102" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C100" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND90" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -34638,15 +34637,16 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="DNP89" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP90" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP91" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R44" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
+<part name="R44" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="49R9"/>
 <part name="DNP45" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC31" library="74xx-little-de" library_urn="urn:adsk.eagle:library:86" deviceset="74*1G08" device="DCK" package3d_urn="urn:adsk.eagle:package:2405/1" technology="AHC"/>
 <part name="DNP112" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP113" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C76" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
-<part name="C83" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C76" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
+<part name="C83" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="DNP114" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="R45" library="resistor" deviceset="R-EU_" device="R0603" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -37997,16 +37997,12 @@ stability!</text>
 <attribute name="VALUE" x="214.884" y="109.601" size="1.778" layer="96"/>
 </instance>
 <instance part="GND80" gate="1" x="213.36" y="104.14"/>
-<instance part="C102" gate="G$1" x="66.04" y="78.74" smashed="yes">
-<attribute name="NAME" x="67.564" y="79.121" size="1.778" layer="95"/>
-<attribute name="VALUE" x="67.564" y="74.041" size="1.778" layer="96"/>
-</instance>
 <instance part="C100" gate="G$1" x="55.88" y="78.74" smashed="yes">
 <attribute name="NAME" x="57.404" y="79.121" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.404" y="74.041" size="1.778" layer="96"/>
 </instance>
-<instance part="GND81" gate="1" x="66.04" y="68.58"/>
-<instance part="GND90" gate="1" x="55.88" y="68.58"/>
+<instance part="GND81" gate="1" x="66.04" y="66.04"/>
+<instance part="GND90" gate="1" x="55.88" y="66.04"/>
 <instance part="DNP73" gate="G$1" x="175.26" y="127"/>
 <instance part="DNP92" gate="G$1" x="175.26" y="129.54"/>
 <instance part="DNP107" gate="G$1" x="175.26" y="132.08" rot="R180"/>
@@ -38114,6 +38110,10 @@ stability!</text>
 <instance part="DNP149" gate="G$1" x="190.5" y="185.42"/>
 <instance part="DNP90" gate="G$1" x="106.68" y="129.54"/>
 <instance part="DNP91" gate="G$1" x="106.68" y="111.76" rot="R180"/>
+<instance part="R45" gate="G$1" x="66.04" y="76.2" smashed="yes" rot="MR270">
+<attribute name="NAME" x="67.31" y="79.7814" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="67.31" y="74.422" size="1.778" layer="96" rot="MR180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -38178,12 +38178,12 @@ stability!</text>
 <segment>
 <pinref part="GND90" gate="1" pin="GND"/>
 <pinref part="C100" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="71.12" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="68.58" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND81" gate="1" pin="GND"/>
-<pinref part="C102" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="71.12" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="68.58" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R45" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND100" gate="1" pin="GND"/>
@@ -38387,10 +38387,10 @@ stability!</text>
 <net name="MCU_VCAP_1" class="0">
 <segment>
 <pinref part="IC21" gate="G$1" pin="VCAP_1"/>
-<pinref part="C102" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="86.36" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <label x="83.82" y="83.82" size="1.778" layer="95" rot="MR0"/>
+<pinref part="R45" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MCU_PB11" class="0">
