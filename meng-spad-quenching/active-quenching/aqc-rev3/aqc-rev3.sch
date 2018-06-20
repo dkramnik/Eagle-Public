@@ -34281,8 +34281,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R11" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2k2"/>
 <part name="DNP58" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C84" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C91" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C92" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C91" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
+<part name="C92" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C81" library="rcl" deviceset="C-EU" device="C0603" value="4u7"/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
@@ -34318,7 +34318,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND76" library="supply1" deviceset="GND" device=""/>
 <part name="C109" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C100" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C100" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND90" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="DNP73" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -34337,13 +34337,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C79" library="rcl" deviceset="C-EU" device="C0603" value="4u7"/>
 <part name="GND109" library="supply1" deviceset="GND" device=""/>
 <part name="GND110" library="supply1" deviceset="GND" device=""/>
-<part name="R79" library="resistor" deviceset="R-EU_" device="R0603" value="DNP"/>
-<part name="R75" library="resistor" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R79" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
+<part name="R75" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="GND111" library="supply1" deviceset="GND" device=""/>
 <part name="DNP129" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP130" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R78" library="resistor" deviceset="R-EU_" device="R0603" value="0R"/>
-<part name="R74" library="resistor" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R78" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
+<part name="R74" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="GND117" library="supply1" deviceset="GND" device=""/>
 <part name="DNP131" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="U$14" library="Kramnik's Library" deviceset="BI_ARROW" device=""/>
@@ -34507,7 +34507,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C86" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="GND160" library="supply1" deviceset="GND" device=""/>
 <part name="DNP10" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C107" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C107" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="GND156" library="supply1" deviceset="GND" device=""/>
 <part name="RLY1" library="meng" deviceset="MEDER_CRF05-1A" device="" value="CRF05-1A"/>
 <part name="RLY2" library="meng" deviceset="MEDER_CRF05-1A" device="" value="CRF05-1A"/>
@@ -34630,8 +34630,8 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="DNP85" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP86" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP87" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C65" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
-<part name="C73" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C65" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C73" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND92" library="supply1" deviceset="GND" device=""/>
 <part name="DNP88" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP89" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -34646,7 +34646,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C83" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="DNP114" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="R45" library="resistor" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R45" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 </parts>
 <sheets>
 <sheet>
