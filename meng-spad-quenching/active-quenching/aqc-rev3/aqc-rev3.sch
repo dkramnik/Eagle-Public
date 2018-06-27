@@ -57783,13 +57783,13 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R22" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="150R"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="C49" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C49" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C48" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C36" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C36" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C24" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C35" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C35" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C28" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C37" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C37" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C38" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
@@ -57804,7 +57804,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U2" library="Texas Instruments_By_element14_Batch_1" deviceset="SN65EPT22DGK" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="C21" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C23" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C23" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="DNP20" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -57829,7 +57829,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="DNP27" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C74" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
-<part name="C73" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C73" library="rcl" deviceset="C-EU" device="C0402" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="DNP28" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -57855,7 +57855,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
 <part name="C78" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C77" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C77" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="IC14" library="meng" deviceset="LTC1711" device=""/>
@@ -57873,7 +57873,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="DNP6" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C44" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C43" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C43" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R28" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
@@ -57888,7 +57888,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C51" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100p"/>
 <part name="IC20" library="meng" deviceset="NC7WZ16P6X" device=""/>
 <part name="C81" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
-<part name="C83" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C83" library="rcl" deviceset="C-EU" device="C0402" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="49R9"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" deviceset="GND" device=""/>
@@ -57916,7 +57916,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND84" library="supply1" deviceset="GND" device=""/>
 <part name="TP12" library="testpad" deviceset="TP" device="TP06R" value="TPTP06R"/>
 <part name="IC18" library="74xx-little-de" deviceset="74*1G04" device="DCK" technology="AHC" value="74AHC1G04DCK"/>
-<part name="C65" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C65" library="rcl" deviceset="C-EU" device="C0402" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C60" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
 <part name="GND86" library="supply1" deviceset="GND" device=""/>
 <part name="GND87" library="supply1" deviceset="GND" device=""/>
@@ -58237,7 +58237,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="X3" library="meng" deviceset="KEYSTONE-7774" device="" value="KEYSTONE-7774"/>
 <part name="X6" library="meng" deviceset="KEYSTONE-7774" device="" value="KEYSTONE-7774"/>
 <part name="GND159" library="supply1" deviceset="GND" device=""/>
-<part name="C95" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C95" library="rcl" deviceset="C-EU" device="C0402" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND160" library="supply1" deviceset="GND" device=""/>
 <part name="DNP10" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C109" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -58337,33 +58337,33 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R56" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
 <part name="DNP81" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C62" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C55" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C55" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
-<part name="C33" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C33" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND57" library="supply1" deviceset="GND" device=""/>
 <part name="R19" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="R17" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="R18" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
 <part name="C63" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C58" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C58" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
 <part name="DNP82" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP83" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C64" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C59" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C59" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND89" library="supply1" deviceset="GND" device=""/>
 <part name="DNP84" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC19" library="74xx-little-de" library_urn="urn:adsk.eagle:library:86" deviceset="74*1G32" device="DCK" package3d_urn="urn:adsk.eagle:package:2405/1" technology="AHC"/>
 <part name="C66" library="rcl" deviceset="C-EU" device="C0402" value="10n"/>
-<part name="C61" library="rcl" deviceset="C-EU" device="C0402" value="100n"/>
+<part name="C61" library="rcl" deviceset="C-EU" device="C0402" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND91" library="supply1" deviceset="GND" device=""/>
 <part name="DNP85" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP86" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP87" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="C93" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
-<part name="C80" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C93" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
+<part name="C80" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND92" library="supply1" deviceset="GND" device=""/>
 <part name="DNP88" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP89" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -58375,7 +58375,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="DNP112" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP113" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C84" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C89" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C89" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="DNP114" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="R74" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
@@ -58383,14 +58383,14 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="IC22" library="74xx-little-de" library_urn="urn:adsk.eagle:library:86" deviceset="74*1G08" device="DCK" package3d_urn="urn:adsk.eagle:package:2405/1" technology="AHC"/>
 <part name="C85" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
-<part name="C90" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C90" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="GND94" library="supply1" deviceset="GND" device=""/>
 <part name="DNP47" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="R47" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 <part name="R51" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R"/>
 <part name="C72" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="DNP"/>
 <part name="DNP1000" library="meng" deviceset="RLE_LOGO" device=""/>
-<part name="C29" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="100n"/>
+<part name="C29" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1UF 10V X7R 0402 10%"/>
 <part name="C30" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10n"/>
 <part name="GND95" library="supply1" deviceset="GND" device=""/>
 <part name="GND96" library="supply1" deviceset="GND" device=""/>
