@@ -57909,7 +57909,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="R65" library="resistor" deviceset="R-EU_" device="R0603" value="RES SMD 470 OHM 1% 1/10W 0603"/>
-<part name="TP16" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="ONE_SHOT"/>
+<part name="TP16" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="OS_COMP"/>
 <part name="TP15" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="DMND_IBIAS"/>
 <part name="TP14" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="DELTA_V"/>
 <part name="TP22" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="GND"/>
@@ -58097,10 +58097,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C22" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 4.7UF 6.3V X7R 0603 10%"/>
 <part name="GND120" library="supply1" deviceset="GND" device=""/>
 <part name="TP17" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="V_A"/>
-<part name="TP18" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_1"/>
-<part name="TP19" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_2"/>
-<part name="TP20" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_3"/>
-<part name="TP21" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_4"/>
+<part name="TP18" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="OS_CCS"/>
+<part name="TP19" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_1"/>
+<part name="TP20" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_2"/>
+<part name="TP21" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="EXTRA_3"/>
 <part name="TP6" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="VREF_AV_DET"/>
 <part name="TP5" library="Kramnik's Library" deviceset="KEYSTONE_5000" device="" value="GND"/>
 <part name="GND85" library="supply1" deviceset="GND" device=""/>

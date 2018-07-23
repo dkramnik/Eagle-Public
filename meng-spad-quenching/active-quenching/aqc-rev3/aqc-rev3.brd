@@ -35,7 +35,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -29042,7 +29042,7 @@ design rules under a new name.</description>
 <element name="R65" library="resistor" package="R0603" value="RES SMD 470 OHM 1% 1/10W 0603" x="104.4575" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="106.045" y="50.4825" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="TP16" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="ONE_SHOT" x="29.5275" y="69.85" smashed="yes">
+<element name="TP16" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="OS_COMP" x="29.5275" y="69.85" smashed="yes">
 <attribute name="NAME" x="31.115" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="32.0675" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
@@ -29251,19 +29251,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.195" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="37.1475" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="TP18" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_1" x="39.6875" y="69.85" smashed="yes" rot="R270">
+<element name="TP18" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="OS_CCS" x="39.6875" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.275" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="42.2275" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="TP19" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_2" x="44.7675" y="69.85" smashed="yes" rot="R270">
+<element name="TP19" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_1" x="44.7675" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.355" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="47.3075" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="TP20" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_3" x="49.8475" y="69.85" smashed="yes" rot="R270">
+<element name="TP20" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_2" x="49.8475" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="51.435" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="52.3875" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="TP21" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_4" x="54.9275" y="69.85" smashed="yes" rot="R270">
+<element name="TP21" library="Kramnik's Library" package="KEYSTONE_5000_MINIATURE" value="EXTRA_3" x="54.9275" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.515" y="71.755" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 <attribute name="VALUE" x="57.4675" y="71.755" size="0.8128" layer="27" font="vector" ratio="16" rot="R270"/>
 </element>
