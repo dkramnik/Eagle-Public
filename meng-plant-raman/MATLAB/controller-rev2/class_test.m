@@ -4,6 +4,7 @@ close all
 clear
 clc
 
+% use 'seriallist' command to list all available serial ports
 sys_heater = leaf_heater_system( [ ] );    % Search for default OSX inst. name
 
 sys_heater.set_temp_setpoint( 50 );
