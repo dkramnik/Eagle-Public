@@ -1,6 +1,6 @@
 function temp_controller_open_serial( obj, port_name )
 % Opens a USB COM port to talk to the leaf heater temp. sensor
-% 'index' specifies the serial_list index to use, if specifically known
+% 'port_name' specifies the COM port name to use, if specifically known
     
     serial_list = seriallist;
     
