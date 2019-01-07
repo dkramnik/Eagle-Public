@@ -8,7 +8,7 @@ input( 'Unplug leaf heater controller, then press [enter].' );
 
 before = seriallist;
 
-input( 'Replug leaf heater controller, then press [enter] to start.' );
+input( 'Replug leaf heater controller, wait a few seconds, then press [enter] to start.' );
 
 after = seriallist;
 while( isempty( setdiff( after, before ) ) )    % Wait for new device
