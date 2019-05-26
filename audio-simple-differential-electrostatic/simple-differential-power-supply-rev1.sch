@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17183,8 +17184,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="10.16" y="22.86" size="2.54" layer="97">Keep appropriate clearances to high_voltage net class</text>
 </plain>
 <instances>
-<instance part="FRAME7" gate="G$1" x="0" y="0"/>
-<instance part="FRAME7" gate="G$2" x="172.72" y="2.54"/>
+<instance part="FRAME7" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME7" gate="G$2" x="172.72" y="2.54" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="3.81" size="2.54" layer="94" font="vector"/>
+<attribute name="SHEET" x="259.08" y="3.81" size="2.54" layer="94" font="vector"/>
+<attribute name="DRAWING_NAME" x="190.5" y="21.59" size="2.54" layer="94" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17237,15 +17242,22 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="156.464" y="157.861" size="1.778" layer="95"/>
 <attribute name="VALUE" x="156.464" y="152.781" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="167.64" y="170.18"/>
+<instance part="C6" gate="G$1" x="167.64" y="170.18" smashed="yes">
+<attribute name="NAME" x="168.783" y="170.6626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.783" y="165.5826" size="1.778" layer="96"/>
+</instance>
 <instance part="GND4" gate="1" x="139.7" y="139.7" smashed="yes">
 <attribute name="VALUE" x="137.16" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="U$5" gate="G$1" x="172.72" y="190.5" rot="R180"/>
-<instance part="U$6" gate="G$1" x="111.76" y="170.18" rot="R180"/>
-<instance part="U$7" gate="G$1" x="111.76" y="165.1" rot="R180"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
+<instance part="U$5" gate="G$1" x="172.72" y="190.5" smashed="yes" rot="R180"/>
+<instance part="U$6" gate="G$1" x="111.76" y="170.18" smashed="yes" rot="R180"/>
+<instance part="U$7" gate="G$1" x="111.76" y="165.1" smashed="yes" rot="R180"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94" font="vector"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94" font="vector"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94" font="vector"/>
+</instance>
 <instance part="C10" gate="G$1" x="129.54" y="119.38" smashed="yes">
 <attribute name="NAME" x="131.064" y="119.761" size="1.778" layer="95"/>
 <attribute name="VALUE" x="131.064" y="114.681" size="1.778" layer="96"/>
@@ -17262,13 +17274,16 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="156.464" y="94.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="156.464" y="89.281" size="1.778" layer="96"/>
 </instance>
-<instance part="C14" gate="G$1" x="167.64" y="106.68"/>
+<instance part="C14" gate="G$1" x="167.64" y="106.68" smashed="yes">
+<attribute name="NAME" x="168.783" y="107.1626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.783" y="102.0826" size="1.778" layer="96"/>
+</instance>
 <instance part="GND10" gate="1" x="139.7" y="76.2" smashed="yes">
 <attribute name="VALUE" x="137.16" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="U$12" gate="G$1" x="172.72" y="127" rot="R180"/>
-<instance part="U$13" gate="G$1" x="111.76" y="106.68" rot="R180"/>
-<instance part="U$14" gate="G$1" x="111.76" y="101.6" rot="R180"/>
+<instance part="U$12" gate="G$1" x="172.72" y="127" smashed="yes" rot="R180"/>
+<instance part="U$13" gate="G$1" x="111.76" y="106.68" smashed="yes" rot="R180"/>
+<instance part="U$14" gate="G$1" x="111.76" y="101.6" smashed="yes" rot="R180"/>
 <instance part="D13" gate="G$1" x="124.46" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="121.92" y="121.4374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="121.92" y="119.1514" size="1.778" layer="96" rot="R180"/>
@@ -17285,12 +17300,28 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="121.92" y="96.0374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="121.92" y="93.7514" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="KK1" gate="G$1" x="228.6" y="124.46"/>
-<instance part="X4" gate="-1" x="228.6" y="91.44" rot="MR0"/>
-<instance part="X4" gate="-2" x="228.6" y="96.52" rot="MR0"/>
-<instance part="X2" gate="-1" x="96.52" y="40.64" rot="MR0"/>
-<instance part="X2" gate="-2" x="96.52" y="38.1" rot="MR0"/>
-<instance part="X2" gate="-3" x="96.52" y="35.56" rot="MR0"/>
+<instance part="KK1" gate="G$1" x="228.6" y="124.46" smashed="yes">
+<attribute name="NAME" x="234.315" y="127.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="234.315" y="125.095" size="1.778" layer="96"/>
+</instance>
+<instance part="X4" gate="-1" x="228.6" y="91.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="226.06" y="90.678" size="1.524" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="229.362" y="92.837" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="X4" gate="-2" x="228.6" y="96.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="226.06" y="95.758" size="1.524" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="229.362" y="97.917" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="X2" gate="-1" x="96.52" y="40.64" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="39.878" size="1.524" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="97.282" y="42.037" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="X2" gate="-2" x="96.52" y="38.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="37.338" size="1.524" layer="95" rot="MR0"/>
+</instance>
+<instance part="X2" gate="-3" x="96.52" y="35.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="93.98" y="34.798" size="1.524" layer="95" rot="MR0"/>
+</instance>
 <instance part="GND12" gate="1" x="101.6" y="30.48" smashed="yes">
 <attribute name="VALUE" x="99.06" y="27.94" size="1.778" layer="96"/>
 </instance>
@@ -17622,8 +17653,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="208.28" y="140.97" size="0.8128" layer="113">Net Class: high_voltage</text>
 </plain>
 <instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME2" gate="G$2" x="172.72" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94" font="vector"/>
+<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94" font="vector"/>
+<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94" font="vector"/>
+</instance>
 <instance part="GND1" gate="1" x="91.44" y="91.44" smashed="yes">
 <attribute name="VALUE" x="88.9" y="88.9" size="1.778" layer="96"/>
 </instance>
@@ -17660,10 +17695,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="54.61" y="146.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="141.478" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="50.8" y="175.26" rot="R180"/>
-<instance part="U$2" gate="G$1" x="101.6" y="132.08" rot="R180"/>
-<instance part="U$3" gate="G$1" x="101.6" y="116.84"/>
-<instance part="U$4" gate="G$1" x="99.06" y="73.66"/>
+<instance part="U$1" gate="G$1" x="50.8" y="175.26" smashed="yes" rot="R180"/>
+<instance part="U$2" gate="G$1" x="101.6" y="132.08" smashed="yes" rot="R180"/>
+<instance part="U$3" gate="G$1" x="101.6" y="116.84" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="99.06" y="73.66" smashed="yes"/>
 <instance part="C7" gate="G$1" x="104.14" y="111.76" smashed="yes">
 <attribute name="NAME" x="105.664" y="112.141" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.664" y="107.061" size="1.778" layer="96"/>
@@ -17675,7 +17710,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="93.98" y="127" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="50.8" y="116.84"/>
+<instance part="C1" gate="G$1" x="50.8" y="116.84" smashed="yes">
+<attribute name="NAME" x="51.943" y="117.3226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="51.943" y="112.2426" size="1.778" layer="96"/>
+</instance>
 <instance part="T1" gate="G$1" x="88.9" y="101.6" smashed="yes">
 <attribute name="NAME" x="93.98" y="109.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="106.68" size="1.778" layer="96"/>
@@ -17724,10 +17762,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="171.45" y="146.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="141.478" size="1.778" layer="96"/>
 </instance>
-<instance part="U$8" gate="G$1" x="167.64" y="175.26" rot="R180"/>
-<instance part="U$9" gate="G$1" x="218.44" y="132.08" rot="R180"/>
-<instance part="U$10" gate="G$1" x="218.44" y="116.84"/>
-<instance part="U$11" gate="G$1" x="215.9" y="73.66"/>
+<instance part="U$8" gate="G$1" x="167.64" y="175.26" smashed="yes" rot="R180"/>
+<instance part="U$9" gate="G$1" x="218.44" y="132.08" smashed="yes" rot="R180"/>
+<instance part="U$10" gate="G$1" x="218.44" y="116.84" smashed="yes"/>
+<instance part="U$11" gate="G$1" x="215.9" y="73.66" smashed="yes"/>
 <instance part="C8" gate="G$1" x="220.98" y="111.76" smashed="yes">
 <attribute name="NAME" x="222.504" y="112.141" size="1.778" layer="95"/>
 <attribute name="VALUE" x="222.504" y="107.061" size="1.778" layer="96"/>
@@ -17739,7 +17777,10 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="210.82" y="127" size="1.778" layer="95"/>
 <attribute name="VALUE" x="210.82" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="167.64" y="116.84"/>
+<instance part="C9" gate="G$1" x="167.64" y="116.84" smashed="yes">
+<attribute name="NAME" x="168.783" y="117.3226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.783" y="112.2426" size="1.778" layer="96"/>
+</instance>
 <instance part="T3" gate="G$1" x="205.74" y="101.6" smashed="yes">
 <attribute name="NAME" x="210.82" y="109.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="210.82" y="106.68" size="1.778" layer="96"/>
@@ -17752,16 +17793,31 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <attribute name="NAME" x="165.1" y="165.1" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="165.1" y="162.56" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="KK2" gate="G$1" x="96.52" y="147.32"/>
-<instance part="KK3" gate="G$1" x="213.36" y="147.32"/>
-<instance part="KK4" gate="G$1" x="96.52" y="170.18"/>
-<instance part="KK5" gate="G$1" x="213.36" y="170.18"/>
-<instance part="J2" gate="G$1" x="104.14" y="25.4" rot="MR0"/>
+<instance part="KK2" gate="G$1" x="96.52" y="147.32" smashed="yes">
+<attribute name="NAME" x="102.235" y="150.495" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.235" y="147.955" size="1.778" layer="96"/>
+</instance>
+<instance part="KK3" gate="G$1" x="213.36" y="147.32" smashed="yes">
+<attribute name="NAME" x="219.075" y="150.495" size="1.778" layer="95"/>
+<attribute name="VALUE" x="219.075" y="147.955" size="1.778" layer="96"/>
+</instance>
+<instance part="KK4" gate="G$1" x="96.52" y="170.18" smashed="yes">
+<attribute name="NAME" x="102.235" y="173.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.235" y="170.815" size="1.778" layer="96"/>
+</instance>
+<instance part="KK5" gate="G$1" x="213.36" y="170.18" smashed="yes">
+<attribute name="NAME" x="219.075" y="173.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="219.075" y="170.815" size="1.778" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="104.14" y="25.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="104.14" y="40.64" size="1.778" layer="104" rot="MR0"/>
+<attribute name="VALUE" x="104.14" y="38.1" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="GND11" gate="1" x="88.9" y="20.32" smashed="yes">
 <attribute name="VALUE" x="86.36" y="17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="U$15" gate="G$1" x="83.82" y="33.02" rot="R180"/>
-<instance part="U$16" gate="G$1" x="83.82" y="27.94" rot="R180"/>
+<instance part="U$15" gate="G$1" x="83.82" y="33.02" smashed="yes" rot="R180"/>
+<instance part="U$16" gate="G$1" x="83.82" y="27.94" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
