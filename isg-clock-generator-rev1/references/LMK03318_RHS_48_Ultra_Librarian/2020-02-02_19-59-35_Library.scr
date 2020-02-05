@@ -1,0 +1,529 @@
+# Created by Ultra Librarian Lite 8.3.122 Copyright © 1999-2018
+# Ultra Librarian Free Reader, Accelerated-Designs Inc.
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'RHS0048A.pac';
+Layer 1;
+Smd '1' 9.8425 23.622 -0 R90 (-133.8582 108.2677);
+Layer 1;
+Smd '2' 9.8425 23.622 -0 R90 (-133.8582 88.5827);
+Layer 1;
+Smd '3' 9.8425 23.622 -0 R90 (-133.8582 68.8977);
+Layer 1;
+Smd '4' 9.8425 23.622 -0 R90 (-133.8582 49.2126);
+Layer 1;
+Smd '5' 9.8425 23.622 -0 R90 (-133.8582 29.5276);
+Layer 1;
+Smd '6' 9.8425 23.622 -0 R90 (-133.8582 9.8426);
+Layer 1;
+Smd '7' 9.8425 23.622 -0 R90 (-133.8582 -9.8425);
+Layer 1;
+Smd '8' 9.8425 23.622 -0 R90 (-133.8582 -29.5275);
+Layer 1;
+Smd '9' 9.8425 23.622 -0 R90 (-133.8582 -49.2126);
+Layer 1;
+Smd '10' 9.8425 23.622 -0 R90 (-133.8582 -68.8976);
+Layer 1;
+Smd '11' 9.8425 23.622 -0 R90 (-133.8582 -88.5826);
+Layer 1;
+Smd '12' 9.8425 23.622 -0 R90 (-133.8582 -108.2677);
+Layer 1;
+Smd '13' 9.8425 23.622 -0 R0 (-108.2676 -133.8582);
+Layer 1;
+Smd '14' 9.8425 23.622 -0 R0 (-88.5826 -133.8582);
+Layer 1;
+Smd '15' 9.8425 23.622 -0 R0 (-68.8976 -133.8582);
+Layer 1;
+Smd '16' 9.8425 23.622 -0 R0 (-49.2125 -133.8582);
+Layer 1;
+Smd '17' 9.8425 23.622 -0 R0 (-29.5275 -133.8582);
+Layer 1;
+Smd '18' 9.8425 23.622 -0 R0 (-9.8425 -133.8582);
+Layer 1;
+Smd '19' 9.8425 23.622 -0 R0 (9.8426 -133.8582);
+Layer 1;
+Smd '20' 9.8425 23.622 -0 R0 (29.5276 -133.8582);
+Layer 1;
+Smd '21' 9.8425 23.622 -0 R0 (49.2127 -133.8582);
+Layer 1;
+Smd '22' 9.8425 23.622 -0 R0 (68.8977 -133.8582);
+Layer 1;
+Smd '23' 9.8425 23.622 -0 R0 (88.5827 -133.8582);
+Layer 1;
+Smd '24' 9.8425 23.622 -0 R0 (108.2678 -133.8582);
+Layer 1;
+Smd '25' 9.8425 23.622 -0 R90 (133.8583 -108.2677);
+Layer 1;
+Smd '26' 9.8425 23.622 -0 R90 (133.8583 -88.5826);
+Layer 1;
+Smd '27' 9.8425 23.622 -0 R90 (133.8583 -68.8976);
+Layer 1;
+Smd '28' 9.8425 23.622 -0 R90 (133.8583 -49.2126);
+Layer 1;
+Smd '29' 9.8425 23.622 -0 R90 (133.8583 -29.5275);
+Layer 1;
+Smd '30' 9.8425 23.622 -0 R90 (133.8583 -9.8425);
+Layer 1;
+Smd '31' 9.8425 23.622 -0 R90 (133.8583 9.8426);
+Layer 1;
+Smd '32' 9.8425 23.622 -0 R90 (133.8583 29.5276);
+Layer 1;
+Smd '33' 9.8425 23.622 -0 R90 (133.8583 49.2126);
+Layer 1;
+Smd '34' 9.8425 23.622 -0 R90 (133.8583 68.8977);
+Layer 1;
+Smd '35' 9.8425 23.622 -0 R90 (133.8583 88.5827);
+Layer 1;
+Smd '36' 9.8425 23.622 -0 R90 (133.8583 108.2677);
+Layer 1;
+Smd '37' 9.8425 23.622 -0 R0 (108.2678 133.8583);
+Layer 1;
+Smd '38' 9.8425 23.622 -0 R0 (88.5827 133.8583);
+Layer 1;
+Smd '39' 9.8425 23.622 -0 R0 (68.8977 133.8583);
+Layer 1;
+Smd '40' 9.8425 23.622 -0 R0 (49.2127 133.8583);
+Layer 1;
+Smd '41' 9.8425 23.622 -0 R0 (29.5276 133.8583);
+Layer 1;
+Smd '42' 9.8425 23.622 -0 R0 (9.8426 133.8583);
+Layer 1;
+Smd '43' 9.8425 23.622 -0 R0 (-9.8425 133.8583);
+Layer 1;
+Smd '44' 9.8425 23.622 -0 R0 (-29.5275 133.8583);
+Layer 1;
+Smd '45' 9.8425 23.622 -0 R0 (-49.2125 133.8583);
+Layer 1;
+Smd '46' 9.8425 23.622 -0 R0 (-68.8976 133.8583);
+Layer 1;
+Smd '47' 9.8425 23.622 -0 R0 (-88.5826 133.8583);
+Layer 1;
+Smd '48' 9.8425 23.622 -0 R0 (-108.2676 133.8583);
+Layer 1;
+Smd '49' 200.7874 200.7874 -0 R0 NOCREAM (.0001 0);
+Layer 1;
+Smd 'V1' 19.685 19.685 -100 R0 (90.5827 -31.4567);
+Layer 1;
+Smd 'V2' 19.685 19.685 -100 R0 (90.5827 31.4567);
+Layer 1;
+Smd 'V3' 19.685 19.685 -100 R0 (-90.5827 31.4567);
+Layer 1;
+Smd 'V4' 19.685 19.685 -100 R0 (-90.5827 -31.4567);
+Layer 1;
+Smd 'V5' 19.685 19.685 -100 R0 (-31.4567 90.5827);
+Layer 1;
+Smd 'V6' 19.685 19.685 -100 R0 (31.4567 90.5827);
+Layer 1;
+Smd 'V7' 19.685 19.685 -100 R0 (31.4567 -90.5827);
+Layer 1;
+Smd 'V8' 19.685 19.685 -100 R0 (-31.4567 -90.5827);
+Layer 1;
+Smd 'V9' 19.685 19.685 -100 R0 (-31.4567 31.4567);
+Layer 1;
+Smd 'V10' 19.685 19.685 -100 R0 (31.4567 31.4567);
+Layer 1;
+Smd 'V11' 19.685 19.685 -100 R0 (-31.4567 -31.4567);
+Layer 1;
+Smd 'V12' 19.685 19.685 -100 R0 (31.4567 -31.4567);
+Layer 21;
+Wire 8 (-146 -146) (-138 -146);
+Wire 8 (-146 -146) (-146 -138);
+Wire 8 (138 -146) (146 -146);
+Wire 8 (146 -146) (146 -138);
+Wire 8 (146 138) (146 146);
+Wire 8 (138 146) (146 146);
+Wire 8 (-146 146) (-123 146);
+Wire 8 (-146 123) (-146 146);
+Layer 51;
+Wire 6 (-141 -141) (141 -141);
+Wire 6 (-141 141) (141 141);
+Wire 6 (141 -141) (141 141);
+Wire 6 (-141 -141) (-141 141);
+Wire 4 (-100 100) -180 (-124 100);
+Wire 4 (-124 100) -180 (-100 100);
+Change Size 50;
+Change Ratio 6;
+Text '.Designator' SR0 (-75 -45);
+Layer 31;
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 -27.5197) (27.5197 -27.5197) (27.5197 27.5197) (-27.5197 27.5197) (-27.5197 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 -27.5197) (90.4331 -27.5197) (90.4331 27.5197) (35.3937 27.5197) (35.3937 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 -27.5197) (-35.3937 -27.5197) (-35.3937 27.5197) (-90.4331 27.5197) (-90.4331 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 -90.4331) (-35.3937 -90.4331) (-35.3937 -35.3937) (-90.4331 -35.3937) (-90.4331 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 -90.4331) (90.4331 -90.4331) (90.4331 -35.3937) (35.3937 -35.3937) (35.3937 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 -90.4331) (27.5197 -90.4331) (27.5197 -35.3937) (-27.5197 -35.3937) (-27.5197 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 35.3939) (-35.3937 35.3939) (-35.3937 90.4333) (-90.4331 90.4333) (-90.4331 35.3939);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 35.3939) (90.4331 35.3939) (90.4331 90.4333) (35.3937 90.4333) (35.3937 35.3939);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 35.3939) (27.5197 35.3939) (27.5197 90.4333) (-27.5197 90.4333) (-27.5197 35.3939);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'RHS0048A_NV.pac';
+Layer 1;
+Smd '1' 9.8425 23.622 -0 R90 (-133.8582 108.2677);
+Layer 1;
+Smd '2' 9.8425 23.622 -0 R90 (-133.8582 88.5827);
+Layer 1;
+Smd '3' 9.8425 23.622 -0 R90 (-133.8582 68.8977);
+Layer 1;
+Smd '4' 9.8425 23.622 -0 R90 (-133.8582 49.2126);
+Layer 1;
+Smd '5' 9.8425 23.622 -0 R90 (-133.8582 29.5276);
+Layer 1;
+Smd '6' 9.8425 23.622 -0 R90 (-133.8582 9.8426);
+Layer 1;
+Smd '7' 9.8425 23.622 -0 R90 (-133.8582 -9.8425);
+Layer 1;
+Smd '8' 9.8425 23.622 -0 R90 (-133.8582 -29.5275);
+Layer 1;
+Smd '9' 9.8425 23.622 -0 R90 (-133.8582 -49.2126);
+Layer 1;
+Smd '10' 9.8425 23.622 -0 R90 (-133.8582 -68.8976);
+Layer 1;
+Smd '11' 9.8425 23.622 -0 R90 (-133.8582 -88.5826);
+Layer 1;
+Smd '12' 9.8425 23.622 -0 R90 (-133.8582 -108.2677);
+Layer 1;
+Smd '13' 9.8425 23.622 -0 R0 (-108.2676 -133.8582);
+Layer 1;
+Smd '14' 9.8425 23.622 -0 R0 (-88.5826 -133.8582);
+Layer 1;
+Smd '15' 9.8425 23.622 -0 R0 (-68.8976 -133.8582);
+Layer 1;
+Smd '16' 9.8425 23.622 -0 R0 (-49.2125 -133.8582);
+Layer 1;
+Smd '17' 9.8425 23.622 -0 R0 (-29.5275 -133.8582);
+Layer 1;
+Smd '18' 9.8425 23.622 -0 R0 (-9.8425 -133.8582);
+Layer 1;
+Smd '19' 9.8425 23.622 -0 R0 (9.8426 -133.8582);
+Layer 1;
+Smd '20' 9.8425 23.622 -0 R0 (29.5276 -133.8582);
+Layer 1;
+Smd '21' 9.8425 23.622 -0 R0 (49.2127 -133.8582);
+Layer 1;
+Smd '22' 9.8425 23.622 -0 R0 (68.8977 -133.8582);
+Layer 1;
+Smd '23' 9.8425 23.622 -0 R0 (88.5827 -133.8582);
+Layer 1;
+Smd '24' 9.8425 23.622 -0 R0 (108.2678 -133.8582);
+Layer 1;
+Smd '25' 9.8425 23.622 -0 R90 (133.8583 -108.2677);
+Layer 1;
+Smd '26' 9.8425 23.622 -0 R90 (133.8583 -88.5826);
+Layer 1;
+Smd '27' 9.8425 23.622 -0 R90 (133.8583 -68.8976);
+Layer 1;
+Smd '28' 9.8425 23.622 -0 R90 (133.8583 -49.2126);
+Layer 1;
+Smd '29' 9.8425 23.622 -0 R90 (133.8583 -29.5275);
+Layer 1;
+Smd '30' 9.8425 23.622 -0 R90 (133.8583 -9.8425);
+Layer 1;
+Smd '31' 9.8425 23.622 -0 R90 (133.8583 9.8426);
+Layer 1;
+Smd '32' 9.8425 23.622 -0 R90 (133.8583 29.5276);
+Layer 1;
+Smd '33' 9.8425 23.622 -0 R90 (133.8583 49.2126);
+Layer 1;
+Smd '34' 9.8425 23.622 -0 R90 (133.8583 68.8977);
+Layer 1;
+Smd '35' 9.8425 23.622 -0 R90 (133.8583 88.5827);
+Layer 1;
+Smd '36' 9.8425 23.622 -0 R90 (133.8583 108.2677);
+Layer 1;
+Smd '37' 9.8425 23.622 -0 R0 (108.2678 133.8583);
+Layer 1;
+Smd '38' 9.8425 23.622 -0 R0 (88.5827 133.8583);
+Layer 1;
+Smd '39' 9.8425 23.622 -0 R0 (68.8977 133.8583);
+Layer 1;
+Smd '40' 9.8425 23.622 -0 R0 (49.2127 133.8583);
+Layer 1;
+Smd '41' 9.8425 23.622 -0 R0 (29.5276 133.8583);
+Layer 1;
+Smd '42' 9.8425 23.622 -0 R0 (9.8426 133.8583);
+Layer 1;
+Smd '43' 9.8425 23.622 -0 R0 (-9.8425 133.8583);
+Layer 1;
+Smd '44' 9.8425 23.622 -0 R0 (-29.5275 133.8583);
+Layer 1;
+Smd '45' 9.8425 23.622 -0 R0 (-49.2125 133.8583);
+Layer 1;
+Smd '46' 9.8425 23.622 -0 R0 (-68.8976 133.8583);
+Layer 1;
+Smd '47' 9.8425 23.622 -0 R0 (-88.5826 133.8583);
+Layer 1;
+Smd '48' 9.8425 23.622 -0 R0 (-108.2676 133.8583);
+Layer 1;
+Smd '49' 200.7874 200.7874 -0 R0 NOCREAM (.0001 0);
+Layer 21;
+Wire 8 (-146 -146) (-138 -146);
+Wire 8 (-146 -146) (-146 -138);
+Wire 8 (138 -146) (146 -146);
+Wire 8 (146 -146) (146 -138);
+Wire 8 (146 138) (146 146);
+Wire 8 (138 146) (146 146);
+Wire 8 (-146 146) (-123 146);
+Wire 8 (-146 123) (-146 146);
+Layer 51;
+Wire 6 (-141 -141) (141 -141);
+Wire 6 (-141 141) (141 141);
+Wire 6 (141 -141) (141 141);
+Wire 6 (-141 -141) (-141 141);
+Wire 4 (-100 100) -180 (-124 100);
+Wire 4 (-124 100) -180 (-100 100);
+Change Size 50;
+Change Ratio 6;
+Text '.Designator' SR0 (-75 -45);
+Layer 31;
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 -27.5197) (27.5197 -27.5197) (27.5197 27.5197) (-27.5197 27.5197) (-27.5197 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 -27.5197) (90.4331 -27.5197) (90.4331 27.5197) (35.3937 27.5197) (35.3937 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 -27.5197) (-35.3937 -27.5197) (-35.3937 27.5197) (-90.4331 27.5197) (-90.4331 -27.5197);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 -90.4331) (-35.3937 -90.4331) (-35.3937 -35.3937) (-90.4331 -35.3937) (-90.4331 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 -90.4331) (90.4331 -90.4331) (90.4331 -35.3937) (35.3937 -35.3937) (35.3937 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 -90.4331) (27.5197 -90.4331) (27.5197 -35.3937) (-27.5197 -35.3937) (-27.5197 -90.4331);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-90.4331 35.3939) (-35.3937 35.3939) (-35.3937 90.4333) (-90.4331 90.4333) (-90.4331 35.3939);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (35.3937 35.3939) (90.4331 35.3939) (90.4331 90.4333) (35.3937 90.4333) (35.3937 35.3939);
+Layer 31;
+Change Spacing 50;
+Change Pour solid;
+Polygon 1  (-27.5197 35.3939) (27.5197 35.3939) (27.5197 90.4333) (-27.5197 90.4333) (-27.5197 35.3939);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'LMK03318RHS.sym';
+Layer 94;
+Pin 'STATUS0' Out None Middle R180 Both 0 (1100 -1500)
+Pin 'STATUS1' Out None Middle R180 Both 0 (1100 -1600)
+Pin 'CAP_DIG' Pas None Middle R0 Both 0 (-1100 1200)
+Pin 'VDD_DIG' Pwr None Middle R0 Both 0 (-1100 1700)
+Pin 'VDD_IN' Pwr None Middle R0 Both 0 (-1100 1600)
+Pin 'PRIREF_P' In None Middle R0 Both 0 (-1100 500)
+Pin 'PRIREF_N' In None Middle R0 Both 0 (-1100 400)
+Pin 'REFSEL' In None Middle R0 Both 0 (-1100 -200)
+Pin 'HW_SW_CTRL' In None Middle R0 Both 0 (-1100 -400)
+Pin 'SECREF_P' In None Middle R0 Both 0 (-1100 200)
+Pin 'SECREF_N' In None Middle R0 Both 0 (-1100 100)
+Pin 'GPIO0' I/O None Middle R0 Both 0 (-1100 -600)
+Pin 'PDN' In None Middle R0 Both 0 (-1100 -1400)
+Pin 'OUT0_P' Out None Middle R180 Both 0 (1100 1000)
+Pin 'OUT0_N' Out None Middle R180 Both 0 (1100 900)
+Pin 'OUT1_N' Out None Middle R180 Both 0 (1100 600)
+Pin 'OUT1_P' Out None Middle R180 Both 0 (1100 700)
+Pin 'VDDO_01' Pwr None Middle R180 Both 0 (1100 1700)
+Pin 'VDDO_23' Pwr None Middle R180 Both 0 (1100 1600)
+Pin 'OUT2_P' Out None Middle R180 Both 0 (1100 400)
+Pin 'OUT2_N' Out None Middle R180 Both 0 (1100 300)
+Pin 'OUT3_N' Out None Middle R180 Both 0 (1100 0)
+Pin 'OUT3_P' Out None Middle R180 Both 0 (1100 100)
+Pin 'GPIO1' I/O None Middle R0 Both 0 (-1100 -700)
+Pin 'SDA' I/O None Middle R0 Both 0 (-1100 -1600)
+Pin 'SCL' I/O None Middle R0 Both 0 (-1100 -1700)
+Pin 'VDD_LDO' Pwr None Middle R0 Both 0 (-1100 1400)
+Pin 'CAP_LDO' Pas None Middle R0 Both 0 (-1100 1000)
+Pin 'NC' Pas None Middle R0 Both 0 (-1100 700)
+Pin 'GPIO2' I/O None Middle R0 Both 0 (-1100 -800)
+Pin 'GPIO3' I/O None Middle R0 Both 0 (-1100 -900)
+Pin 'GPIO4' I/O None Middle R0 Both 0 (-1100 -1000)
+Pin 'GPIO5' I/O None Middle R0 Both 0 (-1100 -1100)
+Pin 'LF' Pas None Middle R0 Both 0 (-1100 800)
+Pin 'CAP_PLL' Pas None Middle R0 Both 0 (-1100 1100)
+Pin 'VDD_PLL' Pwr None Middle R0 Both 0 (-1100 1500)
+Pin 'VDDO_4' Pwr None Middle R180 Both 0 (1100 1500)
+Pin 'OUT4_N' Out None Middle R180 Both 0 (1100 -300)
+Pin 'OUT4_P' Out None Middle R180 Both 0 (1100 -200)
+Pin 'VDDO_5' Pwr None Middle R180 Both 0 (1100 1400)
+Pin 'OUT5_N' Out None Middle R180 Both 0 (1100 -600)
+Pin 'OUT5_P' Out None Middle R180 Both 0 (1100 -500)
+Pin 'VDDO_6' Pwr None Middle R180 Both 0 (1100 1300)
+Pin 'OUT6_N' Out None Middle R180 Both 0 (1100 -900)
+Pin 'OUT6_P' Out None Middle R180 Both 0 (1100 -800)
+Pin 'VDDO_7' Pwr None Middle R180 Both 0 (1100 1200)
+Pin 'OUT7_N' Out None Middle R180 Both 0 (1100 -1200)
+Pin 'OUT7_P' Out None Middle R180 Both 0 (1100 -1100)
+Pin 'PAD' Pwr None Middle R180 Both 0 (1100 -1800)
+Wire 6 (-900 -1900) (900 -1900);
+Wire 6 (900 -1900) (900 1900);
+Wire 6 (900 1900) (-900 1900);
+Wire 6 (-900 1900) (-900 -1900);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 6;
+Text '>Name' SR0 (-186 59);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (-211 -41);
+Layer 96;
+Change Size 82;
+Change Ratio 6;
+Text '>Value' SR0 (-211 -41);
+
+Edit 'LMK03318RHSR.dev';
+Prefix 'U';
+Description '';
+Value Off;
+Add LMK03318RHS 'A' Next  0 (0 0);
+Package 'RHS0048A';
+Technology '';
+Connect 'A.STATUS0' '1';
+Connect 'A.STATUS1' '2';
+Connect 'A.CAP_DIG' '3';
+Connect 'A.VDD_DIG' '4';
+Connect 'A.VDD_IN' '5';
+Connect 'A.PRIREF_P' '6';
+Connect 'A.PRIREF_N' '7';
+Connect 'A.REFSEL' '8';
+Connect 'A.HW_SW_CTRL' '9';
+Connect 'A.SECREF_P' '10';
+Connect 'A.SECREF_N' '11';
+Connect 'A.GPIO0' '12';
+Connect 'A.PDN' '13';
+Connect 'A.OUT0_P' '14';
+Connect 'A.OUT0_N' '15';
+Connect 'A.OUT1_N' '16';
+Connect 'A.OUT1_P' '17';
+Connect 'A.VDDO_01' '18';
+Connect 'A.VDDO_23' '19';
+Connect 'A.OUT2_P' '20';
+Connect 'A.OUT2_N' '21';
+Connect 'A.OUT3_N' '22';
+Connect 'A.OUT3_P' '23';
+Connect 'A.GPIO1' '24';
+Connect 'A.SDA' '25';
+Connect 'A.SCL' '26';
+Connect 'A.VDD_LDO' '27';
+Connect 'A.CAP_LDO' '28';
+Connect 'A.NC' '29';
+Connect 'A.GPIO2' '30';
+Connect 'A.GPIO3' '31';
+Connect 'A.GPIO4' '32';
+Connect 'A.GPIO5' '33';
+Connect 'A.LF' '34';
+Connect 'A.CAP_PLL' '35';
+Connect 'A.VDD_PLL' '36';
+Connect 'A.VDDO_4' '37';
+Connect 'A.OUT4_N' '38';
+Connect 'A.OUT4_P' '39';
+Connect 'A.VDDO_5' '40';
+Connect 'A.OUT5_N' '41';
+Connect 'A.OUT5_P' '42';
+Connect 'A.VDDO_6' '43';
+Connect 'A.OUT6_N' '44';
+Connect 'A.OUT6_P' '45';
+Connect 'A.VDDO_7' '46';
+Connect 'A.OUT7_N' '47';
+Connect 'A.OUT7_P' '48';
+Connect 'A.PAD' '49';
+Package 'RHS0048A_NV' 'RHS0048A_NV';
+Technology '';
+Connect 'A.STATUS0' '1';
+Connect 'A.STATUS1' '2';
+Connect 'A.CAP_DIG' '3';
+Connect 'A.VDD_DIG' '4';
+Connect 'A.VDD_IN' '5';
+Connect 'A.PRIREF_P' '6';
+Connect 'A.PRIREF_N' '7';
+Connect 'A.REFSEL' '8';
+Connect 'A.HW_SW_CTRL' '9';
+Connect 'A.SECREF_P' '10';
+Connect 'A.SECREF_N' '11';
+Connect 'A.GPIO0' '12';
+Connect 'A.PDN' '13';
+Connect 'A.OUT0_P' '14';
+Connect 'A.OUT0_N' '15';
+Connect 'A.OUT1_N' '16';
+Connect 'A.OUT1_P' '17';
+Connect 'A.VDDO_01' '18';
+Connect 'A.VDDO_23' '19';
+Connect 'A.OUT2_P' '20';
+Connect 'A.OUT2_N' '21';
+Connect 'A.OUT3_N' '22';
+Connect 'A.OUT3_P' '23';
+Connect 'A.GPIO1' '24';
+Connect 'A.SDA' '25';
+Connect 'A.SCL' '26';
+Connect 'A.VDD_LDO' '27';
+Connect 'A.CAP_LDO' '28';
+Connect 'A.NC' '29';
+Connect 'A.GPIO2' '30';
+Connect 'A.GPIO3' '31';
+Connect 'A.GPIO4' '32';
+Connect 'A.GPIO5' '33';
+Connect 'A.LF' '34';
+Connect 'A.CAP_PLL' '35';
+Connect 'A.VDD_PLL' '36';
+Connect 'A.VDDO_4' '37';
+Connect 'A.OUT4_N' '38';
+Connect 'A.OUT4_P' '39';
+Connect 'A.VDDO_5' '40';
+Connect 'A.OUT5_N' '41';
+Connect 'A.OUT5_P' '42';
+Connect 'A.VDDO_6' '43';
+Connect 'A.OUT6_N' '44';
+Connect 'A.OUT6_P' '45';
+Connect 'A.VDDO_7' '46';
+Connect 'A.OUT7_N' '47';
+Connect 'A.OUT7_P' '48';
+Connect 'A.PAD' '49';
