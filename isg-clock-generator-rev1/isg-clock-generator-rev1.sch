@@ -239,7 +239,7 @@
 <wire x1="-3.5814" y1="-3.5814" x2="-3.5814" y2="3.5814" width="0.1524" layer="51"/>
 <wire x1="-2.54" y1="2.54" x2="-3.1496" y2="2.54" width="0.1016" layer="51" curve="-180"/>
 <wire x1="-3.1496" y1="2.54" x2="-2.54" y2="2.54" width="0.1016" layer="51" curve="-180"/>
-<text x="-1.905" y="-1.143" size="1.27" layer="51" ratio="6" rot="SR0">.Designator</text>
+<text x="-3.81" y="5.08" size="0.8128" layer="27" font="vector" ratio="16" rot="SR0">&gt;VALUE</text>
 <polygon width="0.0254" layer="31">
 <vertex x="-0.699" y="-0.699"/>
 <vertex x="0.699" y="-0.699"/>
@@ -294,7 +294,39 @@
 <vertex x="0.699" y="2.29700625"/>
 <vertex x="-0.699" y="2.29700625"/>
 </polygon>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-3.81" y="6.35" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0">&gt;NAME</text>
+</package>
+<package name="JP2_ROUND">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
+<text x="-3.556" y="2.6035" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-3.556" y="1.7145" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
+<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
+<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
+<circle x="-4.289425" y="0" radius="0.155575" width="0.127" layer="21"/>
 </package>
 <package name="RHS0048A_NV">
 <smd name="1" x="-3.399996875" y="2.75" dx="0.25" dy="0.6" layer="1" rot="R90"/>
@@ -360,7 +392,7 @@
 <wire x1="-3.5814" y1="-3.5814" x2="-3.5814" y2="3.5814" width="0.1524" layer="51"/>
 <wire x1="-2.54" y1="2.54" x2="-3.1496" y2="2.54" width="0.1016" layer="51" curve="-180"/>
 <wire x1="-3.1496" y1="2.54" x2="-2.54" y2="2.54" width="0.1016" layer="51" curve="-180"/>
-<text x="-1.905" y="-1.143" size="1.27" layer="51" ratio="6" rot="SR0">.Designator</text>
+<text x="-3.81" y="5.08" size="0.8128" layer="27" font="vector" ratio="16" rot="SR0">&gt;VALUE</text>
 <polygon width="0.0254" layer="31">
 <vertex x="-0.699" y="-0.699"/>
 <vertex x="0.699" y="-0.699"/>
@@ -415,39 +447,7 @@
 <vertex x="0.699" y="2.29700625"/>
 <vertex x="-0.699" y="2.29700625"/>
 </polygon>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-<package name="JP2_ROUND">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.016" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-1.27" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.016" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="1.016" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
-<pad name="2" x="0" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="0.9144" diameter="1.778" rot="R90"/>
-<text x="-3.556" y="2.6035" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-<text x="-3.556" y="1.7145" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
-<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
-<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
-<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
-<circle x="-4.289425" y="0" radius="0.155575" width="0.127" layer="21"/>
+<text x="-3.81" y="6.35" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15843,7 +15843,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="IC1" library="isg-clock-generator" deviceset="LMK03318RHSR" device=""/>
+<part name="IC1" library="isg-clock-generator" deviceset="LMK03318RHSR" device="RHS0048A_NV" value="LMK03318RHSR"/>
 <part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="OUT0_P"/>
 <part name="X2" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="OUT0_N"/>
 <part name="X3" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="OUT2_P"/>
@@ -16113,8 +16113,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DNP44" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP45" library="meng" deviceset="ARROW_1DIR" device=""/>
-<part name="X4" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="OUT1_P"/>
-<part name="X5" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="OUT1_P"/>
+<part name="X4" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="PRIREF_P"/>
+<part name="X5" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="PRIREF_N"/>
 <part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R47" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
