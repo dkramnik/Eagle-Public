@@ -13089,11 +13089,11 @@ Source: www.kingbright.com</description>
 <part name="R39" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 13.0K OHM 1% 1/10W 0603"/>
 <part name="JP9" library="isg-clock-generator" deviceset="JP2E" device="" value="HWCTRL"/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R40" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
+<part name="R40" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 10K OHM 1% 1/10W 0603"/>
 <part name="R41" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="R42" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="GND73" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP10" library="isg-clock-generator" deviceset="JP2E" device="" value="RSEL"/>
+<part name="JP10" library="isg-clock-generator" deviceset="JP2E" device="" value="REFSEL"/>
 <part name="GND74" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R43" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
 <part name="R44" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
@@ -13171,9 +13171,13 @@ Source: www.kingbright.com</description>
 <part name="IC4" library="isg-clock-generator" deviceset="TPS7A8001DRBR" device="" value="TPS7A8001DRBR"/>
 <part name="IC5" library="isg-clock-generator" deviceset="TPS7A8001DRBR" device="" value="TPS7A8001DRBR"/>
 <part name="JP1" library="isg-clock-generator" deviceset="JP5Q" device="" package3d_urn="urn:adsk.eagle:package:15454/1" value="MOTHERBOARD"/>
-<part name="X6" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1"/>
+<part name="X6" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1" value="V_INPUT"/>
 <part name="C45" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 4.7UF 6.3V X5R 0603 10%"/>
 <part name="C47" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 4.7UF 6.3V X5R 0603 10%"/>
+<part name="DNP58" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="DNP59" library="meng" deviceset="ARROW_1DIR" device=""/>
+<part name="GND88" library="supply1" deviceset="GND" device=""/>
+<part name="U$4" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13237,7 +13241,7 @@ Open = Mid
 5-6 = NARROW</text>
 <text x="236.22" y="314.96" size="1.778" layer="98">TODO: FIX INDUCTOR PACKAGES</text>
 <text x="124.46" y="416.56" size="1.778" layer="98">TODO: fix all values for new LDO MPN</text>
-<text x="312.42" y="414.02" size="3.81" layer="98">Headers for Connecting to Motherboard </text>
+<text x="312.42" y="416.56" size="3.81" layer="98">Headers for Connecting to Motherboard </text>
 <text x="15.24" y="416.56" size="1.778" layer="98">TODO: figure out power input connectors</text>
 <text x="86.36" y="335.28" size="1.27" layer="98">Vref(1+Rtop/Rbottom) = Vout</text>
 <text x="86.36" y="332.74" size="1.27" layer="98">Vref = 0.8V Nominal</text>
@@ -14185,8 +14189,8 @@ Open = Mid
 <attribute name="VALUE" x="86.36" y="360.68" size="1.778" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="JP1" gate="B" x="353.06" y="396.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="347.98" y="403.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="347.98" y="386.715" size="1.778" layer="96"/>
+<attribute name="NAME" x="347.98" y="411.48" size="1.778" layer="95"/>
+<attribute name="VALUE" x="347.98" y="409.575" size="1.778" layer="96"/>
 </instance>
 <instance part="X6" gate="-1" x="20.32" y="378.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.78" y="379.222" size="1.524" layer="95" rot="R180"/>
@@ -14203,6 +14207,12 @@ Open = Mid
 <attribute name="NAME" x="169.164" y="343.281" size="1.778" layer="95"/>
 <attribute name="VALUE" x="169.164" y="338.201" size="0.8128" layer="96"/>
 </instance>
+<instance part="DNP58" gate="G$1" x="78.74" y="144.78" smashed="yes"/>
+<instance part="DNP59" gate="G$1" x="83.82" y="139.7" smashed="yes" rot="R90"/>
+<instance part="GND88" gate="1" x="342.9" y="378.46" smashed="yes">
+<attribute name="VALUE" x="340.36" y="375.92" size="1.778" layer="96"/>
+</instance>
+<instance part="U$4" gate="G$1" x="337.82" y="408.94" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14723,6 +14733,22 @@ Open = Mid
 <pinref part="JP14" gate="G$1" pin="6"/>
 <wire x1="350.52" y1="40.64" x2="347.98" y2="40.64" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND88" gate="1" pin="GND"/>
+<wire x1="342.9" y1="381" x2="342.9" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="B" pin="3"/>
+<wire x1="342.9" y1="383.54" x2="342.9" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="398.78" x2="345.44" y2="398.78" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="B" pin="4"/>
+<wire x1="360.68" y1="398.78" x2="363.22" y2="398.78" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="398.78" x2="363.22" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="396.24" x2="363.22" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="383.54" x2="342.9" y2="383.54" width="0.1524" layer="91"/>
+<junction x="342.9" y="383.54"/>
+<pinref part="JP1" gate="B" pin="6"/>
+<wire x1="360.68" y1="396.24" x2="363.22" y2="396.24" width="0.1524" layer="91"/>
+<junction x="363.22" y="396.24"/>
+</segment>
 </net>
 <net name="DECAP_LDO" class="0">
 <segment>
@@ -14856,6 +14882,11 @@ Open = Mid
 <wire x1="347.98" y1="35.56" x2="360.68" y2="35.56" width="0.1524" layer="91"/>
 <label x="360.68" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="B" pin="9"/>
+<wire x1="345.44" y1="391.16" x2="332.74" y2="391.16" width="0.1524" layer="91"/>
+<label x="332.74" y="391.16" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -14867,6 +14898,11 @@ Open = Mid
 <pinref part="JP14" gate="G$1" pin="9"/>
 <wire x1="332.74" y1="35.56" x2="320.04" y2="35.56" width="0.1524" layer="91"/>
 <label x="320.04" y="35.56" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="B" pin="10"/>
+<wire x1="360.68" y1="391.16" x2="375.92" y2="391.16" width="0.1524" layer="91"/>
+<label x="375.92" y="391.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT2_P" class="0">
@@ -14962,6 +14998,11 @@ Open = Mid
 <wire x1="411.48" y1="116.84" x2="411.48" y2="119.38" width="0.1524" layer="91"/>
 <label x="378.46" y="118.11" size="0.8128" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="B" pin="7"/>
+<wire x1="345.44" y1="393.7" x2="332.74" y2="393.7" width="0.1524" layer="91"/>
+<label x="332.74" y="393.7" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="STATUS1" class="0">
 <segment>
@@ -14970,6 +15011,11 @@ Open = Mid
 <wire x1="370.84" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="114.3" x2="426.72" y2="119.38" width="0.1524" layer="91"/>
 <label x="378.46" y="115.57" size="0.8128" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="B" pin="5"/>
+<wire x1="345.44" y1="396.24" x2="332.74" y2="396.24" width="0.1524" layer="91"/>
+<label x="332.74" y="396.24" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PDN" class="0">
@@ -15618,6 +15664,19 @@ Open = Mid
 <wire x1="78.74" y1="353.06" x2="78.74" y2="355.6" width="0.1524" layer="91"/>
 <junction x="78.74" y="355.6"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="B" pin="1"/>
+<wire x1="345.44" y1="401.32" x2="342.9" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="401.32" x2="342.9" y2="406.4" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="406.4" x2="342.9" y2="408.94" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="408.94" x2="332.74" y2="408.94" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="406.4" x2="363.22" y2="406.4" width="0.1524" layer="91"/>
+<junction x="342.9" y="406.4"/>
+<wire x1="363.22" y1="406.4" x2="363.22" y2="401.32" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="B" pin="2"/>
+<wire x1="363.22" y1="401.32" x2="360.68" y2="401.32" width="0.1524" layer="91"/>
+<label x="332.74" y="408.94" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="LDO_PVDDIO_FB" class="0">
 <segment>
@@ -15879,6 +15938,14 @@ Open = Mid
 <pinref part="IC1" gate="A" pin="HW_SW_CTRL"/>
 <label x="312.42" y="146.05" size="0.8128" layer="95" rot="R180"/>
 <wire x1="83.82" y1="144.78" x2="314.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="144.78" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
+<junction x="83.82" y="144.78"/>
+<label x="73.66" y="144.78" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="B" pin="8"/>
+<wire x1="360.68" y1="393.7" x2="375.92" y2="393.7" width="0.1524" layer="91"/>
+<label x="375.92" y="393.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LF_NARROW" class="0">
