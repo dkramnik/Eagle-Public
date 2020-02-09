@@ -13188,9 +13188,7 @@ BLM15AG221SN1D</text>
 <text x="449.58" y="109.22" size="1.778" layer="98">Ferrite bead and bulk cap can be shared for VDDO with same PLL/freq.
 Can unused VDDO pins be left unpowered?</text>
 <text x="302.26" y="93.98" size="1.778" layer="98">HWCTRL state is sampled on POR and determines the mode of operation.</text>
-<text x="71.12" y="180.34" size="1.778" layer="98">XTAL: SecRef only
-Todo: get symbol
-with grounded pads</text>
+<text x="99.06" y="185.42" size="1.778" layer="98" rot="R180">XTAL: SecRef only</text>
 <text x="449.58" y="101.6" size="1.778" layer="98">LDOs step-down the output driver supply to 1.8 V internally.
 "VDDO4...7 can be GND if the output dividers are disabled"</text>
 <text x="335.28" y="60.96" size="1.778" layer="98">TI USB2ANY connector</text>
@@ -15706,12 +15704,13 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <label x="81.28" y="402.59" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PULLUP_GPIO5" class="0">
 <segment>
 <pinref part="JP3" gate="1" pin="3"/>
 <wire x1="264.16" y1="91.44" x2="266.7" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="91.44" x2="266.7" y2="101.6" width="0.1524" layer="91"/>
+<label x="265.43" y="101.6" size="0.8128" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="GPIO5_SEL_1_2" class="0">
@@ -15778,20 +15777,22 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <label x="236.22" y="39.37" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="GPIO4_JUMPER" class="0">
 <segment>
 <pinref part="JP4" gate="1" pin="2"/>
 <wire x1="231.14" y1="88.9" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="88.9" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
+<label x="231.14" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="GPIO3_JUMPER" class="0">
 <segment>
 <pinref part="JP5" gate="1" pin="2"/>
 <wire x1="198.12" y1="88.9" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="88.9" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<label x="198.12" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
@@ -15811,12 +15812,13 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="208.28" y1="132.08" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="GPIO2_JUMPER" class="0">
 <segment>
 <pinref part="JP6" gate="1" pin="2"/>
 <wire x1="165.1" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="88.9" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<label x="165.1" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -15836,12 +15838,13 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="175.26" y1="134.62" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="GPIO1_JUMPER" class="0">
 <segment>
 <pinref part="JP7" gate="1" pin="2"/>
 <wire x1="132.08" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="88.9" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
+<label x="132.08" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -15861,12 +15864,13 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="142.24" y1="137.16" x2="314.96" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="GPIO0_JUMPER" class="0">
 <segment>
 <pinref part="JP8" gate="1" pin="2"/>
 <wire x1="106.68" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="88.9" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<label x="106.68" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -15878,20 +15882,22 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="116.84" y1="139.7" x2="314.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="HWCTRL_JUMPER" class="0">
 <segment>
 <pinref part="JP9" gate="1" pin="2"/>
 <wire x1="73.66" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="88.9" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<label x="73.66" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="REFSEL_JUMPER" class="0">
 <segment>
 <pinref part="JP10" gate="1" pin="2"/>
 <wire x1="40.64" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="88.9" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="HW_SW_CTRL" class="0">
