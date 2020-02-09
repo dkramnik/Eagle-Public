@@ -13120,7 +13120,7 @@ Source: www.kingbright.com</description>
 <part name="DNP48" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP49" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND78" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP14" library="Kramnik's Library" deviceset="CON_OST_302-S101" device=""/>
+<part name="JP14" library="Kramnik's Library" deviceset="CON_OST_302-S101" device="" value="TI USB2ANY"/>
 <part name="R51" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP 0603"/>
 <part name="R52" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP 0603"/>
 <part name="GND86" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13155,6 +13155,10 @@ Source: www.kingbright.com</description>
 <part name="GND90" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND91" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND92" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R47" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
+<part name="R48" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
+<part name="C68" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 0.1UF 25V X7R 0603 10%"/>
+<part name="GND93" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13225,6 +13229,7 @@ Open = Mid
 Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <text x="403.86" y="170.18" size="1.778" layer="98">1.8V^2 / 50R = 64.8mW = 1/16W
 (so std. 0402 49.9R resistor can't be burnt out under any conditions)</text>
+<text x="335.28" y="17.78" size="1.778" layer="98">OST 302-S101</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="342.9" y="154.94" smashed="yes">
@@ -14139,8 +14144,8 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <instance part="DNP50" gate="G$1" x="86.36" y="228.6" smashed="yes"/>
 <instance part="DNP51" gate="G$1" x="45.72" y="241.3" smashed="yes"/>
 <instance part="DNP52" gate="G$1" x="45.72" y="256.54" smashed="yes"/>
-<instance part="DNP53" gate="G$1" x="325.12" y="35.56" smashed="yes"/>
-<instance part="DNP54" gate="G$1" x="355.6" y="35.56" smashed="yes"/>
+<instance part="DNP53" gate="G$1" x="393.7" y="30.48" smashed="yes"/>
+<instance part="DNP54" gate="G$1" x="393.7" y="35.56" smashed="yes"/>
 <instance part="DNP55" gate="G$1" x="312.42" y="114.3" smashed="yes"/>
 <instance part="DNP56" gate="G$1" x="312.42" y="111.76" smashed="yes"/>
 <instance part="GND87" gate="1" x="350.52" y="25.4" smashed="yes">
@@ -14220,6 +14225,21 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 </instance>
 <instance part="GND92" gate="1" x="109.22" y="160.02" smashed="yes">
 <attribute name="VALUE" x="106.68" y="157.48" size="1.778" layer="96"/>
+</instance>
+<instance part="R47" gate="G$1" x="386.08" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="387.35" y="57.3786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="387.35" y="52.578" size="0.8128" layer="96"/>
+</instance>
+<instance part="R48" gate="G$1" x="378.46" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="379.73" y="57.3786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="387.35" y="50.038" size="0.8128" layer="96"/>
+</instance>
+<instance part="C68" gate="G$1" x="368.3" y="58.42" smashed="yes" rot="MR0">
+<attribute name="NAME" x="366.776" y="58.801" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="366.776" y="53.721" size="0.8128" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND93" gate="1" x="368.3" y="48.26" smashed="yes">
+<attribute name="VALUE" x="365.76" y="45.72" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14778,6 +14798,11 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <pinref part="Q1" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND93" gate="1" pin="GND"/>
+<pinref part="C68" gate="G$1" pin="2"/>
+<wire x1="368.3" y1="50.8" x2="368.3" y2="53.34" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="DECAP_LDO" class="0">
 <segment>
@@ -14908,8 +14933,12 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 </segment>
 <segment>
 <pinref part="JP14" gate="G$1" pin="10"/>
-<wire x1="347.98" y1="35.56" x2="360.68" y2="35.56" width="0.1524" layer="91"/>
-<label x="360.68" y="35.56" size="1.778" layer="95"/>
+<wire x1="347.98" y1="35.56" x2="378.46" y2="35.56" width="0.1524" layer="91"/>
+<label x="398.78" y="35.56" size="1.778" layer="95"/>
+<pinref part="R48" gate="G$1" pin="1"/>
+<wire x1="378.46" y1="35.56" x2="398.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="50.8" x2="378.46" y2="35.56" width="0.1524" layer="91"/>
+<junction x="378.46" y="35.56"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="B" pin="9"/>
@@ -14925,8 +14954,14 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 </segment>
 <segment>
 <pinref part="JP14" gate="G$1" pin="9"/>
-<wire x1="332.74" y1="35.56" x2="320.04" y2="35.56" width="0.1524" layer="91"/>
-<label x="320.04" y="35.56" size="1.778" layer="95" rot="R180"/>
+<wire x1="332.74" y1="35.56" x2="330.2" y2="35.56" width="0.1524" layer="91"/>
+<label x="398.78" y="30.48" size="1.778" layer="95"/>
+<wire x1="330.2" y1="35.56" x2="330.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="30.48" x2="386.08" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="386.08" y1="30.48" x2="398.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="50.8" x2="386.08" y2="30.48" width="0.1524" layer="91"/>
+<junction x="386.08" y="30.48"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="B" pin="10"/>
@@ -15475,6 +15510,18 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="330.2" y1="60.96" x2="330.2" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="63.5" x2="299.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="325.12" y="66.04" size="1.778" layer="95" rot="R180"/>
+<pinref part="C68" gate="G$1" pin="1"/>
+<wire x1="330.2" y1="63.5" x2="368.3" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="63.5" x2="368.3" y2="60.96" width="0.1524" layer="91"/>
+<junction x="330.2" y="63.5"/>
+<wire x1="368.3" y1="63.5" x2="378.46" y2="63.5" width="0.1524" layer="91"/>
+<junction x="368.3" y="63.5"/>
+<pinref part="R48" gate="G$1" pin="2"/>
+<wire x1="378.46" y1="63.5" x2="378.46" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="63.5" x2="386.08" y2="63.5" width="0.1524" layer="91"/>
+<junction x="378.46" y="63.5"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+<wire x1="386.08" y1="63.5" x2="386.08" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PP_P1V8_VDDO" class="0">
@@ -15992,7 +16039,7 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <label x="124.46" y="176.53" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="PRIREF_VCM_DIVIDER" class="0">
 <segment>
 <pinref part="JP13" gate="1" pin="3"/>
 <wire x1="73.66" y1="213.36" x2="88.9" y2="213.36" width="0.1524" layer="91"/>
@@ -16001,14 +16048,16 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <pinref part="R52" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="213.36" x2="88.9" y2="208.28" width="0.1524" layer="91"/>
 <junction x="88.9" y="213.36"/>
+<label x="86.36" y="214.63" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="EXT_VDD" class="0">
 <segment>
 <pinref part="JP14" gate="G$1" pin="5"/>
 <wire x1="332.74" y1="40.64" x2="330.2" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="40.64" x2="330.2" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R53" gate="G$1" pin="1"/>
+<label x="330.2" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$9" class="0">
