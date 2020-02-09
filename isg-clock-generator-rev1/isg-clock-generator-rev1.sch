@@ -458,7 +458,7 @@
 <smd name="6" x="1.475" y="-0.325" dx="0.85" dy="0.35" layer="1"/>
 <smd name="7" x="1.475" y="0.325" dx="0.85" dy="0.35" layer="1"/>
 <smd name="8" x="1.475" y="0.975" dx="0.85" dy="0.35" layer="1"/>
-<smd name="9" x="0" y="0" dx="1.5" dy="1.75" layer="1" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="1.5" dy="1.75" layer="1" cream="no"/>
 <wire x1="-1.5748" y1="1.1684" x2="-1.5748" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="-1.5748" y1="0.508" x2="-1.5748" y2="0.1524" width="0.1524" layer="51"/>
 <wire x1="-1.5748" y1="-0.1524" x2="-1.5748" y2="-0.508" width="0.1524" layer="51"/>
@@ -692,34 +692,6 @@
 <vertex x="0.8135" y="-0.9385"/>
 <vertex x="0.2" y="-0.9385"/>
 </polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="-0.5468" y="0.875"/>
-<vertex x="-0.5468" y="1.575"/>
-<vertex x="-0.3168" y="1.575"/>
-<vertex x="-0.3168" y="0.875"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="0.5468" y="0.875"/>
-<vertex x="0.5468" y="1.575"/>
-<vertex x="0.3168" y="1.575"/>
-<vertex x="0.3168" y="0.875"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="0.5468" y="-0.875"/>
-<vertex x="0.5468" y="-1.575"/>
-<vertex x="0.3168" y="-1.575"/>
-<vertex x="0.3168" y="-0.875"/>
-</polygon>
-<polygon width="0.1524" layer="1">
-<vertex x="-0.5468" y="-0.875"/>
-<vertex x="-0.5468" y="-1.575"/>
-<vertex x="-0.3168" y="-1.575"/>
-<vertex x="-0.3168" y="-0.875"/>
-</polygon>
-<wire x1="0.2032" y1="-0.4064" x2="-0.2032" y2="-0.4064" width="0.127" layer="18" curve="-180"/>
-<wire x1="-0.2032" y1="-0.4064" x2="0.2032" y2="-0.381" width="0.127" layer="18" curve="-180"/>
-<wire x1="0.2032" y1="0.4064" x2="-0.2032" y2="0.381" width="0.127" layer="18" curve="-180"/>
-<wire x1="-0.2032" y1="0.381" x2="0.2032" y2="0.4064" width="0.127" layer="18" curve="-180"/>
 <wire x1="-1.7018" y1="-1.7018" x2="-0.8636" y2="-1.7018" width="0.1524" layer="21"/>
 <wire x1="1.7018" y1="-1.7018" x2="1.7018" y2="-1.4732" width="0.1524" layer="21"/>
 <wire x1="1.7018" y1="1.7018" x2="0.8636" y2="1.7018" width="0.1524" layer="21"/>
@@ -731,6 +703,12 @@
 <text x="-1.905" y="2.2225" size="0.8128" layer="27" font="vector" ratio="16" rot="SR0">&gt;VALUE</text>
 <text x="-1.905" y="3.175" size="0.8128" layer="25" font="vector" ratio="16" rot="SR0">&gt;NAME</text>
 <circle x="-2.2225" y="1.5875" radius="0.15875" width="0.127" layer="21"/>
+<pad name="VIA1" x="0" y="0.3937" drill="0.3" diameter="0.6096" stop="no" thermals="no"/>
+<pad name="VIA2" x="0" y="-0.3937" drill="0.3" diameter="0.6096" stop="no" thermals="no"/>
+<smd name="PAD1" x="-0.4318" y="-1.1684" dx="0.381" dy="0.9652" layer="1" stop="no" cream="no"/>
+<smd name="PAD2" x="0.4318" y="-1.1684" dx="0.381" dy="0.9652" layer="1" stop="no" cream="no"/>
+<smd name="PAD4" x="-0.4318" y="1.1684" dx="0.381" dy="0.9652" layer="1" stop="no" cream="no"/>
+<smd name="PAD3" x="0.4318" y="1.1684" dx="0.381" dy="0.9652" layer="1" stop="no" cream="no"/>
 </package>
 <package name="JP8Q" urn="urn:adsk.eagle:footprint:15402/1" locally_modified="yes">
 <description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
@@ -1657,7 +1635,7 @@
 <connects>
 <connect gate="A" pin="EN" pad="5"/>
 <connect gate="A" pin="FB/SNS" pad="3"/>
-<connect gate="A" pin="GND" pad="4 9"/>
+<connect gate="A" pin="GND" pad="4 PAD PAD1 PAD2 PAD3 PAD4 VIA1 VIA2"/>
 <connect gate="A" pin="IN" pad="8"/>
 <connect gate="A" pin="IN_2" pad="7"/>
 <connect gate="A" pin="NR/SS" pad="6"/>
@@ -12961,9 +12939,9 @@ Source: www.kingbright.com</description>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C43" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.01uF X7R 0402"/>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R3" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0603"/>
-<part name="R4" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0603"/>
-<part name="R5" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0603"/>
+<part name="R3" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0402"/>
+<part name="R4" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0402"/>
+<part name="R5" library="rcl-modified-footprints" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0R JUMPER 0402"/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1Q" device="" package3d_urn="urn:adsk.eagle:package:15455/1" value="STAT_LED_EN"/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13120,7 +13098,7 @@ Source: www.kingbright.com</description>
 <part name="DNP48" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP49" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND78" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP14" library="Kramnik's Library" deviceset="CON_OST_302-S101" device="" value="TI USB2ANY"/>
+<part name="JP14" library="Kramnik's Library" deviceset="CON_OST_302-S101" device="" value="TI_USB2ANY"/>
 <part name="R51" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP 0603"/>
 <part name="R52" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP 0603"/>
 <part name="GND86" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -13136,7 +13114,7 @@ Source: www.kingbright.com</description>
 <part name="DNP57" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="IC4" library="isg-clock-generator" deviceset="TPS7A8001DRBR" device="" value="TPS7A8001DRBR"/>
 <part name="IC5" library="isg-clock-generator" deviceset="TPS7A8001DRBR" device="" value="TPS7A8001DRBR"/>
-<part name="JP1" library="isg-clock-generator" deviceset="JP5Q" device="" package3d_urn="urn:adsk.eagle:package:15454/1" value="MOTHERBOARD"/>
+<part name="JP1" library="isg-clock-generator" deviceset="JP5Q" device="" package3d_urn="urn:adsk.eagle:package:15454/1" value="EOS_MOTHERBOARD"/>
 <part name="X6" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device="" package3d_urn="urn:adsk.eagle:package:8078633/1" value="V_IN_EXT"/>
 <part name="C45" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 4.7UF 6.3V X5R 0603 10%"/>
 <part name="C47" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 4.7UF 6.3V X5R 0603 10%"/>
@@ -13144,9 +13122,9 @@ Source: www.kingbright.com</description>
 <part name="DNP59" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="GND88" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
-<part name="C50" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER"/>
-<part name="C52" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER"/>
-<part name="C64" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER"/>
+<part name="C50" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER 0402"/>
+<part name="C52" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER 0402"/>
+<part name="C64" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="0R JUMPER 0402"/>
 <part name="DNP60" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="C65" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1uF X7R 0402"/>
 <part name="C66" library="rcl-modified-footprints" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1uF X7R 0402"/>
@@ -13159,6 +13137,7 @@ Source: www.kingbright.com</description>
 <part name="R48" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
 <part name="C68" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 0.1UF 25V X7R 0603 10%"/>
 <part name="GND93" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R54" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -13230,6 +13209,14 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <text x="403.86" y="170.18" size="1.778" layer="98">1.8V^2 / 50R = 64.8mW = 1/16W
 (so std. 0402 49.9R resistor can't be burnt out under any conditions)</text>
 <text x="335.28" y="17.78" size="1.778" layer="98">OST 302-S101</text>
+<text x="203.2" y="55.88" size="1.778" layer="98" align="center-right">0.0 V</text>
+<text x="203.2" y="53.34" size="1.778" layer="98" align="center-right">0.2 V</text>
+<text x="203.2" y="50.8" size="1.778" layer="98" align="center-right">0.4 V</text>
+<text x="203.2" y="48.26" size="1.778" layer="98" align="center-right">0.6 V</text>
+<text x="203.2" y="45.72" size="1.778" layer="98" align="center-right">0.8 V</text>
+<text x="203.2" y="43.18" size="1.778" layer="98" align="center-right">1.0 V</text>
+<text x="203.2" y="40.64" size="1.778" layer="98" align="center-right">1.2 V</text>
+<text x="203.2" y="38.1" size="1.778" layer="98" align="center-right">1.4 V</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="342.9" y="154.94" smashed="yes">
@@ -14241,6 +14228,10 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <instance part="GND93" gate="1" x="368.3" y="48.26" smashed="yes">
 <attribute name="VALUE" x="365.76" y="45.72" size="1.778" layer="96"/>
 </instance>
+<instance part="R54" gate="G$1" x="274.32" y="106.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="276.86" y="112.268" size="1.778" layer="95"/>
+<attribute name="VALUE" x="277.368" y="110.49" size="0.8128" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15079,43 +15070,10 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <net name="GPIO5" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="GPIO5"/>
-<label x="312.42" y="128.27" size="0.8128" layer="95" rot="R180"/>
 <wire x1="314.96" y1="127" x2="274.32" y2="127" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="1" pin="2"/>
-<wire x1="264.16" y1="88.9" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="88.9" x2="274.32" y2="127" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="254" y1="55.88" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="55.88" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
-<junction x="274.32" y="88.9"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="254" y1="38.1" x2="274.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="38.1" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
-<junction x="274.32" y="55.88"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="274.32" y1="40.64" x2="274.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="43.18" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="45.72" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="48.26" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="50.8" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="53.34" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="254" y1="53.34" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
-<junction x="274.32" y="53.34"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="254" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
-<junction x="274.32" y="50.8"/>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="254" y1="48.26" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
-<junction x="274.32" y="48.26"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="254" y1="45.72" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
-<junction x="274.32" y="45.72"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="254" y1="43.18" x2="274.32" y2="43.18" width="0.1524" layer="91"/>
-<junction x="274.32" y="43.18"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="254" y1="40.64" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
-<junction x="274.32" y="40.64"/>
+<label x="312.42" y="128.27" size="0.8128" layer="95" rot="R180"/>
+<pinref part="R54" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="111.76" x2="274.32" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -16238,6 +16196,47 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <junction x="114.3" y="256.54"/>
 <label x="312.42" y="168.91" size="0.8128" layer="95" rot="R180"/>
 <label x="132.08" y="257.81" size="0.8128" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="GPIO5_JUMPER" class="0">
+<segment>
+<pinref part="JP3" gate="1" pin="2"/>
+<wire x1="264.16" y1="88.9" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="254" y1="55.88" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="55.88" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="254" y1="38.1" x2="274.32" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="38.1" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
+<junction x="274.32" y="55.88"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="40.64" x2="274.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="43.18" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="45.72" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="48.26" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="50.8" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="53.34" x2="274.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="254" y1="53.34" x2="274.32" y2="53.34" width="0.1524" layer="91"/>
+<junction x="274.32" y="53.34"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="254" y1="50.8" x2="274.32" y2="50.8" width="0.1524" layer="91"/>
+<junction x="274.32" y="50.8"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="254" y1="48.26" x2="274.32" y2="48.26" width="0.1524" layer="91"/>
+<junction x="274.32" y="48.26"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="254" y1="45.72" x2="274.32" y2="45.72" width="0.1524" layer="91"/>
+<junction x="274.32" y="45.72"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="254" y1="43.18" x2="274.32" y2="43.18" width="0.1524" layer="91"/>
+<junction x="274.32" y="43.18"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="254" y1="40.64" x2="274.32" y2="40.64" width="0.1524" layer="91"/>
+<junction x="274.32" y="40.64"/>
+<pinref part="R54" gate="G$1" pin="2"/>
+<wire x1="274.32" y1="101.6" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
+<junction x="274.32" y="88.9"/>
+<label x="264.16" y="87.63" size="0.8128" layer="95"/>
 </segment>
 </net>
 </nets>
