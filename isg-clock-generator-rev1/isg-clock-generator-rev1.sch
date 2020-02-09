@@ -13103,8 +13103,6 @@ Source: www.kingbright.com</description>
 <part name="X5" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-881/886" package3d_urn="urn:adsk.eagle:package:6216/1" value="PRIREF_N"/>
 <part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R47" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
-<part name="R48" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
 <part name="C59" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0R JUMPER"/>
 <part name="C60" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0R JUMPER"/>
 <part name="R49" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
@@ -14071,14 +14069,6 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 </instance>
 <instance part="GND81" gate="1" x="45.72" y="233.68" smashed="yes">
 <attribute name="VALUE" x="43.18" y="231.14" size="1.778" layer="96"/>
-</instance>
-<instance part="R47" gate="G$1" x="99.06" y="256.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="93.98" y="258.572" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="102.87" y="257.048" size="0.8128" layer="96"/>
-</instance>
-<instance part="R48" gate="G$1" x="99.06" y="241.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="93.98" y="243.332" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="102.87" y="241.808" size="0.8128" layer="96"/>
 </instance>
 <instance part="C59" gate="G$1" x="66.04" y="256.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.516" y="258.699" size="1.778" layer="95" rot="R180"/>
@@ -15148,28 +15138,14 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="314.96" y1="165.1" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="165.1" x2="134.62" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="241.3" x2="124.46" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="R48" gate="G$1" pin="1"/>
 <pinref part="R50" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="241.3" x2="104.14" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="223.52" x2="124.46" y2="241.3" width="0.1524" layer="91"/>
 <junction x="124.46" y="241.3"/>
 <label x="312.42" y="166.37" size="0.8128" layer="95" rot="R180"/>
 <label x="132.08" y="242.57" size="0.8128" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="PRIREF_P" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="PRIREF_P"/>
-<wire x1="314.96" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="167.64" x2="137.16" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="256.54" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="256.54" x2="104.14" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="223.52" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
-<junction x="114.3" y="256.54"/>
-<label x="312.42" y="168.91" size="0.8128" layer="95" rot="R180"/>
-<label x="132.08" y="257.81" size="0.8128" layer="95" rot="R180"/>
+<pinref part="C60" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
+<label x="86.36" y="242.57" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="NC_PIN" class="0">
@@ -15969,7 +15945,7 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <label x="243.84" y="207.01" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="PRIREF_RC_P" class="0">
+<net name="PRIREF_R_P" class="0">
 <segment>
 <pinref part="X4" gate="G1" pin="1"/>
 <pinref part="C59" gate="G$1" pin="1"/>
@@ -15977,23 +15953,7 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <label x="58.42" y="257.81" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="PRIREF_R_P" class="0">
-<segment>
-<pinref part="C59" gate="G$1" pin="2"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="256.54" x2="93.98" y2="256.54" width="0.1524" layer="91"/>
-<label x="86.36" y="257.81" size="0.8128" layer="95" rot="R180"/>
-</segment>
-</net>
 <net name="PRIREF_R_N" class="0">
-<segment>
-<pinref part="R48" gate="G$1" pin="2"/>
-<pinref part="C60" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
-<label x="86.36" y="242.57" size="0.8128" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="PRIREF_RC_N" class="0">
 <segment>
 <pinref part="C60" gate="G$1" pin="1"/>
 <pinref part="X5" gate="G1" pin="1"/>
@@ -16213,6 +16173,22 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="487.68" y1="165.1" x2="487.68" y2="152.4" width="0.1524" layer="91"/>
 <junction x="487.68" y="165.1"/>
+</segment>
+</net>
+<net name="PRIREF_P" class="0">
+<segment>
+<pinref part="C59" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="256.54" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
+<label x="86.36" y="257.81" size="0.8128" layer="95" rot="R180"/>
+<pinref part="IC1" gate="A" pin="PRIREF_P"/>
+<wire x1="314.96" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="167.64" x2="137.16" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="256.54" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="223.52" x2="114.3" y2="256.54" width="0.1524" layer="91"/>
+<junction x="114.3" y="256.54"/>
+<label x="312.42" y="168.91" size="0.8128" layer="95" rot="R180"/>
+<label x="132.08" y="257.81" size="0.8128" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
