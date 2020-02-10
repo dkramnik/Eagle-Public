@@ -13138,6 +13138,7 @@ Source: www.kingbright.com</description>
 <part name="C68" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 0.1UF 25V X7R 0603 10%"/>
 <part name="GND93" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R54" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
+<part name="GND94" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13200,7 +13201,6 @@ Open = Mid
 <text x="236.22" y="314.96" size="1.778" layer="98">TODO: FIX INDUCTOR PACKAGES</text>
 <text x="124.46" y="416.56" size="1.778" layer="98">TODO: fix all values for new LDO MPN</text>
 <text x="312.42" y="416.56" size="3.81" layer="98">Headers for Connecting to Motherboard </text>
-<text x="15.24" y="416.56" size="1.778" layer="98">TODO: figure out power input connectors</text>
 <text x="86.36" y="335.28" size="1.27" layer="98">Vref(1+Rtop/Rbottom) = Vout</text>
 <text x="86.36" y="332.74" size="1.27" layer="98">Vref = 0.8V Nominal</text>
 <text x="50.8" y="312.42" size="1.778" layer="98">EN resistor values should be on the order of 1s to 10s of kOhms.</text>
@@ -14155,12 +14155,12 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <attribute name="NAME" x="347.98" y="411.48" size="1.778" layer="95"/>
 <attribute name="VALUE" x="347.98" y="409.575" size="1.778" layer="96"/>
 </instance>
-<instance part="X6" gate="-1" x="20.32" y="378.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.78" y="379.222" size="1.524" layer="95" rot="R180"/>
-<attribute name="VALUE" x="21.082" y="377.063" size="1.778" layer="96" rot="R180"/>
+<instance part="X6" gate="-1" x="17.78" y="353.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.24" y="353.822" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="18.542" y="351.663" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X6" gate="-2" x="20.32" y="381" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.78" y="381.762" size="1.524" layer="95" rot="R180"/>
+<instance part="X6" gate="-2" x="17.78" y="355.6" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.24" y="356.362" size="1.524" layer="95" rot="R180"/>
 </instance>
 <instance part="C45" gate="G$1" x="167.64" y="396.24" smashed="yes">
 <attribute name="NAME" x="169.164" y="396.621" size="1.778" layer="95"/>
@@ -14231,6 +14231,9 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <instance part="R54" gate="G$1" x="274.32" y="106.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="276.86" y="112.268" size="1.778" layer="95"/>
 <attribute name="VALUE" x="277.368" y="110.49" size="0.8128" layer="96" rot="R270"/>
+</instance>
+<instance part="GND94" gate="1" x="22.86" y="322.58" smashed="yes">
+<attribute name="VALUE" x="20.32" y="320.04" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14793,6 +14796,12 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <pinref part="GND93" gate="1" pin="GND"/>
 <pinref part="C68" gate="G$1" pin="2"/>
 <wire x1="368.3" y1="50.8" x2="368.3" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND94" gate="1" pin="GND"/>
+<wire x1="22.86" y1="325.12" x2="22.86" y2="353.06" width="0.1524" layer="91"/>
+<pinref part="X6" gate="-1" pin="S"/>
+<wire x1="22.86" y1="353.06" x2="20.32" y2="353.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DECAP_LDO" class="0">
@@ -15626,6 +15635,9 @@ Max stub ~ 1/3 * T(10-90) * c/n = 0.52" = 1.3cm</text>
 <wire x1="81.28" y1="353.06" x2="78.74" y2="353.06" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="353.06" x2="78.74" y2="355.6" width="0.1524" layer="91"/>
 <junction x="78.74" y="355.6"/>
+<pinref part="X6" gate="-2" pin="S"/>
+<wire x1="20.32" y1="355.6" x2="30.48" y2="355.6" width="0.1524" layer="91"/>
+<junction x="30.48" y="355.6"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="B" pin="1"/>
