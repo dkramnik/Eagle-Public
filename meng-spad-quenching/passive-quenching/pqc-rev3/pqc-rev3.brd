@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3881,6 +3881,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3989,39 +3992,39 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="08B906" x="1.74625" y="12.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="2.2225" y="10.4775" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
-<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="R_Q" x="8.5725" y="15.5575" smashed="yes" rot="R90">
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="RES SMD 100K OHM 1% 0805" x="8.5725" y="15.5575" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.72125" y="15.14875" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="SPICEPREFIX" value="R" x="8.5725" y="15.5575" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C17" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="C_SNS" x="11.43" y="12.7" smashed="yes">
+<element name="C17" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10PF 250V C0G/NP0 0603" x="11.43" y="12.7" smashed="yes">
 <attribute name="NAME" x="11.4525" y="11.165" size="0.8128" layer="25" font="vector" ratio="16" align="bottom-center"/>
 </element>
-<element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="DF2B36FU,H3F" x="8.5725" y="10.95375" smashed="yes" rot="R270">
+<element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="DNP" x="8.5725" y="10.95375" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.95875" y="7.65875" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R6" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="R_SNS1" x="14.049375" y="14.76375" smashed="yes" rot="R180">
+<element name="R6" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="DNP" x="14.049375" y="14.76375" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.049375" y="15.39875" size="0.8128" layer="25" font="vector" ratio="16" align="bottom-center"/>
 </element>
-<element name="C12" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="C_TUNE1" x="16.8275" y="16.1925" smashed="yes" rot="R270">
+<element name="C12" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="DNP" x="16.8275" y="16.1925" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.1925" y="17.30375" size="0.8128" layer="25" font="vector" ratio="16" rot="R90"/>
 </element>
-<element name="R4" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="R_TIA" x="15.71625" y="16.1925" smashed="yes" rot="R270">
+<element name="R4" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="DNP" x="15.71625" y="16.1925" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.24" y="17.30375" size="0.8128" layer="25" font="vector" ratio="16" rot="R90"/>
 </element>
-<element name="IC2" library="meng" package="WSON8" value="OPA858" x="19.05" y="15.875" smashed="yes">
+<element name="IC2" library="meng" package="WSON8" value="DNP" x="19.05" y="15.875" smashed="yes">
 <attribute name="NAME" x="20.6375" y="15.39875" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="20.6375" y="16.35125" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
-<element name="R7" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 50 OHM 1% 0603" x="23.33625" y="13.335" smashed="yes" rot="R135">
+<element name="R7" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP" x="23.33625" y="13.335" smashed="yes" rot="R135">
 <attribute name="NAME" x="24.765" y="12.85875" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C14" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="C_TUNE2" x="14.605" y="13.17625" smashed="yes" rot="R270">
+<element name="C14" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="DNP" x="14.605" y="13.17625" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.85875" y="14.2875" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="C10" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 25V C0G 0603" x="17.62125" y="17.93875" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.62125" y="18.57375" size="0.8128" layer="25" font="vector" ratio="16" align="bottom-center"/>
 </element>
-<element name="R8" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="R_SNS" x="13.49375" y="13.17625" smashed="yes" rot="R90">
+<element name="R8" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="RES SMD 50 OHM 1% 0402" x="13.49375" y="13.17625" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.85875" y="15.24" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="C7" library="rcl" package="C0805" value="CAP CER 0.1UF 50V X7R 0805" x="7.62" y="21.11375" smashed="yes" rot="R90">
@@ -4037,10 +4040,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="20.6375" y="8.41375" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="20.6375" y="9.36625" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
-<element name="R11" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="R_FB1" x="15.71625" y="10.63625" smashed="yes" rot="R270">
+<element name="R11" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="RES SMD 1K OHM 1% 0402" x="15.71625" y="10.63625" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.24" y="9.68375" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="R10" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="R_FB2" x="13.49375" y="10.63625" smashed="yes" rot="R90">
+<element name="R10" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="RES SMD 100 OHM 1% 0402" x="13.49375" y="10.63625" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.85875" y="10.795" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
 <element name="R9" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 50 OHM 1% 0603" x="23.33625" y="12.22375" smashed="yes" rot="R225">
@@ -4052,13 +4055,13 @@ design rules under a new name.</description>
 <element name="C13" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 0.1UF 25V X7R 0603" x="20.0025" y="13.6525" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.6375" y="14.44625" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C20" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="C_FB1" x="16.8275" y="10.63625" smashed="yes" rot="R270">
+<element name="C20" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CAP CER 0.1PF 50V C0G/NP0 0402" x="16.8275" y="10.63625" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.35125" y="9.68375" size="0.8128" layer="25" font="vector" ratio="16" rot="R270"/>
 </element>
-<element name="C19" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="C_FB2" x="14.605" y="10.63625" smashed="yes" rot="R90">
+<element name="C19" library="rcl-modified-footprints" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="DNP" x="14.605" y="10.63625" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.85875" y="9.8425" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="DF2B36FU,H3F" x="28.73375" y="21.74875" smashed="yes" rot="R90">
+<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD323-W" package3d_urn="urn:adsk.eagle:package:43418/1" value="D55V0M1B2WS-7" x="28.73375" y="21.74875" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.6975" y="23.38375" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="RES SMD 1 OHM 1% 0805" x="9.68375" y="21.11375" smashed="yes" rot="R90">
@@ -4084,19 +4087,19 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="38.1" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="37.7825" y="9.8425" size="0.8128" layer="27" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="IC1" library="Kramnik's Library" package="MSOP-8_POWER_PAD" value="TPS7A4901" x="18.57375" y="22.38375" smashed="yes" rot="R270">
+<element name="IC1" library="Kramnik's Library" package="MSOP-8_POWER_PAD" value="TPS79850" x="18.57375" y="22.38375" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.03375" y="23.16125" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C8" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 25V X7R 0603 10%" x="25.4" y="20.6375" smashed="yes">
 <attribute name="NAME" x="24.4475" y="22.70125" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R1" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 76.8K OHM 1% 1/10W 0603" x="16.51" y="22.225" smashed="yes" rot="R90">
+<element name="R1" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603" x="16.51" y="22.225" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.8275" y="23.65375" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R3" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 24K OHM 1% 1/10W 0603" x="15.875" y="20.0025" smashed="yes" rot="R180">
+<element name="R3" library="rcl-modified-footprints" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP" x="15.875" y="20.0025" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.2875" y="20.47875" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 </element>
-<element name="C3" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 25V X7R 0603 10%" x="15.08125" y="22.225" smashed="yes" rot="R270">
+<element name="C3" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="DNP" x="15.08125" y="22.225" smashed="yes" rot="R270">
 <attribute name="NAME" x="14.605" y="23.65375" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C4" library="rcl-modified-footprints" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 0.1UF 100V X7R 0603" x="25.4" y="22.06625" smashed="yes">
@@ -4581,7 +4584,7 @@ design rules under a new name.</description>
 <wire x1="9.68375" y1="23.65375" x2="9.68375" y2="23.1775" width="0.8128" layer="16"/>
 <wire x1="15.71625" y1="23.65375" x2="9.68375" y2="23.65375" width="0.8128" layer="16"/>
 </signal>
-<signal name="LDO_P5V0_NR_SS_CH1">
+<signal name="LDO_P5V0_NR_SS">
 <contactref element="IC1" pad="6"/>
 <contactref element="C8" pad="1"/>
 <wire x1="22.77375" y1="21.08375" x2="24.22875" y2="21.08375" width="0.4064" layer="1"/>
@@ -4832,6 +4835,13 @@ design rules under a new name.</description>
 <wire x1="10.00125" y1="2.92625" x2="11.43" y2="2.92625" width="0.4064" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="7,39,e969d7b9dbf5b9b9"/>
 <approved hash="7,39,da3fe261cca38c61"/>
