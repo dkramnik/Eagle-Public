@@ -21027,7 +21027,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="IC1" library="Kramnik's Library" deviceset="TPS7A*" device="" value="TPS79850"/>
 <part name="U$58" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
 <part name="U$286" library="Kramnik's Library" deviceset="LEFT_ARROW" device=""/>
-<part name="C8" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 25V X7R 0603 10%"/>
+<part name="C8" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 25V C0G 0603"/>
 <part name="GND144" library="supply1" deviceset="GND" device=""/>
 <part name="GND145" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0R JUMPER 0603"/>
@@ -21082,7 +21082,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1" value="TPTP10R"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10NF 50V X7R 0603"/>
+<part name="C9" library="rcl-modified-footprints" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="CAP CER 10000PF 50V X7R 0603"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device=""/>
 <part name="DNP9" library="meng" deviceset="ARROW_1DIR" device=""/>
 </parts>
