@@ -246,6 +246,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
 <text x="-1.27" y="2.2225" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
+<circle x="-1.5" y="0.75" radius="0.1" width="0.127" layer="21"/>
 </package>
 <package name="SOT23C">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
@@ -4011,7 +4012,7 @@ design rules under a new name.</description>
 <element name="R4" library="rcl-modified-footprints" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="DNP" x="15.71625" y="16.1925" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.24" y="17.30375" size="0.8128" layer="25" font="vector" ratio="16" rot="R90"/>
 </element>
-<element name="IC2" library="meng" package="WSON8" value="DNP" x="19.05" y="15.875" smashed="yes">
+<element name="IC2" library="meng" package="WSON8" value="OPA858" x="19.05" y="15.875" smashed="yes">
 <attribute name="NAME" x="20.6375" y="15.39875" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="20.6375" y="16.35125" size="0.8128" layer="27" font="vector" ratio="16"/>
 </element>
