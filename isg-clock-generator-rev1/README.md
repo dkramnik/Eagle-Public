@@ -1,6 +1,6 @@
 ISG Clock Generator Configuration Instructions:
 
-This board is based off of the TI LMK03318EVM. Refer to the datasheet ([http://www.ti.com/lit/ug/snau186/snau186.pdf]) for detailed configuration instructions.
+This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://www.ti.com/lit/ug/snau186/snau186.pdf) for detailed configuration instructions.
 
 Step 1:
 
