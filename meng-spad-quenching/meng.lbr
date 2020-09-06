@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -230,8 +230,8 @@
 <smd name="12" x="-0.5" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no" cream="no"/>
 <smd name="13" x="-1" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no" cream="no"/>
 <smd name="14" x="-1.5" y="1.4" dx="0.25" dy="0.7" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="4@1" x="-0.75" y="0" dx="1.75" dy="1.65" layer="1" roundness="25" stop="no" cream="no"/>
-<smd name="9@2" x="1" y="0" dx="1.07" dy="1.65" layer="1" roundness="25" stop="no" cream="no"/>
+<smd name="4_PAD" x="-0.75" y="0" dx="1.75" dy="1.65" layer="1" roundness="25" stop="no" cream="no"/>
+<smd name="9_PAD" x="1" y="0" dx="1.07" dy="1.65" layer="1" roundness="25" stop="no" cream="no"/>
 <text x="-1.905" y="2.2225" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-1.905" y="-2.8575" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 <rectangle x1="-1.65" y1="-1.775" x2="-1.35" y2="-1.025" layer="29"/>
@@ -25879,25 +25879,26 @@ MAX3223-MAX3243.pdf</description>
 </polygon>
 </symbol>
 <symbol name="LT3032">
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<pin name="OP" x="10.16" y="7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="AJP" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="BP" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short" direction="pwr"/>
-<pin name="IN" x="-10.16" y="0" length="short" direction="pwr"/>
-<pin name="ON" x="10.16" y="0" length="short" direction="pwr" rot="R180"/>
-<pin name="AJN" x="10.16" y="-2.54" length="short" rot="R180"/>
-<pin name="!SN" x="-10.16" y="-5.08" length="short"/>
-<pin name="BN" x="10.16" y="-5.08" length="short" rot="R180"/>
-<pin name="!SP" x="-10.16" y="5.08" length="short"/>
-<pin name="IP" x="-10.16" y="7.62" length="short" direction="pwr"/>
+<pin name="OUTP" x="15.24" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="AJP" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="BYPP" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="GND4" x="-10.16" y="-7.62" length="short" direction="pwr"/>
+<pin name="INN6" x="-10.16" y="0" length="short" direction="pwr"/>
+<pin name="OUTN" x="15.24" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="AJN" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="!SHDNN" x="-10.16" y="-5.08" length="short"/>
+<pin name="BYPN" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="!SHDNP" x="-10.16" y="5.08" length="short"/>
+<pin name="INP" x="-10.16" y="7.62" length="short" direction="pwr"/>
 <text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND@1" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="IN@1" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="GND5" x="15.24" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="INN9" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="NC" x="-10.16" y="2.54" length="short"/>
 </symbol>
 <symbol name="POT">
 <wire x1="-0.9525" y1="2.54" x2="0.9525" y2="2.54" width="0.254" layer="94"/>
@@ -26964,19 +26965,20 @@ http://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP580_581_
 <devices>
 <device name="" package="DFN14-4X3DE">
 <connects>
-<connect gate="G$1" pin="!SN" pad="10"/>
-<connect gate="G$1" pin="!SP" pad="12"/>
+<connect gate="G$1" pin="!SHDNN" pad="10"/>
+<connect gate="G$1" pin="!SHDNP" pad="12"/>
 <connect gate="G$1" pin="AJN" pad="8"/>
 <connect gate="G$1" pin="AJP" pad="2"/>
-<connect gate="G$1" pin="BN" pad="11"/>
-<connect gate="G$1" pin="BP" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="GND@1" pad="5"/>
-<connect gate="G$1" pin="IN" pad="6"/>
-<connect gate="G$1" pin="IN@1" pad="9"/>
-<connect gate="G$1" pin="IP" pad="14"/>
-<connect gate="G$1" pin="ON" pad="7"/>
-<connect gate="G$1" pin="OP" pad="1"/>
+<connect gate="G$1" pin="BYPN" pad="11"/>
+<connect gate="G$1" pin="BYPP" pad="3"/>
+<connect gate="G$1" pin="GND4" pad="4 4_PAD"/>
+<connect gate="G$1" pin="GND5" pad="5"/>
+<connect gate="G$1" pin="INN6" pad="6"/>
+<connect gate="G$1" pin="INN9" pad="9 9_PAD"/>
+<connect gate="G$1" pin="INP" pad="14"/>
+<connect gate="G$1" pin="NC" pad="13"/>
+<connect gate="G$1" pin="OUTN" pad="7"/>
+<connect gate="G$1" pin="OUTP" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
