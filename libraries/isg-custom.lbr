@@ -122,6 +122,20 @@
 <text x="2.8575" y="5.3975" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="2.8575" y="4.445" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
+<package name="MOUNT-PAD-1/4-20">
+<pad name="MOUNT" x="0" y="0" drill="6.604" diameter="11.176"/>
+<circle x="0" y="0" radius="6.35" width="0.254" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="6.35" curve="-90"/>
+<vertex x="6.35" y="0"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="-6.35" curve="-90"/>
+<vertex x="-6.35" y="0"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="DIE-PICO-MULTI-RING-FILTERS">
@@ -283,6 +297,16 @@
 <pin name="F4_PD1_K" x="101.6" y="55.88" length="middle" rot="R270"/>
 <pin name="HANDLE" x="2.54" y="-5.08" length="middle" rot="R90"/>
 </symbol>
+<symbol name="MOUNT-PAD">
+<wire x1="0.254" y1="2.032" x2="2.032" y2="0.254" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="-2.032" y1="0.254" x2="-0.254" y2="2.032" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="-2.032" y1="-0.254" x2="-0.254" y2="-2.032" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="0.254" y1="-2.032" x2="2.032" y2="-0.254" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="0" y="0" radius="1.524" width="0.0508" layer="94"/>
+<text x="2.794" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.794" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="MOUNT" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DIE-PICO-MULTI-RING-FILTERS" prefix="IC">
@@ -338,6 +362,21 @@
 <technology name="">
 <attribute name="VALUE" value="PICO_BAREDIE" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNT-PAD" prefix="H">
+<gates>
+<gate name="G$1" symbol="MOUNT-PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1/4-20-OPTICAL" package="MOUNT-PAD-1/4-20">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="MOUNT"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
