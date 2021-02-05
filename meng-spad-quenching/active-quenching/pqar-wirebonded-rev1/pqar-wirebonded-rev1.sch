@@ -12931,9 +12931,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="meng" deviceset="NC7SV74K8X" device="" value="NC7SV74K8X"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="rcl-modified-footprints" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="RES SMD 1K OHM 1% 1/10W 0805"/>
+<part name="R3" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
 <part name="R4" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
-<part name="R5" library="rcl-modified-footprints" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="RES SMD 1K OHM 1% 1/10W 0805"/>
+<part name="R5" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
 <part name="R6" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RES SMD 1K OHM 1% 1/10W 0603"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -13040,7 +13040,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="X5" library="meng" deviceset="MMCX" device="BIGPAD" value="FORCE_QUENCH"/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="R16" library="rcl-modified-footprints" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="DNP"/>
+<part name="R16" library="rcl-modified-footprints" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="DNP"/>
 <part name="DNP19" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP20" library="meng" deviceset="ARROW_1DIR" device=""/>
 <part name="DNP21" library="meng" deviceset="ARROW_1DIR" device=""/>
@@ -13107,7 +13107,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="162.56" y="147.32" size="1.778" layer="98">Optional AC-coupled hysteresis</text>
 <text x="287.02" y="15.24" size="1.27" layer="98">CAP SILICON 0.1UF 11V 0603</text>
 <text x="162.56" y="223.52" size="1.778" layer="98">Use 2 for escaping signals underneath</text>
-<text x="309.88" y="68.58" size="1.778" layer="98">Needed to jump over a signal</text>
+<text x="299.72" y="71.12" size="1.778" layer="98">Needed to jump over a signal</text>
 </plain>
 <instances>
 <instance part="H3" gate="G$1" x="43.18" y="27.94" smashed="yes">
@@ -13564,9 +13564,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <attribute name="NAME" x="160.02" y="231.14" size="1.778" layer="95"/>
 <attribute name="VALUE" x="160.02" y="228.6" size="0.8128" layer="97"/>
 </instance>
-<instance part="R17" gate="G$1" x="320.04" y="63.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="316.23" y="64.9986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="316.23" y="60.198" size="0.8128" layer="96"/>
+<instance part="R17" gate="G$1" x="312.42" y="63.5" smashed="yes" rot="MR180">
+<attribute name="NAME" x="308.61" y="64.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="308.61" y="60.198" size="0.8128" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13935,7 +13935,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <junction x="220.98" y="106.68"/>
 <wire x1="215.9" y1="63.5" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
 <junction x="215.9" y="106.68"/>
-<wire x1="314.96" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -14328,14 +14328,15 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <label x="342.9" y="175.26" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VDD_COMP_JUMP" class="0">
 <segment>
 <pinref part="L5" gate="G$1" pin="P$2"/>
 <pinref part="L4" gate="G$1" pin="P$1"/>
 <wire x1="157.48" y1="223.52" x2="157.48" y2="220.98" width="0.1524" layer="91"/>
+<label x="154.94" y="223.52" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CLK_RESET_JUMP" class="0">
 <segment>
 <pinref part="IC20" gate="G$1" pin="IN1"/>
 <wire x1="350.52" y1="63.5" x2="353.06" y2="63.5" width="0.1524" layer="91"/>
@@ -14343,8 +14344,9 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <wire x1="353.06" y1="55.88" x2="350.52" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="55.88" x2="350.52" y2="63.5" width="0.1524" layer="91"/>
 <junction x="350.52" y="63.5"/>
-<wire x1="350.52" y1="63.5" x2="325.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="63.5" x2="317.5" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
+<label x="345.44" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
