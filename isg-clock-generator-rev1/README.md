@@ -1,5 +1,7 @@
 <h1>ISG Clock Generator Instructions:</h1>
 
+This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://www.ti.com/lit/ug/snau186/snau186.pdf) for detailed documentation and configuration instructions.
+
 <h2>Required Rework</h2>
 
 If assembled as specified in the BOM, the output coupling networks on channel 2 (the one with differential output) need to be reconfigured to work with the usual ISG CML2CMOS clock receiver design. Instead of DC coupling, each line should be AC-coupled and biased at around 0.8V. The required component changes are:
@@ -8,6 +10,7 @@ C34, C35 change from 0R jumper to (todo)
 R22, R24 change from DNP to (todo)
 R23, R25 change from DNP to (todo)
 
+Location of channel 2's output coupling network:
 ![Location of channel 2's output coupling network.](doc/PCBA_Channel2_Output_Network.jpg)
 
 <h2>Jumper Configuration</h2>
@@ -19,8 +22,6 @@ todo
 todo
 
 <h2>Custom EEPROM Configuration Using TICS</h2>
-
-This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://www.ti.com/lit/ug/snau186/snau186.pdf) for detailed configuration instructions.
 
 Step 1:
 
