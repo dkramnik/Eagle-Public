@@ -6,16 +6,18 @@ This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://ww
 
 If assembled as specified in the BOM, the output coupling networks on channel 2 (the one with differential output) need to be reconfigured to work with the usual ISG CML2CMOS clock receiver design. Instead of DC coupling, each line should be AC-coupled and biased at around 0.8V. The required component changes are:
 
-C34, C35 change from 0R jumper to (todo)
-R22, R24 change from DNP to (todo)
-R23, R25 change from DNP to (todo)
+C34, C35 (AC-coupling) change from 0R 0402 jumper to 1nF 0402 RF capacitor
+R22, R24 (pulldown to GND) change from DNP to 800R 0402
+R23, R25 (pullup to VDDIO=1.8V) change from DNP to 1k 0402
 
 Location of channel 2's output coupling network:
-![Location of channel 2's output coupling network.](doc/PCBA_Channel2_Output_Network.jpg)
+![Location of channel 2's output coupling network.](doc/PCBA_channel_2_output_network.jpg)
 
 <h2>Jumper Configuration</h2>
 
-todo
+Configure the jumpers like in the picture. STAT1 is on and STAT0 is off when the chip is working as desired.
+
+![Jumper configuration.](doc/PCBA_jumper_config.jpg)
 
 <h2>Standard EEPROM Configuration Using TICS</h2>
 
