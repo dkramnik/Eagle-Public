@@ -2,6 +2,8 @@
 
 This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://www.ti.com/lit/ug/snau186/snau186.pdf) for detailed documentation and configuration instructions.
 
+Important note: the on-chip EEPROM can only be reprogrammed 100 times, so be conservative when reconfiguring the clock source.
+
 <h2>Required Rework</h2>
 
 If assembled as specified in the BOM, the output coupling networks on channel 2 (the one with differential output) need to be reconfigured to work with the usual ISG CML2CMOS clock receiver design. Instead of DC coupling, each line should be AC-coupled and biased at around 0.8V. The required component changes are:
