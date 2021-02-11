@@ -2,6 +2,8 @@
 
 This board is based off of the TI LMK03318EVM. Refer to the datasheet (http://www.ti.com/lit/ug/snau186/snau186.pdf) for detailed documentation and configuration instructions.
 
+The LMK03318 has 4 on-chip memories: ROM, register file, SRAM, and EEPROM. The currently-used settings are stored in the register file, which is loaded either from ROM or EEPROM on startup, depending on the jumper configuration. The I2C interface writes only to the register file, which can then be transferred to the SRAM. The purpose of the (volatile) SRAM is to store data before it is written to EEPROM. The EEPROM can only be programmed from the contents of the SRAM. The various memory programming steps are separate actions with buttons located all over the TICS GUI, and multiple user actions need to be taken to successfully program the device. The TICS GUI also seems to be buggy, so be patient because it can take several attempts to get the PLL chip to output anything.
+
 Important note: the on-chip EEPROM can only be reprogrammed 100 times, so be conservative when reconfiguring the clock source.
 
 <h2>Required Rework</h2>
