@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -25809,10 +25809,10 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="0.3159125" y1="5.0752375" x2="6.9516625" y2="5.0784125" layer="21"/>
 </package>
 <package name="SPAD-WIREBOND-GENERIC-CRYO">
-<smd name="K1" x="-0.3048" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90"/>
-<smd name="A" x="0" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90"/>
-<smd name="K2" x="0.3048" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90"/>
-<smd name="GND" x="0" y="0" dx="8" dy="8" layer="1" rot="R180"/>
+<smd name="K1" x="-0.3048" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90" cream="no"/>
+<smd name="A" x="0" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90" cream="no"/>
+<smd name="K2" x="0.3048" y="-5.334" dx="0.4572" dy="0.1524" layer="1" rot="R90" cream="no"/>
+<smd name="GND" x="0" y="0" dx="8" dy="8" layer="1" rot="R180" cream="no"/>
 <text x="-3.81" y="6.35" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <text x="-3.81" y="5.08" size="0.8128" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
